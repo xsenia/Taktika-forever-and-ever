@@ -263,16 +263,140 @@
   font-size: 16px;
   line-height: 25px;
 }
+
+/*carousel*/
+.carousel-mobile {
+  padding-top: 0;
+}
+
+.carousel-mobile .slick-slider {
+  padding-top: 44px;
+}
+
+.carousel-mobile .slick-dots {
+    bottom: auto;
+    top: -20px;
+}
+
+.carousel-mobile .slick-dots > li {
+  padding: 0 !important;
+  width: 47%;
+}
+
+.carousel-mobile .slick-dots > li::before {
+  display: none;
+}
+
+.carousel-mobile .slick-dots > li button {
+  font-size: 20px;
+  line-height: 20px;
+  color: #202020;
+  width: 100%;
+  height: auto;
+  background: transparent;
+  border-bottom: 3px solid transparent;
+}
+
+.carousel-mobile .slick-dots li.slick-active button {
+  background: transparent;
+  border-bottom: 3px solid #e50000;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.carousel-btn__text {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: toyota-display,Arial,Helvetica,sans-serif;
+  display: block;
+}
+
+.carousel-btn__subtext {
+  color: #000;
+  font-size: 16px;
+  font-family: Arial, toyota-display,Arial,Helvetica,sans-serif;
+  display: block;
+}
+
+.newHiace-slide-img {
+  margin-bottom: 38px;
+}
+
+.newHiace-slide-img img {
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+
+  .h2-hiace-mobile {
+    font-size: 33px !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+.desktop {
+  display: none;  
+}
+
+@media (min-width: 992px) {
+  .desktop {
+    display: block;  
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+
+@media (max-width: 991px) {
+
+  .bstd-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .props-list__title {
+    font-size: 24px !important;
+    line-height: 26px !important;
+    font-weight: 400 !important;
+  }
+
+}
+
+.size-limit {
+  padding-top: 40px;
+}
+.comment-wrap {
+  padding-top: 40px;
+}
+
+@media (max-width: 991px) {
+  .size-limit {
+    padding: 15px;
+  }
+  .comment-wrap {
+    padding: 15px;
+  }
+  .mini-carousel .mini-carousel-intro2 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+
 </style>
 <div id="blinds" style="position: relative;">
     <div class="model-fon"><!-- model-fon -->
         <div class="container">
             <div class="row">
                 <div class="col-xs-12"><!-- Заголовок -->
-                    <section class="page-content__section">
-                        <h1 style="margin-bottom: 16px;">Новое поколение Toyota Hiace</h1>
+                    <section class="page-content__section" style="margin-bottom: 20px;padding-top: 30px;">
+                        <h1 style="margin-bottom: 16px;">Новое поколение Toyota&nbsp;Hiace</h1>
 
-                        <p>Одна из самых успешных в истории коммерческого транспорта модель, впервые представленная еще в 1967 году, во всем мире заслужила репутацию надежного делового партнера, на которого можно смело положиться при решении задач любой сложности.</p>
+                        <p>Одна из самых успешных в истории коммерческого транспорта модель, впервые представленная еще в 1967 году, во всем мире заслужила репутацию надежного делового партнера, на которого можно смело положиться при решении задач любой сложности. Представляем вам новый Toyota Hiace, который теперь доступен на российском рынке в 2 версиях: 13-местный минивэн в комплектации «Стандарт» и 9-ти местная VIP-версия в двух комплектациях «Элеганс» и «Престиж».</p>
                     </section>
                     <!-- //Заголовок --></div>
                 </div>
@@ -280,13 +404,9 @@
         </div>
 
 
-
-
-
-
-
         <!-- newHiace-switcher -->
-        <div class="newHiace-switcher">
+        <div class="newHiace-switcher desktop">
+            <div style="text-align: center;">Выберите интересующую вас версию Toyota Hiace и изучите ее ключевые преимущества ниже.</div>
             <div class="newHiace-switcher_inner" ng-init="switcher = 'switcher_1' ">
                <div class="newHiace-switcher_item" data-view="1" ng-class="{'active' : switcher === 'switcher_1'}" ng-click="switcher = 'switcher_1'">
                   <div class="newHiace-switcher_title"><span class="newHiace-switcher_span">Стандарт</span></div>
@@ -309,10 +429,9 @@
          <!-- //newHiace-switcher -->
 
 
-
-
          <!-- newHiace-content -->
-         <div class="newHiace-content">
+         <div class="newHiace-content  desktop">
+
             <!-- newHiace-item -->
             <div class="newHiace-item" data-view="1" ng-class="{'active' : switcher === 'switcher_1'}">
               <!-- Новый облик -->
@@ -329,6 +448,16 @@
 
                               <div class="props-list__text">Обтекаемые формы кузова нового Toyota Hiace создают образ современного делового автомобиля, а&nbsp;яркие декоративные элементы и&nbsp;широкие окна с&nbsp;незаметными стойками выделяют автомобиль в&nbsp;городском потоке машин.</div>
                           </div>
+                      </div>                                            
+
+                      <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                          <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/safety-and-calm_500x430_tcm-3020-1696093.jpg" title="" /></div>
+
+                          <div class="props-list__info">
+                              <div class="props-list__title">Безопасность и спокойствие</div>
+
+                              <div class="props-list__text">Новая платформа и&nbsp;усиленная конструкция кузова кардинально улучшила пассивную безопасность&nbsp;— новый Hiace получил максимально возможные 5&nbsp;звезд в&nbsp;рейтинге ANCAP. Дополнительно за&nbsp;безопасность водителя и&nbsp;переднего пассажира отвечают фронтальные подушки безопасности. Список систем активной безопасности, помимо традиционной ABS и&nbsp;системы поддержания курсовой устойчивости (VSC), включает усилитель экстренного торможения, функцию распределения тормозных усилий, включение аварийной сигнализации при экстренном торможении, а&nbsp;также имитацию работы межколесного дифференциала.</div>
+                          </div>
                       </div>
 
                       <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
@@ -337,17 +466,7 @@
                           <div class="props-list__info">
                               <div class="props-list__title">Простор и удобство</div>
 
-                              <div class="props-list__text">Новый Toyota Hiace стал существенно просторнее и&nbsp;комфортнее за&nbsp;счет увеличения своих размеров и&nbsp;изменения компоновки кузова. Это позволило сделать шире проход между сиденьями и&nbsp;увеличить расстояние для ног. Боковые стекла нового Toyota Hiace установлены практически вертикально и&nbsp;стали шире, что добавляет комфорта пассажирам, улучшает обзор и&nbsp;визуально увеличивает пространство автомобиля.</div>
-                          </div>
-                      </div>                      
-
-                      <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
-                          <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/safety-and-calm_500x430_tcm-3020-1696093.jpg" title="" /></div>
-
-                          <div class="props-list__info">
-                              <div class="props-list__title">Безопасность и спокойствие</div>
-
-                              <div class="props-list__text">Новая платформа и&nbsp;усиленная конструкция кузова кардинально улучшила пассивную безопасность&nbsp;&mdash; новый Hiace получил максимально возможные 5&nbsp;звезд в&nbsp;рейтинге ANCAP. Дополнительно за&nbsp;безопасность водителя и&nbsp;переднего пассажира отвечают фронтальные подушки безопасности. Список систем активной безопасности, помимо традиционной ABS и&nbsp;системы поддержания курсовой устойчивости (VSC), включает усилитель экстренного торможения, функцию распределения тормозных усилий, включение аварийной сигнализации при экстренном торможении, а&nbsp;также имитацию работы межколесного дифференциала.</div>
+                              <div class="props-list__text">Новый Toyota Hiace стал существенно просторнее и комфортнее за счет увеличения своих размеров и изменения компоновки кузова. Это позволило сделать шире проход между сиденьями и увеличить расстояние для ног. Боковые стекла нового Toyota Hiace установлены практически вертикально и стали шире, что добавляет комфорта пассажирам, улучшает обзор и визуально увеличивает пространство автомобиля.</div>
                           </div>
                       </div>
                   </div>
@@ -362,9 +481,9 @@
                           <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/size-and-practicality_500x430_tcm-3020-1696094.jpg" title="" /></div>
 
                           <div class="props-list__info">
-                              <div class="props-list__title">Размер и практичность</div>
+                              <div class="props-list__title">Многофункциональный салон</div>
 
-                              <div class="props-list__text">Переход на&nbsp;совершенно новую полукапотную компоновку сказался не&nbsp;только на&nbsp;увеличении габаритных размеров, но&nbsp;и&nbsp;на&nbsp;пространстве салона. Таким образом внутреннее пространство увеличилось на&nbsp;256&nbsp;мм. Благодаря этому в&nbsp;салоне нового Hiace вместе с водителем помещается не&nbsp;12&nbsp;человек как раньше, а&nbsp;13.</div>
+                              <div class="props-list__text">Переход на&nbsp;совершенно новую полукапотную компоновку сказался не&nbsp;только на&nbsp;увеличении габаритных размеров, но&nbsp;и&nbsp;на&nbsp;пространстве салона. Таким образом внутреннее пространство увеличилось на&nbsp;256&nbsp;мм. Благодаря этому в&nbsp;салоне нового Hiace вместе с&nbsp;водителем помещается не&nbsp;12&nbsp;человек как раньше, а&nbsp;13.</div>
                           </div>
                       </div>
 
@@ -411,7 +530,7 @@
                           <div class="props-list__info">
                               <div class="props-list__title">Надежность и управление</div>
 
-                              <div class="props-list__text">Сочетание независимой пружинной подвески на&nbsp;стойках &laquo;Мак-Ферсона&raquo; спереди и&nbsp;зависимой рессорной подвески сзади оптимально подходит для многоместного микроавтобуса, обеспечивая отличный баланс энергоемкости и&nbsp;комфорта.</div>
+                              <div class="props-list__text">Сочетание независимой пружинной подвески на&nbsp;стойках «Мак-Ферсона» спереди и&nbsp;зависимой рессорной подвески сзади оптимально подходит для многоместного микроавтобуса, обеспечивая отличный баланс энергоемкости и&nbsp;комфорта.</div>
                           </div>
                       </div>
 
@@ -427,6 +546,40 @@
                   </div>
               </section>
               <!-- //Комфорт для водителя -->
+
+                <div class="row">
+                  <div class="col-xs-12">
+                      <section class="page-content__section">
+                          <header class="section-title">
+                              <h2>Зимний пакет</h2>
+                          </header>
+
+                          <div class="mini-carousel">
+                              <div class="bstd-section">
+                                  <p class="mini-carousel-intro">Россия славится суровыми зимами. Поэтому мы&nbsp;предусмотрели всё, чтобы комфорт окружал вас, пока за&nbsp;окном бушует снежная буря. Зимний пакет* не&nbsp;позволит морозам вносить правки в&nbsp;ваши планы на&nbsp;день.</p>
+
+                                  <div class="bstd-slider__wrapper">
+                                      <div class="bstd-slider__main-image"><img alt="slide0" src="//d1hu588lul0tna.cloudfront.net/toyotaone/ruru/winter_logo_91-1_tcm-3020-1147815.png" title="" /></div>
+
+                                      <div class="bstd-slider">
+                                        <div class="bstd-slider__item"><img alt="slide1" src="http://d1hu588lul0tna.cloudfront.net/toyotaone/ruru/010_tcm-3020-1147821.png" title=""><span>Электрообогрев лобового стекла в&nbsp;зоне покоя стеклоочистителей</span></div>
+
+                                        <div class="bstd-slider__item"><img alt="slide9" src="//d1hu588lul0tna.cloudfront.net/toyotaone/ruru/09_tcm-3020-1147823.png" title="" /><span>Дополнительный электрический отопитель салона</span></div>
+
+                                        <div class="bstd-slider__item"><img alt="slide10" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/012_tcm-3020-1147827.png" title="" /><span>Догреватель двигателя</span></div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="button-wrapper"><a class="btn  btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о пакете" href="https://www.toyota.ru/new-cars/technologies/winter-pack" rel="no follow" target="_blank">Подробнее о&nbsp;пакете</a></div>
+
+                              <div class="comment-wrap">
+                                  <p>* Набор опций может отличаться в зависимости от комплектации.</p>
+                              </div>
+                          </div>
+                      </section>
+                  </div>
+              </div>
             </div>
             <!-- //newHiace-item -->
 
@@ -443,9 +596,19 @@
                           <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/005-feature_500x430_tcm-3020-1785044.jpg" title="" /></div>
 
                           <div class="props-list__info">
-                              <div class="props-list__title">Стильный</div>
+                              <div class="props-list__title">Воплощение стиля</div>
 
-                              <div class="props-list__text">Новый Toyota Hiace выделяется в&nbsp;потоке автомобилей благодаря ярким декоративным элементам и&nbsp;широким окнам с&nbsp;незаметными стойками. Образ совремеменного делового автомобиля также подчеркивают обтекаемые формы кузова.</div>
+                              <div class="props-list__text">Экстерьер Toyota Hiace VIP выполнен в стилистике флагманских моделей Toyota. Статусный облик минивэна формируют эффектная широкая решетка радиатора, хромированные декоративные элементы, легкосплавные 17-дюймовые колесные диски и светодиодная передняя и задняя оптика оригинального дизайна.  </div>
+                          </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                          <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/001-feature_500x430_tcm-3020-1785040.jpg" title="" /></div>
+
+                          <div class="props-list__info">
+                              <div class="props-list__title">Новый уровень безопасности</div>
+
+                              <div class="props-list__text">Безопасность нового Toyota Hiace подтверждена рейтингом ANCAP, где минивэн получил максимально возможные 5 звезд. За пассивную безопасность в новом Toyota Hiace отвечают усиленная конструкция кузова, 7 подушек безопасности, помимо этого 9-ти местная VIP-версия оснащена современными системами активной безопасности Toyota Safety Sense (TSS).</div>
                           </div>
                       </div>
 
@@ -453,46 +616,30 @@
                           <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/003-feature_500x430_tcm-3020-1785042.jpg" title="" /></div>
 
                           <div class="props-list__info">
-                              <div class="props-list__title">Просторный</div>
+                              <div class="props-list__title">Простор бизнес-класса</div>
 
-                              <div class="props-list__text">Благодаря изменению компоновки кузова новый Toyota Hiace стал существенно просторнее и&nbsp;комфортнее. А&nbsp;широкие боковые стекла нового Toyota Hiace улучшают обзор и&nbsp;визуально увеличивают пространство автомобиля.</div>
-                          </div>
-                      </div>                      
-
-                      <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
-                          <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/001-feature_500x430_tcm-3020-1785040.jpg" title="" /></div>
-
-                          <div class="props-list__info">
-                              <div class="props-list__title">Безопасный</div>
-
-                              <div class="props-list__text">В&nbsp;рейтинге ANCAP новый Toyota Hiace получил максимально возможные 5&nbsp;звезд, благодаря новой платформе и&nbsp;усиленной конструкции кузова. Кроме того, новый Toyota Hiace оснащен современными системами активной безопасности Toyota Safety Sense (TSS). Дополнительно за&nbsp;безопасность водителя и&nbsp;пассажиров отвечают 7&nbsp;подушек безопасности.</div>
+                              <div class="props-list__text">Благодаря изменению компоновки кузова новый Toyota Hiace стал существенно просторнее и комфортнее, а широкие боковые стекла нового Toyota Hiace улучшают обзор и визуально увеличивают пространство автомобиля.</div>
                           </div>
                       </div>
+
                   </div>
               </section>
-              <!-- //Новый облик --><!-- Комфорт для пассажира -->
+              <!-- //Новый облик -->
 
+              <!-- Комфорт для пассажира -->
               <section class="article">
                   <h2 class="h1">Комфорт для пассажира</h2>
 
                   <div class="props-list props-list_center">
-                      <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
-                          <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/010-feature_500x430_tcm-3020-1785049.jpg" title="" /></div>
-
-                          <div class="props-list__info">
-                              <div class="props-list__title">Практичный</div>
-
-                              <div class="props-list__text">Благодаря совершенно новой полукапотной компоновке, увеличились габаритные размеры и&nbsp;пространство салона&nbsp;— новый Toyota Hiace рассчитан на&nbsp;водителя и&nbsp;8&nbsp;пассажиров.</div>
-                          </div>
-                      </div>
+                      
 
                       <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
                           <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/007-feature_500x430_tcm-3020-1785046.jpg" title="" /></div>
 
                           <div class="props-list__info">
-                              <div class="props-list__title">Комфортый</div>
+                              <div class="props-list__title">Комфорт <span style="white-space: nowrap;">премиум-класса</span></div>
 
-                              <div class="props-list__text">Поездки на&nbsp;дальние расстояния в&nbsp;новом Toyota Hiace подарят максимальный комфорт и&nbsp;незабываемые впечатления. Сверхудобные сидения с&nbsp;кожаной обивкой легко трансформируются в&nbsp;лежачее положение, а&nbsp;задние сидения сдвигаются для увеличения пространства багажного отделения.</div>
+                              <div class="props-list__text">Высочайший уровень комфорта VIP-версии Hiace обеспечивает новое оснащение пассажирской части салона. На втором и третьем рядах устанавливаются просторные и комфортные капитанские кресла с индивидуальными регулировками, улучшенной боковой поддержкой, откидными подлокотниками.</div>
                           </div>
                       </div>
 
@@ -500,9 +647,19 @@
                           <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/006-feature_500x430_tcm-3020-1785045.jpg" title="" /></div>
 
                           <div class="props-list__info">
-                              <div class="props-list__title">Функциональный</div>
+                              <div class="props-list__title">Достойное окружение</div>
 
-                              <div class="props-list__text">Для наиболее удобной посадки пассажиров увеличен дверной проем автомобиля, при входе располагаются ручки, а&nbsp;ступенька в&nbsp;полу второго ряда оснащена подсветкой&nbsp;— функциональность нового Toyota Hiace продумана в&nbsp;каждой детали.</div>
+                              <div class="props-list__text">Атмосферу комфорта и гостеприимства в поездках на VIP-версии также создают такие элементы оснащения как независимый климат-контроль пассажирской части салона, амбиентная подсветка, 4 индивидуальные лампы освещения и 6 USB-портов, подсветка порога, ручки для удобства посадки и высадки, электропривод боковых дверей и электрический доводчик двери багажного отсека. </div>
+                          </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                          <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/010-feature_500x430_tcm-3020-1785049.jpg" title="" /></div>
+
+                          <div class="props-list__info">
+                              <div class="props-list__title">Многофункциональный салон</div>
+
+                              <div class="props-list__text">В любом путешествии Toyota Hiace подстроится под ваши желания. Полностью разложив кресла, пассажиры могут отдохнуть в дороге, а чтобы увеличить багажное отделение и разместить необходимый багаж, достаточно сдвинуть задние сидения.</div>
                           </div>
                       </div>
                   </div>
@@ -517,9 +674,9 @@
                           <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/004-feature_500x430_tcm-3020-1785043.jpg" title="" /></div>
 
                           <div class="props-list__info">
-                              <div class="props-list__title">Мощный</div>
+                              <div class="props-list__title">Уверенный характер</div>
 
-                              <div class="props-list__text">Надежный дизельный двигатель объёмом 2,8 литра в&nbsp;сочетании с&nbsp;6-ступенчатой автоматической коробкой передач подчеркивает деловую репутацию и&nbsp;сильный характер нового Toyota Hiace.</div>
+                              <div class="props-list__text">Надежный дизельный двигатель объёмом 2,8 литра в сочетании с 6-ступенчатой автоматической коробкой передач обеспечивает отличные характеристики разгона и топливную экономичность новому Toyota Hiace.</div>
                           </div>
                       </div>
 
@@ -527,9 +684,9 @@
                           <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/002-feature_500x430_tcm-3020-1785041.jpg" title="" /></div>
 
                           <div class="props-list__info">
-                              <div class="props-list__title">Надежный</div>
+                              <div class="props-list__title">Надежный <span style="white-space: nowrap;">бизнес-партнер</span></div>
 
-                              <div class="props-list__text">Новый Toyota Hiace сочетает превосходный баланс энергоемкости и&nbsp;максимальный комфорт при движении, благодаря пружинной подвеске на&nbsp;стойках «Мак-Ферсона» спереди и&nbsp;зависимой рессорной подвески сзади.</div>
+                              <div class="props-list__text">Новый Toyota Hiace сочетает превосходный баланс энергоемкости и максимальный комфорт при движении благодаря пружинной подвеске на стойках «Мак-Ферсона» спереди и зависимой рессорной подвески сзади.</div>
                           </div>
                       </div>
 
@@ -537,67 +694,489 @@
                           <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/008-feature_500x430_tcm-3020-1785047.jpg" title="" /></div>
 
                           <div class="props-list__info">
-                              <div class="props-list__title">Уверенный</div>
+                              <div class="props-list__title">Уверенность и обзорность</div>
 
-                              <div class="props-list__text">Новый Toyota Hiace подарит уверенность в&nbsp;любой дорожной ситуации. Боковые зеркала с&nbsp;электроприводом регулировки и&nbsp;складывания для лучшей обзорности имеют 2&nbsp;секции. Максимальный комфорт обеспечивает независимый климат-контроль для пассажиров.</div>
+                              <div class="props-list__text">Новый Toyota Hiace в VIP-версии  подарит уверенность в любой ситуации. Боковые зеркала с электроприводом регулировки и складывания для лучшей обзорности имеют 2 секции, а мультифункциональное рулевое колесо  регулируется по вылету и углу наклона, что позволяет водителю занять максимально удобное положение и не отвлекаться от дороги.</div>
                           </div>
                       </div>
                   </div>
               </section>
               <!-- //Комфорт для водителя -->
-            </div>
-            <!-- //newHiace-item -->
-         </div>
-         <!-- //newHiace-content -->
 
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-        <div class="container">
-            <div class="row">
+              <div class="row">
                 <div class="col-xs-12">
                     <section class="page-content__section">
                         <header class="section-title">
-                            <h2>Зимний пакет</h2>
+                            <h2>Toyota Safety Sense</h2>
                         </header>
 
+
                         <div class="mini-carousel">
-                            <div class="bstd-section">
-                                <p class="mini-carousel-intro">Россия славится суровыми зимами. Поэтому мы&nbsp;предусмотрели всё, чтобы комфорт окружал вас, пока за&nbsp;окном бушует снежная буря. Зимний пакет* не&nbsp;позволит морозам вносить правки в&nbsp;ваши планы на&nbsp;день.</p>
+                          <div class="bstd-slider__wrapper">
 
-                                <div class="bstd-slider__wrapper">
-                                    <div class="bstd-slider__main-image"><img alt="slide0" src="//d1hu588lul0tna.cloudfront.net/toyotaone/ruru/winter_logo_91-1_tcm-3020-1147815.png" title="" /></div>
+                            <p class="mini-carousel-intro2">
+                              Инновационные технологии Toyota обеспечивают высочайший уровень безопасности вашего движения. Интеллектуальные системы активной и пассивной безопасности* предупредят вас, если ситуация будет выходить из-под вашего контроля.
+                            </p>
 
-                                    <div class="bstd-slider">
+                            <div class="bstd-slider__main-image"><img alt="slide0" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/000-tss-2-0_tcm-3020-1324325.png" title=""></div>
+
+                            <div class="bstd-slider">
+                              <div class="bstd-slider__item"><img alt="slide1" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/001-tss-2-0_tcm-3020-1324326.png" title=""><span>Система предупреждения об&nbsp;угрозе фронтального столкновения с&nbsp;функцией автоматического торможения и&nbsp;распознавания пешеходов (PCS)</span></div>
+
+                              <div class="bstd-slider__item"><img alt="slide2" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/002-tss-2-0_tcm-3020-1324327.png" title=""><span>Круиз-контроль с&nbsp;функцией поддержания безопасной дистанции до&nbsp;впереди идущего автомобиля во&nbsp;всем диапазоне скоростей (DRCC)</span></div>
+
+                              <div class="bstd-slider__item"><img alt="slide3" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/003-tss-2-0_tcm-3020-1324328.png" title=""><span>Система распознавания и&nbsp;информирования водителя о&nbsp;дорожных знаках (RSA)</span></div>
+
+                              <div class="bstd-slider__item"><img alt="slide4" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/004-tss-2-0_tcm-3020-1324329.png" title=""><span>Система оповещения о&nbsp;непреднамеренном пересечении дорожной разметки с&nbsp;функцией возврата в&nbsp;полосу (LDA)</span></div>
+
+                              <div class="bstd-slider__item"><img alt="slide5" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/005-tss-2-0_tcm-3020-1324330.png" title=""><span>Система автоматического переключения дальнего света на&nbsp;ближний (AHB)</span></div>
+
+                              <div class="bstd-slider__item"><img alt="slide6" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/006-tss-2-0_tcm-3020-1324331.png" title=""><span>Система контроля и&nbsp;информирования об&nbsp;усталости водителя (LDA)</span></div>
+                            </div>
+                          </div>
+
+                          <div class="button-wrapper"><a class="btn  btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о технологиях" href="https://www.toyota.ru/new-cars/technologies/tss" rel="no follow" target="_blank">Подробнее о&nbsp;технологиях</a></div>
+
+                          <div class="size-limit">
+                            <p class="support-text">* Набор опций может отличаться в зависимости от комплектации.<br>Новые активные системы безопасности такие, как Toyota Safety Sense, предназначены для помощи водителю. Поскольку из-за внешних факторов существует ограничение на точность распознавания и эффективность управления, обеспечиваемые данной системой, не следует слишком полагаться на систему. Водителю всегда необходимо обращать пристальное внимание на окружающую автомобиль обстановку и соблюдать все меры предосторожности при вождении. Эксплуатация Toyota Safety Sense может быть затронута или затруднена из-за внешних факторов, и Toyota не несет ответственности за какие-либо последствия, связанные с использованием системы.</p>
+                          </div>
+
+
+                    </section>
+                </div>
+              </div>
+
+
+              <div class="row">
+                  <div class="col-xs-12">
+                      <section class="page-content__section">
+                          <header class="section-title">
+                              <h2>Зимний пакет</h2>
+                          </header>
+
+                          <div class="mini-carousel">
+                              <div class="bstd-section">
+                                  <p class="mini-carousel-intro">Россия славится суровыми зимами. Поэтому мы&nbsp;предусмотрели всё, чтобы комфорт окружал вас, пока за&nbsp;окном бушует снежная буря. Зимний пакет* не&nbsp;позволит морозам вносить правки в&nbsp;ваши планы на&nbsp;день.</p>
+
+                                  <div class="bstd-slider__wrapper">
+                                      <div class="bstd-slider__main-image"><img alt="slide0" src="//d1hu588lul0tna.cloudfront.net/toyotaone/ruru/winter_logo_91-1_tcm-3020-1147815.png" title="" /></div>
+
+                                      <div class="bstd-slider">
+                                        <div class="bstd-slider__item"><img alt="slide1" src="http://d1hu588lul0tna.cloudfront.net/toyotaone/ruru/010_tcm-3020-1147821.png" title=""><span>Электрообогрев лобового стекла в&nbsp;зоне покоя стеклоочистителей</span></div>
+
                                         <div class="bstd-slider__item"><img alt="slide9" src="//d1hu588lul0tna.cloudfront.net/toyotaone/ruru/09_tcm-3020-1147823.png" title="" /><span>Дополнительный электрический отопитель салона</span></div>
 
                                         <div class="bstd-slider__item"><img alt="slide10" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/012_tcm-3020-1147827.png" title="" /><span>Догреватель двигателя</span></div>
-                                    </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="button-wrapper"><a class="btn  btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о пакете" href="https://www.toyota.ru/new-cars/technologies/winter-pack" rel="no follow" target="_blank">Подробнее о&nbsp;пакете</a></div>
+
+                              <div class="comment-wrap">
+                                  <p>* Набор опций может отличаться в зависимости от комплектации.</p>
+                              </div>
+                          </div>
+                      </section>
+                  </div>
+              </div>
+
+
+            </div>
+            <!-- //newHiace-item -->
+        </div>
+        <!-- //newHiace-content -->
+
+
+
+
+
+
+
+        <div class="mobile container" style="padding: 0">
+          <section>
+            <div class="carousel-mobile">
+              <div style="text-align: center;margin-bottom: 39px;padding-left: 15px;padding-right: 15px;">Выберите интересующую вас версию Toyota Hiace и изучите ее ключевые преимущества ниже.</div>
+              <slick adaptive-height="true" class="slick-slider slider-nav slick-slider-custom" dots="true" infinite="false" id="slider-main" settings="slickConfig">
+                <!-- slick-slide-01 -->
+                <div class="slick-slide">
+                  <!-- newHiace-item -->
+                  <div class="newHiace-item_slide">
+                    <!-- Новый облик -->
+
+                    <div class="newHiace-slide-img">
+                      <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/sw1_tcm-3020-1777370.jpg" title="" />
+                    </div>
+
+                    <section class="article">
+                        <h2 class="h1 h2-hiace-mobile">Новый облик</h2>
+
+                        <div class="props-list">
+                            <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/functionality-and-style_500x430_tcm-3020-1696089.jpg" title="" /></div>
+
+                                <div class="props-list__info">
+                                    <div class="props-list__title">Функциональность и стиль</div>
+
+                                    <div class="props-list__text">Обтекаемые формы кузова нового Toyota Hiace создают образ современного делового автомобиля, а&nbsp;яркие декоративные элементы и&nbsp;широкие окна с&nbsp;незаметными стойками выделяют автомобиль в&nbsp;городском потоке машин.</div>
+                                </div>
+                            </div>                                            
+
+                            <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/safety-and-calm_500x430_tcm-3020-1696093.jpg" title="" /></div>
+
+                                <div class="props-list__info">
+                                    <div class="props-list__title">Безопасность и спокойствие</div>
+
+                                    <div class="props-list__text">Новая платформа и&nbsp;усиленная конструкция кузова кардинально улучшила пассивную безопасность&nbsp;— новый Hiace получил максимально возможные 5&nbsp;звезд в&nbsp;рейтинге ANCAP. Дополнительно за&nbsp;безопасность водителя и&nbsp;переднего пассажира отвечают фронтальные подушки безопасности. Список систем активной безопасности, помимо традиционной ABS и&nbsp;системы поддержания курсовой устойчивости (VSC), включает усилитель экстренного торможения, функцию распределения тормозных усилий, включение аварийной сигнализации при экстренном торможении, а&nbsp;также имитацию работы межколесного дифференциала.</div>
                                 </div>
                             </div>
 
-                            <div class="button-wrapper"><a class="btn  btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о пакете" href="https://www.toyota.ru/new-cars/technologies/winter-pack" rel="no follow" target="_blank">Подробнее о&nbsp;пакете</a></div>
+                            <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/spaciousness-and-convenience_500x430_tcm-3020-1696090.jpg" title="" /></div>
 
-                            <div class="comment-wrap">
-                                <p>* Набор опций может отличаться в зависимости от комплектации.</p>
+                                <div class="props-list__info">
+                                    <div class="props-list__title">Простор и удобство</div>
+
+                                    <div class="props-list__text">Новый Toyota Hiace стал существенно просторнее и комфортнее за счет увеличения своих размеров и изменения компоновки кузова. Это позволило сделать шире проход между сиденьями и увеличить расстояние для ног. Боковые стекла нового Toyota Hiace установлены практически вертикально и стали шире, что добавляет комфорта пассажирам, улучшает обзор и визуально увеличивает пространство автомобиля.</div>
+                                </div>
                             </div>
                         </div>
                     </section>
+                    <!-- //Новый облик --><!-- Комфорт для пассажира -->
+
+                    <section class="article">
+                        <h2 class="h1 h2-hiace-mobile">Комфорт для пассажира</h2>
+
+                        <div class="props-list props-list_center">
+                            <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/size-and-practicality_500x430_tcm-3020-1696094.jpg" title="" /></div>
+
+                                <div class="props-list__info">
+                                    <div class="props-list__title">Многофункциональный салон</div>
+
+                                    <div class="props-list__text">Переход на&nbsp;совершенно новую полукапотную компоновку сказался не&nbsp;только на&nbsp;увеличении габаритных размеров, но&nbsp;и&nbsp;на&nbsp;пространстве салона. Таким образом внутреннее пространство увеличилось на&nbsp;256&nbsp;мм. Благодаря этому в&nbsp;салоне нового Hiace вместе с&nbsp;водителем помещается не&nbsp;12&nbsp;человек как раньше, а&nbsp;13.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/comfort-and-possibilities_500x430_tcm-3020-1696095.jpg" title="" /></div>
+
+                                <div class="props-list__info">
+                                    <div class="props-list__title">Комфорт и возможности</div>
+
+                                    <div class="props-list__text">Усовершенствованные сиденья с&nbsp;подголовниками регулируются по&nbsp;углу наклона и&nbsp;дарят комфорт даже в&nbsp;поездке на&nbsp;дальние расстояния. Кроме этого в&nbsp;новом Toyota Hiace можно увеличить пространство для перевозки багажа, сложив сиденья.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/reasonableness-and-attentiveness_500x430_tcm-3020-1696097.jpg" title="" /></div>
+
+                                <div class="props-list__info">
+                                    <div class="props-list__title">Продуманность и внимательность</div>
+
+                                    <div class="props-list__text">Новый Toyota Hiace стал больше, и это позволило увеличить ширину и высоту дверного проёма для наиболее комфортной посадки и высадки. Для удобства посадки при входе в автомобиле располагаются ручки, а в полу второго ряда вмонтирована ступенька с подсветкой.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- //Комфорт для пассажира --><!-- Комфорт для водителя -->
+
+                    <section class="article">
+                        <h2 class="h1 h2-hiace-mobile">Комфорт для водителя</h2>
+
+                        <div class="props-list props-list_center">
+                            <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/safety-and-calm_500x430_tcm-3020-1696105.jpg" title="" /></div>
+
+                                <div class="props-list__info">
+                                    <div class="props-list__title">Уверенность и мощь</div>
+
+                                    <div class="props-list__text">Новый Toyota Hiace подтверждает свою деловую репутацию и&nbsp;сильный характер. Автомобиль оснащен турбодизелем 2,8&nbsp;л в&nbsp;сочетании с&nbsp;6-ступенчатой механической коробкой передач. Этот улучшенный с&nbsp;точки зрения экономичности дизельный двигатель 1GD-FTV Global Diesel используется при производстве таких признанных лидеров, как Toyota Land Cruiser Prado и&nbsp;Toyota Hilux.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/reliability-and-control_500x430_tcm-3020-1696110.jpg" title="" /></div>
+
+                                <div class="props-list__info">
+                                    <div class="props-list__title">Надежность и управление</div>
+
+                                    <div class="props-list__text">Сочетание независимой пружинной подвески на&nbsp;стойках «Мак-Ферсона» спереди и&nbsp;зависимой рессорной подвески сзади оптимально подходит для многоместного микроавтобуса, обеспечивая отличный баланс энергоемкости и&nbsp;комфорта.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/review-and-assurance_500x430_tcm-3020-1696126.jpg" title="" /></div>
+
+                                <div class="props-list__info">
+                                    <div class="props-list__title">Обзор и уверенность</div>
+
+                                    <div class="props-list__text">Функциональность нового Toyota Hiace продумана в&nbsp;каждой детали. Боковые зеркала с&nbsp;электроприводом регулировки и&nbsp;складывания для лучшей обзорности имеют 2&nbsp;секции. В&nbsp;новом Toyota Hiace установлен однозонный климат-контроль для водителя и&nbsp;переднего пассажира, а&nbsp;в&nbsp;пассажирском салоне находится дополнительный кондиционер.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- //Комфорт для водителя -->
+
+                      <div class="row">
+                        <div class="col-xs-12">
+                            <section class="page-content__section">
+                                <header class="section-title">
+                                    <h2>Зимний пакет</h2>
+                                </header>
+
+                                <div class="mini-carousel">
+                                    <div class="bstd-section">
+                                        <p class="mini-carousel-intro">Россия славится суровыми зимами. Поэтому мы&nbsp;предусмотрели всё, чтобы комфорт окружал вас, пока за&nbsp;окном бушует снежная буря. Зимний пакет* не&nbsp;позволит морозам вносить правки в&nbsp;ваши планы на&nbsp;день.</p>
+
+                                        <div class="bstd-slider__wrapper">
+                                            <div class="bstd-slider__main-image"><img alt="slide0" src="//d1hu588lul0tna.cloudfront.net/toyotaone/ruru/winter_logo_91-1_tcm-3020-1147815.png" title="" /></div>
+
+                                            <div class="bstd-slider">
+                                              <div class="bstd-slider__item"><img alt="slide1" src="http://d1hu588lul0tna.cloudfront.net/toyotaone/ruru/010_tcm-3020-1147821.png" title=""><span>Электрообогрев лобового стекла в&nbsp;зоне покоя стеклоочистителей</span></div>
+
+                                              <div class="bstd-slider__item"><img alt="slide9" src="//d1hu588lul0tna.cloudfront.net/toyotaone/ruru/09_tcm-3020-1147823.png" title="" /><span>Дополнительный электрический отопитель салона</span></div>
+
+                                              <div class="bstd-slider__item"><img alt="slide10" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/012_tcm-3020-1147827.png" title="" /><span>Догреватель двигателя</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="button-wrapper"><a class="btn  btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о технологиях" href="https://www.toyota.ru/new-cars/technologies/winter-pack" rel="no follow" target="_blank">Подробнее о&nbsp;технологиях</a></div>
+
+                                    <div class="comment-wrap">
+                                        <p>* Набор опций может отличаться в зависимости от комплектации.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- //newHiace-item -->
                 </div>
+                <!-- //slick-slide-01 -->
+
+                <!-- slick-slide-02 -->
+                <div class="slick-slide">
+                  
+                  <!-- newHiace-item -->
+                  <div class="newHiace-item_slide">
+                    <!-- Новый облик -->
+
+                    <div class="newHiace-slide-img">
+                      <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/sw2-1_tcm-3020-1777371.jpg" title="" />
+                    </div>
+
+                    <section class="article">
+                        <h2 class="h1 h2-hiace-mobile">Новый облик</h2>
+
+                        <div class="props-list">
+                          <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                              <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/005-feature_500x430_tcm-3020-1785044.jpg" title="" /></div>
+
+                              <div class="props-list__info">
+                                  <div class="props-list__title">Воплощение стиля</div>
+
+                                  <div class="props-list__text">Экстерьер Toyota Hiace VIP выполнен в стилистике флагманских моделей Toyota. Статусный облик минивэна формируют эффектная широкая решетка радиатора, хромированные декоративные элементы, легкосплавные 17-дюймовые колесные диски и светодиодная передняя и задняя оптика оригинального дизайна.  </div>
+                              </div>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                              <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/001-feature_500x430_tcm-3020-1785040.jpg" title="" /></div>
+
+                              <div class="props-list__info">
+                                  <div class="props-list__title">Новый уровень безопасности</div>
+
+                                  <div class="props-list__text">Безопасность нового Toyota Hiace подтверждена рейтингом ANCAP, где минивэн получил максимально возможные 5 звезд. За пассивную безопасность в новом Toyota Hiace отвечают усиленная конструкция кузова, 7 подушек безопасности, помимо этого 9-ти местная VIP-версия оснащена современными системами активной безопасности Toyota Safety Sense (TSS).</div>
+                              </div>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                              <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/003-feature_500x430_tcm-3020-1785042.jpg" title="" /></div>
+
+                              <div class="props-list__info">
+                                  <div class="props-list__title">Простор <span style="white-space: nowrap;">бизнес-класса</span></div>
+
+                                  <div class="props-list__text">Благодаря изменению компоновки кузова новый Toyota Hiace стал существенно просторнее и комфортнее, а широкие боковые стекла нового Toyota Hiace улучшают обзор и визуально увеличивают пространство автомобиля.</div>
+                              </div>
+                          </div>
+
+                      </div>
+                    </section>
+                    <!-- //Новый облик --><!-- Комфорт для пассажира -->
+
+                    <section class="article">
+                        <h2 class="h1 h2-hiace-mobile">Комфорт для пассажира</h2>
+
+                        <div class="props-list props-list_center">
+                            
+
+                            <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/007-feature_500x430_tcm-3020-1785046.jpg" title="" /></div>
+
+                                <div class="props-list__info">
+                                    <div class="props-list__title">Комфорт <span style="white-space: nowrap;">премиум-класса</span></div>
+
+                                    <div class="props-list__text">Высочайший уровень комфорта VIP-версии Hiace обеспечивает новое оснащение пассажирской части салона. На втором и третьем рядах устанавливаются просторные и комфортные капитанские кресла с индивидуальными регулировками, улучшенной боковой поддержкой, откидными подлокотниками.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/006-feature_500x430_tcm-3020-1785045.jpg" title="" /></div>
+
+                                <div class="props-list__info">
+                                    <div class="props-list__title">Достойное окружение</div>
+
+                                    <div class="props-list__text">Атмосферу комфорта и гостеприимства в поездках на VIP-версии также создают такие элементы оснащения как независимый климат-контроль пассажирской части салона, амбиентная подсветка, 4 индивидуальные лампы освещения и 6 USB-портов, подсветка порога, ручки для удобства посадки и высадки, электропривод боковых дверей и электрический доводчик двери багажного отсека. </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/010-feature_500x430_tcm-3020-1785049.jpg" title="" /></div>
+
+                                <div class="props-list__info">
+                                    <div class="props-list__title">Многофункциональный салон</div>
+
+                                    <div class="props-list__text">В любом путешествии Toyota Hiace подстроится под ваши желания. Полностью разложив кресла, пассажиры могут отдохнуть в дороге, а чтобы увеличить багажное отделение и разместить необходимый багаж, достаточно сдвинуть задние сидения.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- //Комфорт для пассажира --><!-- Комфорт для водителя -->
+
+                    <section class="article">
+                        <h2 class="h1 h2-hiace-mobile">Комфорт для водителя</h2>
+
+                        <div class="props-list props-list_center">
+                          <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                              <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/004-feature_500x430_tcm-3020-1785043.jpg" title="" /></div>
+
+                              <div class="props-list__info">
+                                  <div class="props-list__title">Уверенный характер</div>
+
+                                  <div class="props-list__text">Надежный дизельный двигатель объёмом 2,8 литра в сочетании с 6-ступенчатой автоматической коробкой передач обеспечивает отличные характеристики разгона и топливную экономичность новому Toyota Hiace.</div>
+                              </div>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                              <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/002-feature_500x430_tcm-3020-1785041.jpg" title="" /></div>
+
+                              <div class="props-list__info">
+                                  <div class="props-list__title">Надежный <span style="white-space: nowrap;">бизнес-партнер</span></div>
+
+                                  <div class="props-list__text">Новый Toyota Hiace сочетает превосходный баланс энергоемкости и максимальный комфорт при движении благодаря пружинной подвеске на стойках «Мак-Ферсона» спереди и зависимой рессорной подвески сзади.</div>
+                              </div>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-6 col-lg-3 props-list__card">
+                              <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/008-feature_500x430_tcm-3020-1785047.jpg" title="" /></div>
+
+                              <div class="props-list__info">
+                                  <div class="props-list__title">Уверенность и обзорность</div>
+
+                                  <div class="props-list__text">Новый Toyota Hiace в VIP-версии  подарит уверенность в любой ситуации. Боковые зеркала с электроприводом регулировки и складывания для лучшей обзорности имеют 2 секции, а мультифункциональное рулевое колесо  регулируется по вылету и углу наклона, что позволяет водителю занять максимально удобное положение и не отвлекаться от дороги.</div>
+                              </div>
+                          </div>
+                      </div>
+                    </section>
+                    <!-- //Комфорт для водителя -->
+
+                    <div class="row">
+                      <div class="col-xs-12">
+                          <section class="page-content__section">
+                              <header class="section-title">
+                                  <h2>Toyota Safety Sense</h2>
+                              </header>
+
+                              <div class="mini-carousel">
+                                <div class="bstd-slider__wrapper">
+
+                                  <p class="mini-carousel-intro2">
+                                    Инновационные технологии Toyota обеспечивают высочайший уровень безопасности вашего движения. Интеллектуальные системы активной и пассивной безопасности* предупредят вас, если ситуация будет выходить из-под вашего контроля.
+                                  </p>
+
+                                  <div class="bstd-slider__main-image"><img alt="slide0" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/000-tss-2-0_tcm-3020-1324325.png" title=""></div>
+
+                                  <div class="bstd-slider">
+                                    <div class="bstd-slider__item"><img alt="slide1" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/001-tss-2-0_tcm-3020-1324326.png" title=""><span>Система предупреждения об&nbsp;угрозе фронтального столкновения с&nbsp;функцией автоматического торможения и&nbsp;распознавания пешеходов (PCS)</span></div>
+
+                                    <div class="bstd-slider__item"><img alt="slide2" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/002-tss-2-0_tcm-3020-1324327.png" title=""><span>Круиз-контроль с&nbsp;функцией поддержания безопасной дистанции до&nbsp;впереди идущего автомобиля во&nbsp;всем диапазоне скоростей (DRCC)</span></div>
+
+                                    <div class="bstd-slider__item"><img alt="slide3" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/003-tss-2-0_tcm-3020-1324328.png" title=""><span>Система распознавания и&nbsp;информирования водителя о&nbsp;дорожных знаках (RSA)</span></div>
+
+                                    <div class="bstd-slider__item"><img alt="slide4" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/004-tss-2-0_tcm-3020-1324329.png" title=""><span>Система оповещения о&nbsp;непреднамеренном пересечении дорожной разметки с&nbsp;функцией возврата в&nbsp;полосу (LDA)</span></div>
+
+                                    <div class="bstd-slider__item"><img alt="slide5" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/005-tss-2-0_tcm-3020-1324330.png" title=""><span>Система автоматического переключения дальнего света на&nbsp;ближний (AHB)</span></div>
+
+                                    <div class="bstd-slider__item"><img alt="slide6" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/006-tss-2-0_tcm-3020-1324331.png" title=""><span>Система контроля и&nbsp;информирования об&nbsp;усталости водителя (LDA)</span></div>
+                                  </div>
+                                </div>
+
+                                <div class="button-wrapper"><a class="btn  btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о пакете" href="https://www.toyota.ru/new-cars/technologies/tss" rel="no follow" target="_blank">Подробнее о&nbsp;пакете</a></div>
+
+                                <div class="size-limit">
+                                  <p class="support-text">* Набор опций может отличаться в зависимости от комплектации.<br>Новые активные системы безопасности такие, как Toyota Safety Sense, предназначены для помощи водителю. Поскольку из-за внешних факторов существует ограничение на точность распознавания и эффективность управления, обеспечиваемые данной системой, не следует слишком полагаться на систему. Водителю всегда необходимо обращать пристальное внимание на окружающую автомобиль обстановку и соблюдать все меры предосторожности при вождении. Эксплуатация Toyota Safety Sense может быть затронута или затруднена из-за внешних факторов, и Toyota не несет ответственности за какие-либо последствия, связанные с использованием системы.</p>
+                                </div>
+
+
+                          </section>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+                  <div class="col-xs-12">
+                      <section class="page-content__section">
+                          <header class="section-title">
+                              <h2>Зимний пакет</h2>
+                          </header>
+
+                          <div class="mini-carousel">
+                              <div class="bstd-section">
+                                  <p class="mini-carousel-intro">Россия славится суровыми зимами. Поэтому мы&nbsp;предусмотрели всё, чтобы комфорт окружал вас, пока за&nbsp;окном бушует снежная буря. Зимний пакет* не&nbsp;позволит морозам вносить правки в&nbsp;ваши планы на&nbsp;день.</p>
+
+                                  <div class="bstd-slider__wrapper">
+                                      <div class="bstd-slider__main-image"><img alt="slide0" src="//d1hu588lul0tna.cloudfront.net/toyotaone/ruru/winter_logo_91-1_tcm-3020-1147815.png" title="" /></div>
+
+                                      <div class="bstd-slider">
+                                        <div class="bstd-slider__item"><img alt="slide1" src="http://d1hu588lul0tna.cloudfront.net/toyotaone/ruru/010_tcm-3020-1147821.png" title=""><span>Электрообогрев лобового стекла в&nbsp;зоне покоя стеклоочистителей</span></div>
+
+                                        <div class="bstd-slider__item"><img alt="slide9" src="//d1hu588lul0tna.cloudfront.net/toyotaone/ruru/09_tcm-3020-1147823.png" title="" /><span>Дополнительный электрический отопитель салона</span></div>
+
+                                        <div class="bstd-slider__item"><img alt="slide10" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/012_tcm-3020-1147827.png" title="" /><span>Догреватель двигателя</span></div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="button-wrapper"><a class="btn  btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о пакете" href="https://www.toyota.ru/new-cars/technologies/winter-pack" rel="no follow" target="_blank">Подробнее о&nbsp;пакете</a></div>
+
+                              <div class="comment-wrap">
+                                  <p>* Набор опций может отличаться в зависимости от комплектации.</p>
+                              </div>
+                          </div>
+                      </section>
+                  </div>
+              </div>
+
+
+                  </div>
+                  <!-- //newHiace-item -->
+
+                </div>
+                <!-- //slick-slide-02 -->
+              </slick>
             </div>
+          </section>
         </div>
+
+
     </div>
 <!-- #blinds -->
+
+<script> 
+window.onload = function() {
+  document.getElementById('slick-slide-control00').innerHTML ='<b class="carousel-btn__text">Стандарт</b> <span class="carousel-btn__subtext">13 мест</span>';
+  document.getElementById('slick-slide-control01').innerHTML ='<b class="carousel-btn__text">VIP-версия</b> <span class="carousel-btn__subtext">9 мест</span>';  
+};
+</script>
