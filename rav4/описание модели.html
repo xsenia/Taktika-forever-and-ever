@@ -1,0 +1,5199 @@
+<style type="text/css">
+
+@media (min-width: 768px) {
+  .article #model-descr h2 {font-size: 44px; line-height: 46px;}
+  
+  .cupInt-arrow {margin-top: 60px;}
+}
+
+@media (max-width: 767px) {
+  .article #model-descr .h1 {font-size: 34px;}
+  .support-text {padding-left: 15px; padding-right: 15px;}
+  
+  .article .model-triple-widget__container {padding-left: 0; padding-right: 0;}
+  .article ul>li.cupInt-bottomNav_item {padding-left: 12px; padding-right: 12px;}
+}
+
+.support-text {
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #202020;
+  display: block;
+  margin-top: 2.6em;
+}
+@media (min-width: 768px) {
+  #model-descr .container {
+    max-width: 750px !important;
+  }
+
+}
+
+@media (min-width: 992px) {
+  #model-descr .container {
+    max-width: 992px !important;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  #model-descr .container {
+    max-width: 1170px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  #model-descr .container {
+    max-width: 1240px !important;
+  }
+}
+
+
+/* Build remove name of colours */
+
+.or-swatch-title.or-small {
+  display: none;
+}
+
+/* Special Price */
+
+.bstd-sp {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  background: #fff;
+}
+
+.bstd-sp__items {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(100% + 30px);
+  margin: 0 -15px;
+}
+
+.bstd-sp a.mob {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .bstd-sp a.desk {display: none;}
+  .bstd-sp a.mob {display: block;}
+}
+
+img.bstd-sp__item {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 15px;
+  width: 255px;
+  height: 185px;
+  object-fit: cover;
+}
+
+img.bstd-sp__item.bstd-sp__item--x2 {
+  width: 510px;
+}
+
+@media (max-width: 540px) {
+  img.bstd-sp__item.bstd-sp__item--x2 {
+    width: 255px;
+    height: 370px;
+  }
+}
+
+.bstd-sp__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bstd-sp__buttons .btn {
+  margin: 15px;
+}
+
+
+
+/* Special Price (new) */
+
+.bstd-spr {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  background: #fff;
+}
+
+.bstd-spr__items {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(100% + 30px);
+  margin: 0 -15px;
+}
+
+.bstd-spr__items a {
+  text-decoration: none;
+}
+
+.bstd-spr a.mob {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .bstd-spr a.desk {display: none;}
+  .bstd-spr a.mob {display: block;}
+}
+
+.bstd-spr__item {
+  box-sizing: border-box;
+  padding: 20px 25px;
+  margin: 15px;
+  width: 255px;
+  height: 240px;
+  border-radius: 2px;
+  color: #202020;
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-position: 155px 135px;
+  transition: all .2s;
+}
+
+.bstd-spr__item:hover {
+  background-color: #eaeaea;
+}
+
+.bstd-spr__item h5 {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e20617;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "T1 Body Font","Open Sans",Arial,Helvetica,sans-serif;
+  font-weight: 400;
+}
+
+.bstd-spr__item span {
+  display: block;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.bstd-spr__item span strong {
+  font-family: "T1 Body Font Bold","Open Sans Bold",Arial,Helvetica,sans-serif;
+  font-weight: 700;
+}
+
+.bstd-spr__item .details {
+  margin-top: 20px;
+}
+
+.bstd-spr__item .details table {
+  width: 100%;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.bstd-spr__item .details table tr td:last-child {
+  text-align: right;
+}
+
+.bstd-spr__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bstd-spr__buttons .btn {
+  margin: 15px;
+}
+
+
+
+/* Зимний пакет */
+
+.winter-package {
+  position: relative;
+  max-width: 1140px;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  background: #fff;
+}
+
+.winter-package__flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .winter-package__flex-container {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+}
+
+.winter-package__item:not(.__big) {
+  padding: 8px;
+  width: -webkit-calc(100% / 6);
+  width: calc(100% / 6);
+}
+
+@media (max-width: 1024px) {
+  .winter-package__item:not(.__big) {
+    padding-bottom: 16px;
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 450px) {
+  .winter-package__item:not(.__big) {
+    width: -webkit-calc(100% / 2);
+    width: calc(100% / 2);
+  }
+}
+
+.winter-package__item.__big {
+  min-width: 220px;
+}
+
+@media (max-width: 1024px) {
+  .winter-package__item.__big {
+    padding-bottom: 16px;
+    width: 100%;
+  }
+}
+
+.winter-package__item__img {
+  display: inline-block;
+}
+
+.winter-package__item__text {
+  padding-top: 8px;
+  text-indent: 0;
+}
+
+
+
+/* Табы (bstd-slidetab) */
+/* Camry, Corolla, Prius, RAV4, Toyota Touch 2 */
+
+.bstd-block {
+  margin-top: 60px;
+}
+
+.bstd-text {
+  margin-bottom: 20px;
+}
+
+.bstd-slidetab .filter-bar {
+  text-align: center;
+}
+
+.bstd-slidetab .slides {
+  padding: 45px 0;
+}
+
+.bstd-slidetab .slide {
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 250px;
+}
+
+.bstd-slidetab .slide.active {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bstd-slidetab .slide__content {
+  width: 50%;
+}
+
+.bstd-slidetab .slide__title {
+  margin-bottom: 20px;
+}
+
+.bstd-slidetab img.slide__img {
+  width: calc(50% - 65px);
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+
+  .bstd-slidetab .slide.active {
+    flex-direction: column-reverse;
+  }
+
+  .bstd-slidetab .slide__content {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .bstd-slidetab img.slide__img {
+    width: 100%;
+  }
+
+}
+
+
+
+/*Top features V2 font size and toast hide*/
+
+.topfeatures-v2-gallery .item-content p {font-size: 16px;}
+.topfeatures-v2-gallery .toast {display: none !important;}
+
+
+
+/*Style for icon infromation for finance disclaimer*/
+
+.readMore i {padding-left: 0 !important;}
+a.readMore {display: inline-block !important;}
+a.readMore br {display: none !important;}
+
+
+
+/*Style to make non promo pirce gray*/ 
+.prices-component .prices .price:not(.promo) {
+  color: #202020;
+}
+
+
+
+/*Style to remove bgcolor from main banne*/
+.focus-carousel .background::before {
+  background-color: rgba(0, 0, 0, 0);}
+
+
+
+
+
+  /*PDCA CSS*/
+
+  .owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    -moz-backface-visibility: hidden;
+  }
+
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+  }
+
+  .owl-carousel .owl-item,
+  .owl-carousel .owl-wrapper {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+  }
+
+  .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+  }
+
+  .owl-carousel .owl-dots.disabled,
+  .owl-carousel .owl-nav.disabled {
+    display: none;
+  }
+
+  .owl-carousel .owl-dot,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-nav .owl-prev {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .owl-carousel.owl-loaded {
+    display: block;
+  }
+
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block;
+  }
+
+  .owl-carousel.owl-hidden {
+    opacity: 0;
+  }
+
+  .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden;
+  }
+
+  .owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+  }
+
+  .owl-carousel.owl-rtl {
+    direction: rtl;
+  }
+
+  .owl-carousel.owl-rtl .owl-item {
+    float: right;
+  }
+
+  .no-js .owl-carousel {
+    display: block;
+  }
+
+  .owl-carousel .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .owl-carousel .owl-animated-in {
+    z-index: 0;
+  }
+
+  .owl-carousel .owl-animated-out {
+    z-index: 1;
+  }
+
+  .owl-carousel .fadeOut {
+    -webkit-animation-name: a;
+    animation-name: a;
+  }
+
+  .owl-height {
+    -webkit-transition: height .5s ease-in-out;
+    transition: height .5s ease-in-out;
+  }
+
+  .owl-carousel .owl-item .owl-lazy {
+    opacity: 0;
+    -webkit-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+  }
+
+  .owl-carousel .owl-item img.owl-lazy {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .owl-carousel .owl-video-wrapper {
+    position: relative;
+    height: 100%;
+    background: #000;
+  }
+
+  .owl-carousel .owl-video-play-icon {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: -webkit-transform .1s ease;
+    transition: -webkit-transform .1s ease;
+    transition: transform .1s ease;
+    transition: transform .1s ease,-webkit-transform .1s ease;
+  }
+
+  .owl-carousel .owl-video-play-icon:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  .owl-carousel .owl-video-playing .owl-video-play-icon,
+  .owl-carousel .owl-video-playing .owl-video-tn {
+    display: none;
+  }
+
+  .owl-carousel .owl-video-tn {
+    opacity: 0;
+    height: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+  }
+
+  .owl-carousel .owl-video-frame {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+  }
+
+  .owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .owl-theme .owl-nav [class*=owl-] {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #d6d6d6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .owl-theme .owl-nav [class*=owl-]:hover {
+    background: #869791;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .owl-theme .owl-nav .disabled {
+    opacity: .5;
+    cursor: default;
+  }
+
+  .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 10px;
+  }
+
+  .owl-theme .owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #d6d6d6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #869791;
+  }
+
+  .slick-slider {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .slick-list,
+  .slick-slider {
+    position: relative;
+    display: block;
+  }
+
+  .slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slick-list:focus {
+    outline: none;
+  }
+
+  .slick-list.dragging {
+    cursor: pointer;
+  }
+
+  .slick-slider .slick-list,
+  .slick-slider .slick-track {
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slick-track:after,
+  .slick-track:before {
+    content: "";
+    display: table;
+  }
+
+  .slick-track:after {
+    clear: both;
+  }
+
+  .slick-loading .slick-track {
+    visibility: hidden;
+  }
+
+  .slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+  }
+
+  [dir=rtl] .slick-slide {
+    float: right;
+  }
+
+  .slick-slide img {
+    display: block;
+  }
+
+  .slick-slide.slick-loading img {
+    display: none;
+  }
+
+  .slick-slide.dragging img {
+    pointer-events: none;
+  }
+
+  .slick-initialized .slick-slide {
+    display: block;
+  }
+
+  .slick-loading .slick-slide {
+    visibility: hidden;
+  }
+
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+
+  .slick-arrow.slick-hidden {
+    display: none;
+  }
+
+  .size-limit {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .size-limit p {
+    text-indent: 0;
+  }
+
+  .size-limit p.postUl {
+    margin-top: 10px;
+  }
+
+  .pdca {
+    overflow: hidden;
+  }
+
+  .pdca .bstd-section {
+    font-size: 16px;
+    overflow: hidden;
+  }
+
+  .pdca .title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 0;
+    font-family: toyotadisplay_bd,Arial,Helvetica,sans-serif;
+    font-size: 38px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .pdca .subtitle {
+    font-family: T1 Body Font Bold,Open Sans Bold,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .pdca .text {
+    font-size: 16px;
+    text-indent: 0;
+  }
+
+  .pdca .text li {
+    margin-bottom: 5px;
+  }
+
+  .pdca .cta-inpage {
+    margin-top: 80px;
+    padding: 68px 0;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+  }
+
+  .pdca .bstd-section.bstd-section-header {
+    background: -webkit-linear-gradient(right,#babdc0,#f5f5f5);
+    background: linear-gradient(270deg,#babdc0,#f5f5f5);
+  }
+
+  .pdca .bstd-section.bstd-section-header .bstd-header {
+    min-height: 400px;
+    padding-top: 60px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: auto;
+  }
+
+  .pdca .bstd-section.bstd-section-header .bstd-header h1 {
+    font-size: 54px;
+    text-align: left;
+    line-height: 1.13;
+  }
+
+  .pdca .bstd-section.bstd-section-header .bstd-header .pdcahead {
+    font-size: 54px;
+    text-align: left;
+    line-height: 1.13;
+  }
+
+  .pdca .bstd-section.bstd-section-header_mod_middle {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .pdca .bstd-section.bstd-section-header_mod_middle .bstd-header {
+    padding-top: 0;
+  }
+
+  .pdca .bstd-section.bstd-section-header_mod_middle .bstd-header:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    min-height: 400px;
+  }
+
+  .pdca .bstd-section.bstd-section-header_mod_middle .bstd-header h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .pdca .bstd-section.bstd-section-header_mod_middle .bstd-header .pdcahead {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .pdca .bstd-intro__item {
+    margin-bottom: 10px;
+    padding: 20px 0;
+    padding-right: 20px;
+    padding-left: 62px;
+    font-size: 16px;
+    line-height: 22px;
+    background: #f0f0f0 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAMAAACfvvDEAAABQVBMVEXX19fw8PDX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fY2NjX19fY2NjX19fZ2dna2tra2tpdyDNeyDRfyDVgyTdiyTliyTpjyjpjyjtmyj5py0NtzEdtzEhuzUlvzUpvzUt3z1R90VyD0mSH02mR1naZ2ICc2YWf2oeg2oqi24ul3JCn3JKr3Zez4KK24KbD5LbK5r/Q58fR6MjT6MrX19fb29vb6tXc3Nzd3d3e3t7f39/g7Nvl5eXm5ubm7ePm7uTn7uXo6Ojq6urq7unr6+vt7e3t7+zv7+/v8O/w8PCZBolBAAAAMnRSTlMAAAEEBQYYGSMkJVJTVVpbXF1eX2BrbG1wl5i8vr/AwcLDxMXe3+Hi5OXw8PHx8v39/g96Lg0AAAHySURBVHjalZVpV9pQEIYvUUCoS6pULaa2uCEKpbxqi9oNq3Wpe0ULAW2DgXD//w/oLTE4SW6Evp9mcp4zJ3NnYyGXIqPJV5mV8kpmNjka6Xxhjig5oM7k9XqjaXGr2ajr+Rl1QEoq4wtVw+KPsozqwrjiJ+Opism9MiupuJd8lrvlMt3mht3k1DuTy2UWpin54rrJg9S8nnwkRwoE9KOFEYccWjX5UzJXYzapvCHJyNNKKR1y4hfvpcrEPzK8ZPYkzXRYkGo1EGjvbx7ZVlUVpGYEkofAB9syNMaieSsIPAFwYJtWPsrG9CDwbA3Yaz84+hh7WQ8Az9eB3Zbj1ZPsdUMOXmwAO/ddtzHP0vJCXm0BpTtS0mWW7SZ0tHnMHd1sA19qtK3fsnLXeQ+cPpi1r8D2Dacqk5jfgfXzjnVXArauhEFjkv9sfQOKP4VxvwNsXHhab5nm/keE+lTjrd1ucE5zp+9Z+wiUfu8Ba2cEct5TpTW6LAKfAZxwr3TVqTspDHBIGafu3l46BbDf9pGG5u/PH0V3RNKf4XS/PR9KVHrPUcKezVS/sxmK5XrMey72vztEaPLJvTRFd910ob9dJzTc5/4Uis9Jd/JcXLLnE4u+Pb+YUKS3Y1DVXLdDez7ovh1UETU5m8mWs+IeqVH3PfoLLvT2IOqPK20AAAAASUVORK5CYII=) no-repeat 11px;
+    background-size: 41px 41px;
+  }
+
+  .pdca .bstd-intro__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .pdca .bstd-intro__item--random-bg {
+    padding: 30px;
+    padding-left: 140px;
+    background-position: 20px;
+    background-size: 100px 100px;
+  }
+
+  .pdca .bstd-intro__item--transparent {
+    padding: 12px 0;
+    padding-right: 0;
+    padding-left: 51px;
+    background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAMAAACfvvDEAAAA/FBMVEX////Y2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjZ2dnY2NjZ2dnZ2dnb29vb29vc3Nx3enyBg4WLjpCWmJqdn6CusLG8vb7CxMTFxsfJysvLzM3R0tPU1dXY2Njb3Nze3t7g4ODh4eHi4uLj4+Pl5eXq6uru7u7v7/Dy8vLz8/P19fX29vb39/f4+Pj6+vr7+/v9/f3+/v7////5C0G+AAAAMXRSTlMAAQIFGRolJidWV1hcXV5fYWJwcnN0dZeYmr6/wMHExcbHyd/g4uTl8PHx8vLz/f7+UrE/XQAAAbBJREFUeNqNlW1TgkAQgDfBlxJK0sryNbXUMhNNMy2NFBFNRfb//5duBu044qTnA3Mz98zN7bK3CyyilM5Wa6NaNZuWROAiSDdN3VhaW9xaS0NvZmTB1ztKlCemjRTbnJaVo79ipKB9o5eVVoh4xZMHA/0wGnFWPG+t0Z91K+kWk58b5LH5TFHxuGUhH6t1vBejjRUeYt2I7dJTMPAwRtFJVkLDIDQFCEJ5FWiuKgIx5SkGM5WJmTH5Ql8dOgszAxBu2lxxoKrqrgaaIkg6VxwT8Q0ddAmuuCmaE7H3m6hryC15JhG7uGdZhDuLL3Zcf/8e6luu2EbK9hFGuGeofjCiim5G5EzX5owV2TPpPV/pbpsu6T1dsb/s9ztUpLHTfNKjum6R5lPSvQH3yHfuNXUJws+2W3UYe0X7OQyQN9GrDtCLmQeAU6Y+Z0Ts+9TnGTGFClPz7+qAV/OgfGEQX4rzNouBb/N218hijXXQe/9/D/nl4mBfugQXqQO9LgUM8SdO/3yKg4dIybcnl6Lwh5BSmSyYPr+YVpSQ/+yQs8zsyMkCcBFlMo/qozqZR7IIDD/jro3FNffzDwAAAABJRU5ErkJggg==) no-repeat 0px;
+  }
+
+  .pdca .bstd-features {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-calc(100% + 30px);
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .pdca .bstd-features__item {
+    -webkit-flex-basis: -webkit-calc(100%/3 - 30px);
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - 30px);
+    max-width: 360px;
+    outline: none;
+    margin: 0 15px;
+    margin-bottom: 40px;
+  }
+
+  .pdca .bstd-features__item--2 {
+    -webkit-flex-basis: -webkit-calc(100%/2 - 30px);
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+    flex-basis: calc(100% / 2 - 30px);
+    max-width: 555px;
+  }
+
+  .pdca .bstd-features__item--4 {
+    -webkit-flex-basis: -webkit-calc(100%/4 - 30px);
+    -ms-flex-preferred-size: calc(100% / 4 - 30px);
+    flex-basis: calc(100% / 4 - 30px);
+    max-width: 263px;
+  }
+
+  .pdca .bstd-features__item--5 {
+    -webkit-flex-basis: -webkit-calc(100%/5 - 30px);
+    -ms-flex-preferred-size: calc(100% / 5 - 30px);
+    flex-basis: calc(100% / 5 - 30px);
+    max-width: 205px;
+  }
+
+  .pdca .bstd-features__item img {
+    max-width: 100%;
+    margin: 0 auto 20px!important;
+    border-radius: 0;
+  }
+
+  .pdca .bstd-features__item p {
+    text-indent: 0;
+  }
+
+  .pdca .bstd-features__item strong {
+    display: block;
+    color: #202020;
+  }
+
+  .pdca .bstd-features__item a:not(.btn) {
+    color: #202020;
+    text-decoration: underline;
+  }
+
+  .pdca .bstd-features__item a:not(.btn):hover {
+    color: #e50000;
+    text-decoration: underline;
+  }
+
+  .pdca .slick-next,
+  .pdca .slick-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    display: block;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background: #e50000;
+  }
+
+  .pdca .slick-next:hover,
+  .pdca .slick-prev:hover {
+    color: transparent;
+    outline: none;
+    background-color: #ce0000;
+  }
+
+  .pdca .slick-next:hover:before,
+  .pdca .slick-prev:hover:before {
+    opacity: 1;
+  }
+
+  .pdca .slick-next.slick-disabled:before,
+  .pdca .slick-prev.slick-disabled:before {
+    opacity: .25;
+  }
+
+  .pdca .slick-prev {
+    left: 0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAcCAYAAAC+lOV/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAThJREFUeNqUlVlLw0AQgKMP3kf75oE3XhUf/Af+6FItRYJWQdBXURFt1VqPPyAINX5bJ7AsSTOz8EGO/SbJzsxmKEmSyDjmoAbfw0ZxHmI4gN/IPVnJAtwl/+MaylpxEe5FvIJS/3MV4hI8iHgJs+m9InEZHkW88MUieQWeRDyHmXBOnrgKLRGbMJ01L0tch7aIZzCV93bhhQ14ETGGyUFr4p9swquIJzBRlIn0YAs6IjY0YirvwJuIda2YyjciHsO4oVwj1xhlKfof6JnahAj78CVPr8KI5bUde/ApAWowapEdFfiQAEcwZpEdu/CuXcCsiy51XU3q8qJue7nPLZpB3+RXXWa5Fq2oX+9xGECTT7/TTv1O05ai6/HnsMctW++at0n0dxeLHG5PVesfow2HcOsa6U+AAQDwUILhKUAA/wAAAABJRU5ErkJggg==);
+    background-position: 7px;
+  }
+
+  .pdca .slick-next,
+  .pdca .slick-prev {
+    background-repeat: no-repeat;
+    background-size: 10px auto;
+  }
+
+  .pdca .slick-next {
+    right: 0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAcCAYAAAC+lOV/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASdJREFUeNqU1MlKA1EQheFrlo5RiTiPODxB9u7zwiHEWUQ0IijOs9GND+BCSPsXVsMV6XhPwwe9OafTuVXdk2XZUQihgxo+gnCVXBVNVJRw4MkVnGY/1znGEFLkN6M48YILjCthM4KWF1xiQgmbYRx7wRUmlbAp2wl4wTWmlLAZwqEX3GJGCecF+15wj1klbAax5wUPmFPCZgC7XvCIeSVs+rHjBU9YVMKmD1te8IIlJWx60fSCViloF781fPl9WX1q3Z/6jjUl2PDgG1ZT/7D4PdtYST0qC2568BXLqUNiR7MdH03qeMZD8ZwPRUo4HkebpoXUlYwX4dcc/xeOV/DPBnULW/Cg2+4WheOvxl3RV6MovOHBG0wri2KL8YkzrKOtbMm3AAMAiEaDHyoYX/oAAAAASUVORK5CYII=);
+    background-position: 11px;
+  }
+
+  .pdca .slick-dots {
+    position: relative;
+    counter-reset: a;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 70px;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 50px;
+    background-color: #2e2e2e;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .pdca .slick-dots:after {
+    content: counter(a);
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .pdca .slick-dots li {
+    display: inline-block;
+    counter-increment: a;
+  }
+
+  .pdca .slick-dots li button {
+    display: none;
+  }
+
+  .pdca .slick-dots li.slick-active:before {
+    content: counter(a) " /";
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    margin-right: 4px;
+  }
+
+  .pdca .bstd-slider {
+    margin: 0 auto;
+  }
+
+  .pdca .bstd-slider:after,
+  .pdca .bstd-slider:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    z-index: 3;
+  }
+
+  .pdca .bstd-slider:before {
+    left: 0;
+    background: -webkit-linear-gradient(left,#fff,hsla(0,0%,100%,0));
+    background: linear-gradient(90deg,#fff,hsla(0,0%,100%,0));
+  }
+
+  .pdca .bstd-slider:after {
+    right: 0;
+    background: -webkit-linear-gradient(right,#fff,hsla(0,0%,100%,0));
+    background: linear-gradient(270deg,#fff,hsla(0,0%,100%,0));
+  }
+
+  .pdca .bstd-slider .owl-nav {
+    position: absolute;
+    z-index: 4;
+    margin: 0;
+    top: 130px;
+    left: 0;
+    right: 0;
+  }
+
+  .pdca .bstd-slider .owl-nav .owl-next,
+  .pdca .bstd-slider .owl-nav .owl-prev {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #e50000;
+    background-repeat: no-repeat;
+  }
+
+  .pdca .bstd-slider .owl-nav .owl-next.disabled,
+  .pdca .bstd-slider .owl-nav .owl-prev.disabled {
+    background-color: #dedede;
+    pointer-events: none;
+  }
+
+  .pdca .bstd-slider .owl-nav .owl-next:hover,
+  .pdca .bstd-slider .owl-nav .owl-prev:hover {
+    background-color: #ce0000;
+  }
+
+  .pdca .bstd-slider .owl-nav .owl-prev {
+    left: 0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAcCAYAAAC+lOV/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAThJREFUeNqUlVlLw0AQgKMP3kf75oE3XhUf/Af+6FItRYJWQdBXURFt1VqPPyAINX5bJ7AsSTOz8EGO/SbJzsxmKEmSyDjmoAbfw0ZxHmI4gN/IPVnJAtwl/+MaylpxEe5FvIJS/3MV4hI8iHgJs+m9InEZHkW88MUieQWeRDyHmXBOnrgKLRGbMJ01L0tch7aIZzCV93bhhQ14ETGGyUFr4p9swquIJzBRlIn0YAs6IjY0YirvwJuIda2YyjciHsO4oVwj1xhlKfof6JnahAj78CVPr8KI5bUde/ApAWowapEdFfiQAEcwZpEdu/CuXcCsiy51XU3q8qJue7nPLZpB3+RXXWa5Fq2oX+9xGECTT7/TTv1O05ai6/HnsMctW++at0n0dxeLHG5PVesfow2HcOsa6U+AAQDwUILhKUAA/wAAAABJRU5ErkJggg==);
+    background-position: 13px;
+  }
+
+  .pdca .bstd-slider .owl-nav .owl-next {
+    right: 0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAcCAYAAAC+lOV/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASdJREFUeNqU1MlKA1EQheFrlo5RiTiPODxB9u7zwiHEWUQ0IijOs9GND+BCSPsXVsMV6XhPwwe9OafTuVXdk2XZUQihgxo+gnCVXBVNVJRw4MkVnGY/1znGEFLkN6M48YILjCthM4KWF1xiQgmbYRx7wRUmlbAp2wl4wTWmlLAZwqEX3GJGCecF+15wj1klbAax5wUPmFPCZgC7XvCIeSVs+rHjBU9YVMKmD1te8IIlJWx60fSCViloF781fPl9WX1q3Z/6jjUl2PDgG1ZT/7D4PdtYST0qC2568BXLqUNiR7MdH03qeMZD8ZwPRUo4HkebpoXUlYwX4dcc/xeOV/DPBnULW/Cg2+4WheOvxl3RV6MovOHBG0wri2KL8YkzrKOtbMm3AAMAiEaDHyoYX/oAAAAASUVORK5CYII=);
+    background-position: 20px;
+  }
+
+  .pdca .bstd-slider .owl-dots {
+    margin-top: 40px;
+  }
+
+  .pdca .bstd-slider .owl-dots .owl-dot span {
+    width: 75px;
+    height: 2px;
+    border-radius: 0;
+    background-color: #b3b5b8;
+  }
+
+  .pdca .bstd-slider .owl-dots .owl-dot.active span,
+  .pdca .bstd-slider .owl-dots .owl-dot:hover span {
+    background-color: #e50000;
+  }
+
+  .pdca .bstd-slider .owl-item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 140px;
+    right: 11px;
+    width: 15px;
+    height: 28px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAcCAYAAAC+lOV/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVhJREFUeNqUlMkrRWEcho/bWZk3ZMgsQ7KVMnQvMv+lNkiGFK4MCw6SFbdruhcLmclC4fnqvWWD3/fW0zl1et7zO6fv+/KiKNoNguATJuE28EhMdMEKlPnKo3AInbAG5T6yG3UQDqADklBhlV3uYAj2oV0TVFpll3sV7EGbCqqsssuDCiJoVUG1VXZ5VMEOtOgf1FhllycYhm1oVkGtVc4VjMEWNKqgziq7PKtgExpUUG+VXV5UsCExqUlMssurCtY1uitoinks5TcYh1X9/Skf2eULPnRf6iPnwwyMwA1MhB7irBbPNQzAcWgU5yRc6XriHoQGcR7ikJWYyj38Sy6ABeiHDCQgbVlhhbAo8VJvTlvWdpHEPriQeGrZVcUSe+Fc4pllP5dI7JEQV8GvCX+IS9CtERP61uA/2YnLOrvTEjPW03NaYkqjZnzO7Xc40huzPrvkW4ABAOr8UaEotyZUAAAAAElFTkSuQmCC) no-repeat 50%;
+  }
+
+  .pdca .bstd-slider__item {
+    max-width: 304px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .pdca .bstd-slider__item span {
+    display: block;
+    margin-top: 25px;
+  }
+
+  .pdca .bstd-slider--rect-img-mod:before {
+    left: -10px;
+  }
+
+  .pdca .bstd-slider--rect-img-mod:after {
+    right: -10px;
+  }
+
+  .pdca .bstd-slider--rect-img-mod .owl-item:not(:last-child):after {
+    display: none;
+  }
+
+  .pdca .bstd-slider--rect-img-mod .bstd-slider__item {
+    max-width: 330px;
+    text-align: left;
+    color: #595d60;
+  }
+
+  .pdca .bstd-slider--rect-img-mod .owl-nav .owl-prev {
+    left: -20px;
+  }
+
+  .pdca .bstd-slider--rect-img-mod .owl-nav .owl-next {
+    right: -20px;
+  }
+
+  .pdca .bstd-services {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .pdca .bstd-services__item {
+    -webkit-flex-basis: 480px;
+    -ms-flex-preferred-size: 480px;
+    flex-basis: 480px;
+    max-width: 480px;
+    margin-left: -1px;
+  }
+
+  .pdca .bstd-services__item .image {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .pdca .bstd-services__item .image img {
+    width: 100%;
+    border-radius: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .pdca .bstd-services__item .image:hover img {
+    opacity: .8;
+  }
+
+  .pdca .bstd-services__item .text {
+    display: block;
+    margin: 0;
+    padding: 0 25px;
+    color: #595d60;
+    text-align: left;
+    text-indent: 0;
+  }
+
+  .pdca .bstd-services__item .text strong {
+    display: block;
+    color: #202020;
+  }
+
+  .pdca .bstd-services__item a.btn {
+    margin: 20px 25px;
+    min-width: 140px;
+  }
+
+  .pdca .bstd-other {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .pdca .bstd-other__item {
+    -webkit-flex-basis: 263px;
+    -ms-flex-preferred-size: 263px;
+    flex-basis: 263px;
+    max-width: 263px;
+    margin: 0 10px;
+  }
+
+  .pdca .bstd-other__item img {
+    max-width: 100%;
+    margin-bottom: 20px!important;
+  }
+
+  .pdca .bstd-other__item span {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: T1 Body Font Bold,Open Sans Bold,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+  }
+
+  .pdca .bstd-other__item p {
+    margin: 5px 0 0;
+    text-indent: 0;
+  }
+
+  .pdca .bstd-faq.accordion {
+    border-bottom: 1px solid #e3e4e5;
+  }
+
+  .pdca .bstd-faq.accordion .header {
+    position: relative;
+    outline: none;
+    padding: 30px 60px 30px 15px;
+    border-top: 1px solid #e3e4e5;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    font-family: T1 Body Font Bold,Open Sans Bold,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+  }
+
+  .pdca .bstd-faq.accordion .header:after {
+    content: "\e901";
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-family: Toyota-icon-restyle;
+    font-size: 20px;
+    color: #e50000;
+  }
+
+  .pdca .bstd-faq.accordion .header.ui-accordion-header-active {
+    background-color: #fff;
+    padding-bottom: 0;
+  }
+
+  .pdca .bstd-faq.accordion .header.ui-accordion-header-active:after {
+    content: "\e904";
+  }
+
+  .pdca .bstd-faq.accordion .content {
+    padding: 70px 60px 75px 40px;
+    line-height: 24px;
+    color: #595d60;
+  }
+
+  .pdca .bstd-faq.accordion .content ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+
+  .pdca .bstd-faq.accordion .content li {
+    margin-bottom: 5px;
+  }
+
+  .pdca .bstd-faq.accordion .content a {
+    text-decoration: underline;
+  }
+
+  .pdca .bstd-faq.accordion .content th {
+    color: #202020;
+  }
+
+  .pdca .bstd-disclaimer ul {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-left: 20px;
+    list-style: disc;
+    font-size: 13px;
+  }
+
+  .pdca .bstd-fixed {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 7px 0;
+    border-top: 1px solid #e3e4e5;
+    background: #fff;
+    text-align: center;
+  }
+
+  .pdca .bstd-table__button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .pdca .bstd-table table {
+    width: 100%;
+    box-shadow: 1px 1px 0 #e0e0e0;
+  }
+
+  .pdca .bstd-table table thead {
+    background-color: #f8f8f8;
+  }
+
+  .pdca .bstd-table table tbody tr:hover {
+    background-color: #fdfdfd;
+  }
+
+  .pdca .bstd-table table tbody tr.same {
+    display: none;
+  }
+
+  .pdca .bstd-table table tbody tr.is-open {
+    display: table-row;
+  }
+
+  .pdca .bstd-table table th {
+    font-family: T1 Body Font Bold,Open Sans Bold,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+  }
+
+  .pdca .bstd-table table td,
+  .pdca .bstd-table table th {
+    padding: 15px 20px;
+    padding-right: 10px;
+    box-shadow: inset 1px 1px 0 #e0e0e0;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .pdca .bstd-table table tbody td label {
+    position: relative;
+    display: inline-block;
+    font-family: T1 Body Font Bold,Open Sans Bold,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .pdca .bstd-table table tbody td label span.icon {
+    position: absolute;
+    top: 20%;
+    right: -20px;
+  }
+
+  .pdca .bstd-table table input[data-toggle=toggle] {
+    display: none;
+  }
+
+  .pdca .bstd-form {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 570px;
+  }
+
+  .pdca .bstd-form input.search {
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 41px;
+    padding: 7px 35px 9px 16px;
+    outline: 0;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    font-size: 15px;
+    caret-color: #e50000;
+  }
+
+  .pdca .bstd-form input.search:focus {
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
+  }
+
+  .pdca .bstd-form button.search-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 41px;
+    height: 41px;
+    border: 0;
+    outline: 0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAMAAAD+iNU2AAAAbFBMVEWAgICqq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6+qq6/9Bm9EAAAAI3RSTlMAAAYHEhMVFhtZWltoaWprbHXExcbIzM3Oz9DR0t7f8PL1+IPzbhoAAACDSURBVHjaXc7bDsIgEEVRBpCpRW2lN63Si+f//1EHIomet7UzISgifQ7rGk6aiJRSVM1Im6tkM2LxzH7BaMQNItNnHNGKO9SUVqMT7+Bsxv7vn/sjenGL6Mp7RMpMiN45/8LDiMt/8LTJpC/9tvXXOyYr/u5wk6DyJFsJxTmE4hSG4Q2+mQpwI0HNkwAAAABJRU5ErkJggg==);
+    background-color: hsla(0,0%,100%,0);
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  .pdca .bstd-anchors .at-anchors {
+    position: relative;
+    top: -100px;
+  }
+
+  .pdca .bstd-collapse__button {
+    margin-top: 10px;
+  }
+
+  .pdca .bstd-collapse__button span {
+    margin-top: 0;
+  }
+
+  .pdca .bstd-section.bstd-section-collapsible {
+    display: none;
+    overflow: visible;
+    margin-top: 80px;
+    border-top: 1px solid #d3d3d3;
+  }
+
+  .pdca .bstd-section.bstd-section-collapsible .size-limit.bstd-arrow {
+    position: relative;
+  }
+
+  .pdca .bstd-section.bstd-section-collapsible .size-limit.bstd-arrow:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-top: -60px;
+    top: -13px;
+    left: 3%;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-left: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+  }
+
+  .pdca .bstd-section.bstd-section-collapsible-2 .size-limit.bstd-arrow:before {
+    left: 37%;
+  }
+
+  .pdca .bstd-section.bstd-section-collapsible-3 .size-limit.bstd-arrow:before {
+    left: 72%;
+  }
+
+  .pdca .bstd-section.bstd-section-collapsible-4 .size-limit.bstd-arrow:before {
+    left: 81%;
+  }
+
+  .pdca .bstd-features.bstd-features--comfort-bg {
+    padding-top: 70px;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .w_column_1 {
+    max-width: 1200px;
+  }
+
+  .w_item_1 {
+    width: 60%;
+    float: left;
+  }
+
+  .w_item_2 {
+    width: 35%;
+    float: right;
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+
+  .w_item_double {
+    width: 60%;
+    float: left;
+  }
+
+  .w_item_sm {
+    float: left;
+    padding-right: 20px;
+  }
+
+  .w_item_in {
+    width: 100%;
+  }
+
+  @media (min-width:1200px) {
+
+    .pdca .bstd-section.bstd-section-header--after-nav {
+      margin-top: 45px;
+    }
+
+  }
+  @media (max-width:1286px) and (min-width: 1200px){
+
+
+    .size-limit .bstd-slider .owl-nav .owl-prev {
+      left: -20px;
+    }
+
+    .size-limit .bstd-slider .owl-nav .owl-next {
+      right: -20px;
+    }
+
+    .size-limit .bstd-slider {
+     width: 83vw;
+   }
+
+ }
+
+
+
+ @media (max-width:1200px) {
+
+  .size-limit {
+    max-width: 970px;
+  }
+
+  .pdca .bstd-services {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .pdca .bstd-services__item {
+    margin: 15px 0;
+  }
+
+}
+
+@media (max-width:992px) {
+
+  .size-limit {
+    max-width: 750px;
+  }
+
+  .pdca .bstd-section.bstd-section-header .bstd-header h1 {
+    font-size: 30px;
+  }
+
+  .pdca .bstd-section.bstd-section-header .bstd-header .pdsahead {
+    font-size: 30px;
+  }
+
+}
+
+
+@media (max-width:768px) {
+
+  .pdca .bstd-section.bstd-section-collapsible .size-limit.bstd-arrow:before {
+    left: 20%;
+  }
+
+}
+
+@media (max-width:767px) {
+
+  .pdca .bstd-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .pdca .title {
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .pdca .text-center {
+    text-align: left;
+  }
+
+  .pdca .flex-order-mobile--1 {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .pdca .flex-order-mobile--2 {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .pdca .bstd-section.bstd-section-header .bstd-header {
+    padding-top: 15px;
+    background-position: bottom;
+    background-size: contain;
+  }
+
+  .pdca .bstd-section.bstd-section-header_mod_middle .bstd-header {
+    padding-top: 15px;
+  }
+
+  .pdca .bstd-section.bstd-section-header_mod_middle .bstd-header:before {
+    display: none;
+  }
+
+  .pdca .cta-inpage {
+    padding: 36px 0;
+  }
+
+  .pdca .bstd-features {
+    width: 100%;
+    margin: 0;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .pdca .bstd-features__item {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin: 15px 0;
+    max-width: none;
+  }
+
+  .pdca .bstd-features_mod_gallery .bstd-features {
+    display: block;
+  }
+
+  .pdca .bstd-features_mod_gallery .bstd-features__item {
+    max-width: none;
+    padding: 0 33px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .pdca .bstd-slider .owl-nav {
+    top: 80px;
+  }
+
+  .pdca .bstd-slider .owl-nav .owl-prev {
+    left: -5px;
+  }
+
+  .pdca .bstd-slider .owl-nav .owl-next {
+    right: -5px;
+  }
+
+  .pdca .bstd-slider .owl-dots {
+    counter-reset: a;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 70px;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 50px;
+    background-color: #2e2e2e;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .pdca .bstd-slider .owl-dots:after {
+    content: counter(a);
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .pdca .bstd-slider .owl-dots .owl-dot {
+    display: inline-block;
+    counter-increment: a;
+  }
+
+  .pdca .bstd-slider .owl-dots .owl-dot span {
+    display: none;
+  }
+
+  .pdca .bstd-slider .owl-dots .owl-dot.active:before {
+    content: counter(a) " /";
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    margin-right: 4px;
+  }
+
+  .pdca .bstd-slider .owl-item:not(:last-child):after {
+    top: 90px;
+  }
+
+  .pdca .bstd-slider__item {
+    max-width: 200px;
+  }
+
+  .pdca .bstd-slider--rect-img-mod .bstd-slider__item {
+    max-width: 200px;
+  }
+
+  .pdca .bstd-services__item .text {
+    padding: 0;
+  }
+
+  .pdca .bstd-services__item a.btn {
+    margin: 20px 0;
+  }
+
+  .pdca .bstd-other__item {
+    margin: 15px auto;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: none;
+  }
+
+  .pdca .bstd-faq.accordion {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .pdca .bstd-faq.accordion .header:after {
+    top: 29px;
+  }
+
+  .pdca .bstd-fixed {
+    padding: 0;
+  }
+
+  .pdca .bstd-fixed a {
+    margin: 3px;
+  }
+
+  .w_item_2 {
+    display: none;
+  }
+
+  .w_item_1,
+  .w_item_double {
+    width: 100%;
+  }
+
+}
+
+@media (max-width:600px) {
+
+  .pdca .bstd-form {
+    width: 100%;
+  }
+
+}
+
+@media (max-width:400px) {
+
+  .pdca .bstd-section.bstd-section-header .bstd-header {
+    min-height: 330px;
+    background-size: 70%;
+  }
+
+  .pdca .bstd-intro__item--random-bg {
+    padding: 20px;
+    padding-top: 140px;
+    background-position: center 20px;
+  }
+
+}
+
+@-webkit-keyframes a {
+
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+
+}
+
+@keyframes a {
+
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+
+}
+
+
+.pdca ul.list {
+ list-style: disc;
+ padding-left: 20px;
+ line-height: 24px;
+ color: #595d60;
+}
+
+/*Toyota Weeks*/
+
+.mob_view {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .desk_view {display: none;}
+  .mob_view {display: block;}
+}
+</style>
+<!-- begin non iFrame styles -->
+<style type="text/css">.cta-inpage .list-buttons li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.btn-brochure-fix {
+  width: 250px;
+  overflow: auto;
+}
+</style>
+<style type="text/css">.hero-cta {
+ display: none;
+}
+
+.visual-content .frame .position {
+ display: none;
+}
+
+.car-hero .hero-features {
+  border-bottom: none;
+  padding-top: 0px;
+}
+
+.explore-gallery {
+ margin-top: 0!important;
+}
+
+.more-about .item a {
+ pointer-events: none;
+ text-decoration: none;
+}
+
+.more-about .item .btn {
+ pointer-events: auto!important;
+}
+
+.icon-material-close.icon-cross {
+ font-size: 8rem!important;
+}
+
+.glyphicon{
+ font-size: medium;
+}
+</style>
+<style type="text/css">.animate_fadeUp {
+  -webkit-animation-name: fadeUp;
+  animation-name: fadeUp;
+  animation-duration: .6s;
+  animation-fill-mode: forwards;
+}
+
+.html5-inpage.html5-inpage__cupExt .container {
+  width: 100%;
+  padding: 0;
+}
+
+.html5-inpage.html5-inpage__cupExt .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.html5-inpage.html5-inpage__cupExt .col-xs-12 {
+  padding: 0;
+}
+
+.cupExt-wrapper {
+  padding: 20px 20px;
+}
+
+.cupExt-title {
+  padding: 0 20px;
+}
+
+.cupExt-nav {
+  display: flex;
+  justify-content: center;
+  margin: 26px 0 0;
+}
+
+.cupExt-nav_inner {
+  position: relative;
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #dc0508;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.cupExt-nav_hover {
+  position: absolute !important;
+  background: #dc0508;
+  transition: left 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 1;
+  border-radius: 30px;
+  margin-bottom: 0 !important;
+}
+
+.cupExt-nav_item {
+  z-index: 2;
+  color: #000000;
+  user-select: none;
+  cursor: pointer;
+  padding: 20px 60px !important;
+  border-radius: 30px;
+  transition: background 0.3s cubic-bezier(0.17, 0.67, 0.45, 1.02);
+  margin-bottom: 0 !important;
+  line-height: 22px !important;
+  font-size: 15px !important;
+}
+
+.cupExt-nav_item.active {
+  color: #fff;
+  border-radius: 30px;
+}
+
+.cupExt-bottomNav {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.cupExt-bottomNav_inner {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.cupExt-bottomNav_item {
+  color: #000000;
+  user-select: none;
+  cursor: pointer;
+  color: #cfcfcf;
+  font-size: 12px !important;
+  transition: all .2s ease-in-out;
+  padding: 5px 32px;
+}
+
+.cupExt-bottomNav_item:hover {
+  color: #b6b6b6;
+}
+
+.cupExt-bottomNav_item:hover img {
+  opacity: .7;
+}
+
+.cupExt-bottomNav_item.active {
+  color: #dc0508;
+  border-radius: 30px;
+}
+
+.cupExt-bottomNav_item.active img {
+  opacity: 1;
+}
+
+.cupExt-bottomNav_item img {
+  margin: 0 10px 0 0;
+  opacity: .5;
+  transition: all .2s ease-in-out;
+}
+
+.cupExt-points {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cupExt-points.active {
+  display: block;
+}
+
+.cupExt-points_item {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.cupExt-points_item.active {
+  width: auto;
+}
+
+.cupExt-points_item.active .cupExt-points_icon {
+  transform: rotate(180deg);
+}
+
+.cupExt-points_item_1 {
+  left: 15%;
+  bottom: 62%;
+}
+
+.cupExt-points_icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cupExt-points_icon span {
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  color: #111;
+  font-size: 30px;
+  font-family: Arial, 'sans-serif';
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.cupExt-points_icon span:before,
+.cupExt-points_icon span:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.cupExt-points_icon span:before {
+  width: 2px;
+  height: 10px;
+}
+
+.cupExt-points_icon span:after {
+  height: 2px;
+  width: 10px;
+}
+
+.cupExt-points_icon:before {
+  width: 2px;
+  height: 10px;
+}
+
+.cupExt-points_icon:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; /* background: rgba(229, 0, 0, 0.3); */
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: scale(1.5);
+}
+
+.cupExt-popups_item {
+  transform: scale(0);
+  opacity: 0;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+  width: 298px;
+  padding: 4px;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: opacity 0.3s;
+}
+
+.cupExt-popups_item.active {
+  transform: scale(1) translate(-50%, -50%);
+  opacity: 1;
+}
+
+.cupExt-popups_item.active ~ .cupExt-popups_bg {
+  z-index: 99;
+  opacity: .3;
+}
+
+.cupExt-popups_bg {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.45, 1.02);
+}
+
+.cupExt-popups_close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 32px;
+  height: 32px;
+  z-index: 200;
+}
+
+.cupExt-popups_close .btn-close {
+  color: #fff;
+  background-color: #000;
+  transition: all 0.3s;
+  width: 30px;
+  background-image: url(/bundles/brandtoyota2018/images/svg/static/close_white.svg);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 30px;
+  display: block;
+  padding: 0;
+  top: 0; right: 0;
+}
+
+.cupExt-popups_close .btn-close:hover,
+.cupExt-popups_close .btn-close:active,
+.cupExt-popups_close .btn-close:focus {
+  background-image: url(/bundles/brandtoyota2018/images/svg/static/close_white.svg) !important;
+  background-color: #333 !important;
+  background-position: center center !important;
+  background-size: 10px 10px !important;
+  background-repeat: no-repeat !important;
+  background-position: center center;
+}
+
+.cupExt-popups_img {
+  width: 100%;
+}
+
+.cupExt-popups_img img {
+  width: 100%;
+}
+
+.cupExt-popups_text {
+  padding: 15px 5px;
+  text-align: center;
+}
+
+.cupExt-popups_text p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #595d60;
+  text-indent: 0;
+}
+
+.cupExt-slider {
+  position: relative;
+  display: flex;
+}
+
+.cupExt-slider_inner {
+  position: relative;
+  margin: 0 auto;
+}
+
+.cupExt-slider_item {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+.cupExt-slider_item.current {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
+.cupExt-car_kv {
+  position: relative;
+}
+
+.cupExt-arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: opacity .2s ease-in;
+}
+
+.cupExt-arrow:hover {
+  opacity: .8;
+}
+
+.cupExt-arrow_left {
+  left: 0;
+}
+
+.cupExt-arrow_left:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #dc0508;
+  border-left: 2px solid #dc0508;
+}
+
+.cupExt-arrow_right {
+  right: 0;
+}
+
+.cupExt-arrow_right:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(135deg);
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #dc0508;
+  border-left: 2px solid #dc0508;
+}
+
+@media (min-width: 768px) {
+
+  .cupExt-wrapper {
+    padding: 60px 20px 40px;
+    background: #fff url(https://static.toyota.ru/t/toyota/carchapter/blinds/new-rav4/bg-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 2560px auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .cupExt-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .cupExt-nav_inner {
+    transform: scale(0.9);
+    margin: 0 0 20px 0;
+  }
+
+  .cupExt-nav_item {
+    padding: 10px 20px !important;
+  }
+
+  .cupExt-bottomNav {
+    padding: 10px;
+  }
+
+  .cupExt-bottomNav_item {
+    padding: 4px 8px !important;
+  }
+
+  .cupExt-bottomNav_text {
+    display: none;
+  }
+
+  .cupExt-popups_item.active {
+    top: 10%;
+    left: 25%;
+    transform: scale(0.75);
+  }
+
+  .cupExt-slider {
+    background: #fff url(//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/bg-mob_tcm-3020-1767654.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    margin-top: 70px;
+  }
+
+  .cupExt-nav {
+    position: absolute;
+    top: -84px;
+    left: 10px;
+  }
+
+  .cupExt-car_kv {
+    padding: 20px 20px 50px 20px;
+  }
+
+  .cupExt-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .cupExt-arrow_left {
+    left: 5px;
+  }
+
+  .cupExt-arrow_left:before {
+    width: 5px;
+    height: 5px;
+  }
+
+  .cupExt-arrow_right {
+    right: 5px;
+  }
+
+  .cupExt-arrow_right:before {
+    width: 5px;
+    height: 5px;
+  }
+
+  .section-title {
+    margin-top: 15px;
+  }
+
+  .section-title h2 {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  .cupExt-popups_item.active {
+    transform: scale(0.6);
+    top: 0;
+    left: 5%;
+  }
+
+}
+
+@media (max-width: 475px) {
+
+  .cupExt-nav_inner {
+    transform: scale(1);
+  }
+
+  .cupExt-nav_item {
+    font-size: 12px !important;
+    padding: 10px 10px !important;
+  }
+
+}
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+</style>
+<style type="text/css">.ext_front_1_1 {
+  left: 55%;
+  top: 73%;
+}
+
+.ext_front_1_2 {
+  left: 34%;
+  top: 65%;
+}
+
+.ext_front_1_3 {
+  left: 57%;
+  top: 32%;
+}
+
+.ext_front_2_1 {
+  left: 57%;
+  top: 47%;
+}
+
+.ext_front_2_2 {
+  left: 45%;
+  top: 53%;
+}
+
+.ext_front_2_3 {
+  left: 30%;
+  top: 20%;
+}
+
+.ext_front_3_1 {
+  left: 31%;
+  top: 63%;
+}
+
+.ext_front_3_2 {
+  left: 75%;
+  top: 55%;
+}
+
+.ext_front_3_3 {
+  left: 75%;
+  top: 67%;
+}
+
+.ext_aside_1_1 {
+  left: 88%;
+  top: 73%;
+}
+
+.ext_aside_1_2 {
+  left: 60%;
+  top: 72%;
+}
+.ext_aside_1_3 {
+  left: 55%;
+  top: 41%;
+}
+
+.ext_aside_2_1 {
+  left: 90%;
+  top: 54%;
+}
+
+.ext_aside_2_2 {
+  left: 23%;
+  top: 64%;
+}
+
+.ext_aside_3_1 {
+  left: 39%;
+  top: 71%;
+}
+
+.ext_aside_3_2 {
+  left: 62%;
+  top: 45%;
+}
+
+.ext_aside_3_3 {
+  left: 92%;
+  top: 51%;
+}
+
+.ext_back_1_1 {
+  left: 47%;
+  top: 77%;
+}
+
+.ext_back_1_2 {
+  left: 75%;
+  top: 71%;
+}
+
+.ext_back_1_3 {
+  left: 71%;
+  top: 39%;
+}
+
+.ext_back_2_1 {
+  left: 43%;
+  top: 44%;
+}
+
+
+.ext_back_2_2 {
+  left: 54%;
+  top: 70%;
+}
+
+.ext_back_3_1 {
+  left: 69%;
+  top: 72%;
+}
+
+.ext_back_3_2 {
+  left: 22%;
+  top: 47%;
+}
+
+.ext_back_3_3 {
+  left: 67%;
+  top: 48%;
+}
+
+@media (max-width:767px) {
+
+  .ext_front_1_1 {
+    left: 54%;
+    top: 54%;
+  }
+
+  .ext_front_1_2 {
+    left: 35%;
+    top: 50%;
+  }
+
+  .ext_front_1_3 {
+    left: 51%;
+    top: 24%;
+  }
+
+  .ext_aside_1_1 {
+    left: 83%;
+    top: 56%;
+  }
+
+  .ext_aside_1_2 {
+    left: 37%;
+    top: 53%;
+  }
+
+  .ext_aside_1_3 {
+    left: 52%;
+    top: 34%;
+  }
+
+
+  .ext_back_1_1 {
+    left: 46%;
+    top: 60%;
+  }
+
+  .ext_back_1_2 {
+    left: 68%;
+    top: 56%;
+  }
+
+  .ext_back_1_3 {
+    left: 65%;
+    top: 31%;
+  }
+
+  .ext_front_2_1 {
+    left: 55%;
+    top: 35%;
+  }
+
+  .ext_front_2_2 {
+    left: 45%;
+    top: 56%;
+  }
+
+  .ext_aside_2_1 {
+    left: 83%;
+    top: 40%;
+  }
+
+  .ext_aside_2_2 {
+    left: 19%;
+    top: 53%;
+  }
+
+  .ext_back_2_1 {
+    left: 40%;
+    top: 35%;
+  }
+
+  .ext_back_2_2 {
+    left: 54%;
+    top: 57%;
+  }
+
+  .ext_front_3_1 {
+    left: 33%;
+    top: 50%;
+  }
+
+  .ext_front_3_2 {
+    left: 69%;
+    top: 39%;
+  }
+
+  .ext_front_3_3 {
+    left: 50%;
+    top: 39%;
+  }
+
+  .ext_aside_3_1 {
+    left: 45%;
+    top: 54%;
+  }
+
+  .ext_aside_3_2 {
+    left: 57%;
+    top: 39%;
+  }
+
+  .ext_aside_3_3 {
+    left: 27%;
+    top: 19%;
+  }
+
+  .ext_back_3_1 {
+    left: 65%;
+    top: 52%;
+  }
+
+  .ext_back_3_2 {
+    left: 19%;
+    top: 32%;
+  }
+
+  .ext_back_3_3 {
+    left: 45%;
+    top: 42%;
+  }
+
+}
+</style>
+<style type="text/css">.animate_fadeUp {
+  -webkit-animation-name: fadeUp;
+  animation-name: fadeUp;
+  animation-duration: .6s;
+  animation-fill-mode: forwards;
+}
+
+.html5-inpage.html5-inpage__cupInt .container {
+  width: 100%;
+  padding: 0;
+}
+
+.html5-inpage.html5-inpage__cupInt .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.html5-inpage.html5-inpage__cupInt .col-xs-12 {
+  padding: 0;
+}
+
+.cupInt-wrapper {
+  padding: 20px;
+}
+
+.cupInt-title {
+  padding: 0 20px;
+}
+
+.cupInt-title .h1 {
+  text-align: center;
+  margin-bottom: 10px !important;
+}
+
+.cupInt-nav {
+  display: flex;
+  justify-content: center;
+  margin: 26px 0 32px;
+}
+
+.cupInt-nav_inner {
+  position: relative;
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #dc0508;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.cupInt-nav_hover {
+  position: absolute !important;
+  background: #dc0508;
+  transition: left 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 1;
+  border-radius: 30px;
+  margin-bottom: 0 !important;
+}
+
+.cupInt-nav_item {
+  z-index: 2;
+  color: #000000;
+  user-select: none;
+  cursor: pointer;
+  padding: 20px 60px !important;
+  border-radius: 30px;
+  transition: background 0.3s cubic-bezier(0.17, 0.67, 0.45, 1.02);
+  margin-bottom: 0 !important;
+  line-height: 22px !important;
+  font-size: 15px !important;
+}
+
+.cupInt-nav_item.active {
+  color: #fff;
+  border-radius: 30px;
+}
+
+.cupInt-bottomNav {
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+
+.cupInt-bottomNav_inner {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.cupInt-bottomNav_item {
+  color: #000000;
+  user-select: none;
+  cursor: pointer;
+  color: #cfcfcf;
+  font-size: 12px;
+  transition: all .2s ease-in-out;
+  padding: 12px 32px;
+}
+
+.cupInt-bottomNav_item:hover {
+  color: #b6b6b6;
+}
+
+.cupInt-bottomNav_item:hover img {
+  opacity: .7;
+}
+
+.cupInt-bottomNav_item.active {
+  color: #dc0508;
+  border-radius: 30px;
+}
+
+.cupInt-bottomNav_item.active img {
+  opacity: 1;
+}
+
+.cupInt-bottomNav_item img {
+  margin: 0 10px 0 0;
+  opacity: .5;
+  transition: all .2s ease-in-out;
+}
+
+.cupInt-points {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cupInt-points.active {
+  display: block;
+}
+
+.cupInt-points_item {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.cupInt-points_item.active {
+  width: auto;
+}
+
+.cupInt-points_item.active .cupInt-points_icon {
+ transform: rotate(180deg); 
+}
+
+.cupInt-points_item_1 {
+  left: 15%;
+  bottom: 62%;
+}
+
+.cupInt-points_icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cupInt-points_icon span {
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  color: #111;
+  font-size: 30px;
+  font-family: Arial, 'sans-serif';
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.cupInt-points_icon span:before,
+.cupInt-points_icon span:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.cupInt-points_icon span:before {
+  width: 2px;
+  height: 10px;
+}
+
+.cupInt-points_icon span:after {
+  height: 2px;
+  width: 10px;
+}
+
+.cupInt-points_icon:before {
+  width: 2px;
+  height: 10px;
+}
+
+.cupInt-points_icon:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; /* background: rgba(229, 0, 0, 0.3); */
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: scale(1.5);
+}
+
+.cupInt-popups_item {
+  transform: scale(0);
+  opacity: 0;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+  width: 298px;
+  padding: 4px;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: opacity 0.3s;
+}
+
+.cupInt-popups_item.active {
+  transform: scale(1) translate(-50%, -50%);
+  opacity: 1;
+}
+
+.cupInt-popups_item.active ~ .cupInt-popups_bg {
+  z-index: 99;
+  opacity: .3;
+}
+
+.cupInt-popups_bg {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.45, 1.02);
+}
+
+.cupInt-popups_close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 32px;
+  height: 32px;
+  z-index: 200;
+}
+
+.cupInt-popups_close .btn-close {
+  color: #fff;
+  background-color: #000;
+  transition: all 0.3s;
+  width: 30px;
+  background-image: url(/bundles/brandtoyota2018/images/svg/static/close_white.svg);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 30px;
+  display: block;
+  padding: 0;
+  top: 0; right: 0;
+}
+
+.cupInt-popups_close .btn-close:hover,
+.cupInt-popups_close .btn-close:active,
+.cupInt-popups_close .btn-close:focus {
+  background-image: url(/bundles/brandtoyota2018/images/svg/static/close_white.svg) !important;
+  background-color: #333 !important;
+  background-position: center center !important;
+  background-size: 10px 10px !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.cupInt-popups_img {
+  width: 100%;
+}
+
+.cupInt-popups_img img {
+  width: 100%;
+}
+
+.cupInt-popups_text {
+  padding: 15px 5px;
+  text-align: center;
+}
+
+.cupInt-popups_text p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #595d60;
+  text-indent: 0;
+}
+
+.cupInt-slider {
+  position: relative;
+  display: flex;
+}
+
+.cupInt-slider_inner {
+  position: relative;
+  margin: 0 auto;
+}
+
+.cupInt-slider_item {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+.cupInt-slider_item.current {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  min-height: 180px;
+}
+
+.cupInt-car_kv {
+  position: relative;
+}
+
+.cupInt-arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: opacity .2s ease-in;
+}
+
+.cupInt-arrow:hover {
+  opacity: .8;
+}
+
+.cupInt-arrow_left {
+  left: 40px;
+}
+
+.cupInt-arrow_left:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #dc0508;
+  border-left: 2px solid #dc0508;
+}
+
+.cupInt-arrow_right {
+  right: 40px;
+}
+
+.cupInt-arrow_right:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(135deg);
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #dc0508;
+  border-left: 2px solid #dc0508;
+}
+
+@media (min-width: 768px) {
+
+  .cupInt-wrapper {
+    padding: 60px 20px 40px;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 2560px auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .cupInt-title {
+    font-size: 28px;
+    line-height: 32px;
+    padding: 0;
+    margin: 0 -10px;
+  }
+
+  .cupInt-nav {
+    margin: 26px 0 10px;
+  }
+
+  .cupInt-nav_inner {
+    transform: scale(0.9);
+    margin: 0 0 20px 0;
+    position: relative;
+    z-index: 11;
+  }
+
+  .cupInt-nav_item {
+    padding: 10px 20px !important;
+  }
+
+  .cupInt-bottomNav {
+    padding: 10px;
+    bottom: 0px;
+  }
+
+  .cupInt-bottomNav_item {
+    padding: 4px 8px;
+    margin-bottom: 7px !important;
+  }
+
+  .cupInt-bottomNav_text {
+    display: none;
+  }
+
+  .cupInt-popups_item.active {
+    top: 10%;
+    left: 25%;
+    transform: scale(0.75);
+  }
+
+  .cupInt-slider {
+    background: #fff;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    margin-top: 70px;
+  }
+
+  .cupInt-nav {
+    position: absolute;
+    top: -84px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+  }
+
+  .cupInt-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .cupInt-arrow_left {
+    left: 5px;
+  }
+
+  .cupInt-arrow_left:before {
+    width: 5px;
+    height: 5px;
+  }
+
+  .cupInt-arrow_right {
+    right: 5px;
+  }
+
+  .cupInt-arrow_right:before {
+    width: 5px;
+    height: 5px;
+  }
+
+  .container-mob {
+    padding-left: 20px;
+    padding-right: 20px; 
+    margin-bottom: 30px;
+  }
+
+  .article .html5-inpage__newKsp h2 {font-size: 34px;}
+
+}
+
+@media (max-width: 575px) {
+
+  .cupInt-popups_item.active {
+    transform: scale(0.6);
+    top: 0;
+    left: 5%;
+  }
+
+}
+
+@media (max-width: 475px) {
+
+  .cupInt-nav_inner {
+    transform: scale(1);
+  }
+
+  .cupInt-nav_item {
+    font-size: 12px !important;
+    padding: 10px 10px !important;
+  }
+
+}
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+</style>
+<style type="text/css">.int_front_1_1 {
+  left: 18%;
+  top: 75%;
+}
+
+.int_front_1_2 {
+  left: 66%;
+  top: 64%;
+}
+
+.int_front_2_1 {
+  left: 35%;
+  top: 77%;
+}
+
+.int_front_2_2 {
+  left: 70%;
+  top: 80%;
+}
+
+.int_front_2_3 {
+  left: 30%;
+  top: 20%;
+}
+
+.int_front_3_1 {
+  left: 53%;
+  top: 30%;
+}
+
+.int_front_3_2 {
+  left: 34%;
+  top: 34%;
+}
+
+.int_front_3_3 {
+  left: 52%;
+  top: 60%;
+}
+
+.int_aside_1_1 {
+  left: 50%;
+  top: 50%;
+}
+
+.int_aside_1_2 {
+  left: 40%;
+  top: 20%;
+}
+
+.int_aside_2_1 {
+  left: 40%;
+  top: 40%;
+}
+
+.int_aside_2_2 {
+  left: 40%;
+  top: 50%;
+}
+
+.int_aside_3_1 {
+  left: 30%;
+  top: 70%;
+}
+
+.int_aside_3_2 {
+  left: 20%;
+  top: 50%;
+}
+
+.int_back_1_1 {
+  left: 22%;
+  top: 75%;
+}
+
+.int_back_1_2 {
+  left: 72%;
+  top: 34%;
+}
+
+.int_back_1_3 {
+  left: 30%;
+  top: 65%;
+}
+
+.int_back_2_1 {
+  left: 44%;
+  top: 72%;
+}
+
+.int_back_2_2 {
+  left: 64%;
+  top: 45%;
+}
+
+.int_back_3_1 {
+  left: 45%;
+  top: 70%;
+}
+
+@media (max-width: 767px) {
+
+  .int_front_1_1 {
+    left: 13%;
+    top: 52%;
+  }
+
+  .int_front_1_2 {
+    left: 72%;
+    top: 53%;
+  }
+
+  .int_back_1_1 {
+    left: 75%;
+    top: 55%;
+  }
+
+  .int_back_1_2 {
+    left: 84%;
+    top: 15%;
+  }
+
+  .int_back_1_3 {
+    left: 35%;
+    top: 49%;
+  }
+
+  .int_front_2_1 {
+    left: 20%;
+    top: 51%;
+  }
+
+  .int_front_2_2 {
+    left: 75%;
+    top: 51%;
+  }
+
+  .int_back_2_1 {
+    left: 44%;
+    top: 50%;
+  }
+
+  .int_back_2_2 {
+    left: 64%;
+    top: 45%;
+  }
+
+  .int_front_3_1 {
+    left: 50%;
+    top: 18%;
+  }
+
+  .int_front_3_2 {
+    left: 32%;
+    top: 16%;
+  }
+
+  .int_front_3_3 {
+    left: 52%;
+    top: 53%;
+  }
+
+  .int_back_3_1 {
+    left: 45%;
+    top: 54%;
+  }
+</style>
+<style type="text/css">.animate_fadeUp {
+  -webkit-animation-name: fadeUp;
+  animation-name: fadeUp;
+  animation-duration: .6s;
+  animation-fill-mode: forwards;
+}
+
+.newKsp {
+ margin-bottom: 30px;
+ margin-top: 30px; 
+}
+
+.ksp-open #ctaBar {
+  display: none !important;
+}
+
+.html5-inpage.html5-inpage__newKsp .container {
+  width: 100%;
+  padding: 0;
+}
+
+.html5-inpage.html5-inpage__newKsp .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.html5-inpage.html5-inpage__newKsp .col-xs-12 {
+  padding: 0;
+}
+
+.newKsp-title {
+  margin: 60px 0 40px;
+}
+
+.newKsp-items {
+  display: flex;
+  position: relative;
+  background: #000000;
+}
+
+.newKsp-items.active .newKsp-item {
+  width: 20%;
+}
+
+.newKsp-items.active .newKsp-item.active {
+  width: 80%;
+}
+
+.newKsp-items.active .newKsp-item.active .newKsp-button {
+  display: none;
+}
+
+.newKsp-items.active .newKsp-item.active .newKsp-info_inner {
+  padding: 40px;
+}
+
+.newKsp-items.active .newKsp-item.active .newKsp-info {
+  display: block;
+}
+
+.newKsp-items.active .newKsp-item.active .newKsp-info_button {
+  display: none;
+}
+
+.newKsp-items.active .newKsp-item.active .newKsp-info_close {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+
+.newKsp-items.active .newKsp-item.active .newKsp-info_close:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background: #fff;
+  opacity: 0;
+  box-shadow: inset 5px -10px 0px 0px #fff;
+  animation-name: openXB;
+  animation-duration: .2s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+
+.newKsp-items.active .newKsp-item.active .newKsp-info_close:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  box-shadow: inset 5px -10px 0px 0px #fff;
+  background: #fff;
+  opacity: 0;
+  animation-name: openXA;
+  animation-duration: .2s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+
+.newKsp-items.active .newKsp-item.active .newKsp-info_title {
+  animation-name: fadeUp;
+  animation-duration: .6s;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+  display: block;
+}
+
+.newKsp-items.active .newKsp-item.active .newKsp-info_text {
+  animation-name: fadeUp;
+  animation-duration: .6s;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+  cursor: auto;
+  display: block;
+}
+
+.newKsp-items.active .newKsp-info_button {
+  width: 0;
+}
+
+.newKsp-item {
+  cursor: pointer;
+  display: flex;
+  width: 33.33%;
+  position: relative;
+  height: 375px;
+  transition: all 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.newKsp-item:hover:not(.active) .newKsp-button {
+  background: #262626;
+}
+
+.newKsp-item:hover:not(.active) .newKsp-button_arrow {
+  animation-name: epilepsy;
+  animation-duration: .5s;
+  animation-delay: .2s;
+  animation-iteration-count: infinite;
+}
+
+.newKsp-kv {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.newKsp-button {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  background: #000000;
+}
+
+.newKsp-button_inner {
+  padding: 20px;
+}
+
+.newKsp-button_title {
+  position: relative;
+  color: #fff;
+  font-size: 20px !important;
+  line-height: 26px;
+  font-weight: bold;
+
+}
+
+.newKsp-button_arrow {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 0;
+  top: 50%;
+}
+
+.newKsp-button_arrow:before {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(135deg);
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #dc0508;
+  border-left: 2px solid #dc0508;
+}
+
+.newKsp-info {
+  display: none;
+  background: #000000;
+}
+
+.newKsp-info_inner {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.newKsp-info_title {
+  display: none;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.newKsp-info_text {
+  display: none;
+  opacity: 0;
+  overflow: hidden;
+  color: #999999;
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 21px;
+  transition: all 0.35s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*----------------------------------
+//LIBS
+//----------------------------------*/
+
+@media (min-width: 1001px) {
+
+  .newKsp-items.active .newKsp-item.active .newKsp-kv {
+    width: 50%;
+  }
+
+  .newKsp-items.active .newKsp-item.active .newKsp-info {
+    width: 50%;
+    height: 100%;
+  }
+
+  .cupInt {
+    margin-bottom: 60px;
+  }
+
+  .newKsp {
+    margin-bottom: 60px;
+  }
+
+  .newKsp-info_title {
+   margin-right: 10px;
+ }
+
+
+}
+
+@media (max-width: 1365px) {
+
+  .newKsp-items.active .newKsp-item.active .newKsp-info_title {
+    font-size: 20px;
+  }
+
+  .newKsp-button_title {
+    font-size: 16px !important;
+  }
+
+  .newKsp-info_title {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 1199px) {
+
+  .newKsp-items.active .newKsp-item.active .newKsp-info_title {
+    font-size: 16px;
+  }
+
+  .newKsp-button_title {
+    font-size: 14px !important;
+  }
+
+  .newKsp-info {
+    overflow-y: auto;
+  }
+
+  .newKsp-info_title {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  .newKsp-items {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .newKsp-items.active .newKsp-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newKsp-items.active .newKsp-item.active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    top: 0;
+  }
+
+  .newKsp-items.active .newKsp-item.active .newKsp-kv {
+    position: relative;
+    height: 50vh;
+  }
+
+  .newKsp-items.active .newKsp-item.active .newKsp-info {
+    width: 100%;
+    position: relative;
+    height: 50vh;
+  }
+
+  .newKsp-item {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  body.ksp-open {
+    overflow: hidden;
+  }
+
+  .newKsp-items.active .newKsp-item.active .newKsp-info_close {
+    position: fixed;
+  }
+
+  .newKsp-items.active .newKsp-item.active .newKsp-info_title {
+    font-size: 20px;
+  }
+
+  .newKsp-button_title {
+    font-size: 20px !important;
+  }
+
+  .newKsp-info_title {
+    font-size: 20px;
+  }
+
+}
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes epilepsy {
+
+  from {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+
+}
+
+@keyframes openXB {
+
+  from {
+    transform: rotate(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotate(45deg);
+    opacity: 1;
+  }
+
+}
+
+@keyframes openXA {
+
+  from {
+    transform: rotate(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotate(-45deg);
+    opacity: 1;
+  }
+
+}
+</style>
+<style type="text/css">.article ul.list-check>li::before, .article ul>li::before {
+  display: none;
+}
+
+.cupExt-bottomNav_item {
+  margin-bottom: 0 !important;
+}
+</style>
+<style type="text/css">.cupExt-arrow,
+.cupInt-arrow {
+  display: none;
+}
+.cupExt-arrow.active,
+.cupInt-arrow.active {
+  display: block;
+}
+
+
+
+/*video*/
+
+.inset-video_block .content_wrapper .content h2 {
+  text-align: left;
+  color: #fff;
+  padding-bottom: 16px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.inset-video_title {
+    padding-bottom: 16px;
+    padding-top: 50px;
+}
+
+.blind-text.inset-video {
+    margin-bottom: 0;
+}
+
+.inset-video_block {
+    margin-bottom: 0;
+}
+
+.inset-video_block .content_wrapper {
+    position:relative;
+    display: block;
+}
+
+.inset-video_block .content_wrapper .desktop {
+    display: block;
+}
+
+.inset-video_block .content_wrapper .mob {
+    display: none;
+}
+
+.inset-video_block .content_wrapper .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 36px 0 0 50px !important;
+}
+
+.inset-video_block .content_wrapper .content h2 {
+    text-align: left;
+    color: #fff;
+    padding-bottom: 16px;
+}
+
+@media only screen and (max-width:767px) {
+    .inset-video_block {
+        margin-bottom: 20px;
+    }
+
+    .inset-video_block .content_wrapper .content {
+        position:relative;
+        text-align: center;
+        padding: 30px 0 0 0 !important;
+    }
+
+    .inset-video_block .content h2 {
+        display:none;
+    }
+
+    .inset-video_block .btn-desktop {
+        display:inline-block;
+    }
+
+    .inset-video_block .button_wrapper {
+        text-align: center;
+    }
+
+    .inset-video_block .content_wrapper .desktop {
+        display: none;
+    }
+
+    .inset-video_block .content_wrapper .mob {
+        display: block;
+    }
+
+}
+
+.inset-video_block .content_wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .inset-video_block .content_wrapper {
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .inset-video_block .content_wrapper {
+        width: 970px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .inset-video_block .content_wrapper {
+        width: 1170px;
+        margin: 0 auto;
+    }
+}
+
+.play-ico {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  margin-right: 1px;
+}
+
+.title-wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+@media(min-width: 992px) {
+  .title-wrap {
+    padding-top: 60px;
+  }
+}
+
+.banner-desktop {
+  width: 100%;
+  height: 448px;
+  background-image: url(https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/rav4-video.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.banner-desktop-img {
+  display: none;
+}
+
+.inset-video__title {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .inset-video__title {
+    display: none;
+  }
+}
+</style>
+
+
+<div id="model-descr">
+  <section class="html5-inpage html5-inpage__cupExt" data-section-title="" id="html5-inpage2">
+    <div class="container2">
+      
+      <div class="title-wrap">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="h1">Абсолютно новый RAV4</div>
+            <p>Брутальный дизайн, уникальная модульная архитектура TNGA, линейка новых бензиновых двигателей, новый полный привод и система <span style="white-space: nowrap;">Multi-terrain</span> select  делают новый RAV4 уникальным предложением в классе.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="inset-video_block">
+            <div class="content_wrapper">
+              <div class="desktop banner-desktop">
+                <!-- <img alt="RAV4" class="banner-desktop-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/RAV4.jpg" title=""> -->
+              </div>
+              <img alt="RAV4" class="mob" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/rav4-video.jpg" title="">
+              <div class="content">
+                <div class="inset-video__title">Запредельный RAV4</div>
+
+                <div><a class="btn btn-sm btn-success" href="https://www.youtube.com/watch?time_continue=1&v=F56pTTaMD2U" target="_blank"><span class="play-ico"><svg id="blue_copy" style="fill: #fff;" version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Layer_4_copy"> <path d="M31.356,25.677l38.625,22.3c1.557,0.899,1.557,3.147,0,4.046l-38.625,22.3c-1.557,0.899-3.504-0.225-3.504-2.023V27.7   C27.852,25.902,29.798,24.778,31.356,25.677z"></path> <path d="M69.981,47.977l-38.625-22.3c-0.233-0.134-0.474-0.21-0.716-0.259l37.341,21.559c1.557,0.899,1.557,3.147,0,4.046   l-38.625,22.3c-0.349,0.201-0.716,0.288-1.078,0.301c0.656,0.938,1.961,1.343,3.078,0.699l38.625-22.3   C71.538,51.124,71.538,48.876,69.981,47.977z"></path> <path d="M31.356,25.677l38.625,22.3c1.557,0.899,1.557,3.147,0,4.046   l-38.625,22.3c-1.557,0.899-3.504-0.225-3.504-2.023V27.7C27.852,25.902,29.798,24.778,31.356,25.677z" style="fill:#fff;stroke:#fff;stroke-miterlimit:10;"></path> </g> </svg> </span>Посмотреть видео</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-xs-12 html5">
+          <div class="cupExt">
+            <div class="cupExt-wrapper">
+              <div class="cupInt-title">
+                <div class="h1">Новые&nbsp;грани</div>
+              </div>
+
+              <div class="size-limit">
+                <p class="text"><br />
+                Выразительный и&nbsp;брутальный дизайн, смелый и&nbsp;функциональный интерьер&nbsp;&mdash; Toyota RAV4 ломает стереотипы и&nbsp;начинает новую страницу в&nbsp;своей и&nbsp;без того победоносной истории.</p>
+              </div>
+
+              <div class="cupExt-slider">
+                <div class="cupExt-slider_wrapper">&nbsp;</div>
+
+                <div class="cupExt-slider_inner">
+                  <div class="cupExt-slider_item " data-view="front" ng-class="{'current' : bottomNavItem === 'bottomNav_item_1'}">
+                    <div class="cupExt-car_kv">
+                      <div class="cupExt-nav">
+                        <ul class="cupExt-nav_inner" ng-init="points = 'points_11'">
+                          <li class="cupExt-nav_hover">&nbsp;</li>
+                          <li class="cupExt-nav_item" ng-class="{'active' : points === 'points_11'}" ng-click="points = 'points_11'">Внедорожный</li>
+                          <li class="cupExt-nav_item" ng-class="{'active' : points === 'points_12'}" ng-click="points = 'points_12'">Выразительный</li>
+                          <li class="cupExt-nav_item" ng-class="{'active' : points === 'points_13'}" ng-click="points = 'points_13'">Безопасный</li>
+                        </ul>
+                      </div>
+                      <img alt="RAV4" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-front_tcm-3020-1767644.png" title="" />
+                      <div class="cupExt-points" ng-class="{'active' : points === 'points_11'}">
+                        <div class="cupExt-points_item ext_front_1_1" data-point-id="ext_front_1_1">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_front_1_2" data-point-id="ext_front_1_2">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_front_1_3" data-point-id="ext_front_1_3">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupExt-points" ng-class="{'active' : points === 'points_12'}">
+                        <div class="cupExt-points_item ext_front_2_1" data-point-id="ext_front_2_1">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_front_2_2" data-point-id="ext_front_2_2">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupExt-points" ng-class="{'active' : points === 'points_13'}">
+                        <div class="cupExt-points_item ext_front_3_1" data-point-id="ext_front_3_1">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_front_3_2" data-point-id="ext_front_3_2">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_front_3_3" data-point-id="ext_front_3_3">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupExt-popups">
+                        <div class="cupExt-popups_item ext_front_1_1" data-popup-id="ext_front_1_1">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-body_tcm-3020-1765638.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Уменьшенные свесы кузова</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_front_1_2" data-popup-id="ext_front_1_2">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/clirens.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Увеличенный дорожный просвет</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_front_1_3" data-popup-id="ext_front_1_3">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-MTS_tcm-3020-1765655.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Система Multi-terrain select<sup class="reg">&reg;</sup> для адаптации к&nbsp;движению по&nbsp;различным покрытиям</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_bg">&nbsp;</div>
+                      </div>
+
+                      <div class="cupExt-popups">
+                        <div class="cupExt-popups_item ext_front_2_1" data-popup-id="ext_front_2_1">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-optics_tcm-3020-1765656.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Светодиодная оптика во&nbsp;всех комплектациях</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_front_2_2" data-popup-id="ext_front_2_2">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-wheels_tcm-3020-1765662.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Легкосплавные колесные диски&nbsp;19&Prime;</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_bg">&nbsp;</div>
+                      </div>
+
+                      <div class="cupExt-popups">
+                        <div class="cupExt-popups_item ext_front_3_1" data-popup-id="ext_front_3_1">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-TNGA_tcm-3020-1765657.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Уникальная модульная архитектура TNGA</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_front_3_2" data-popup-id="ext_front_3_2">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-camera_tcm-3020-1765653.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Камеры кругового обзора</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_front_3_3" data-popup-id="ext_front_3_3">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-TSS_tcm-3020-1765659.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Новое поколение системы активной безопасности TSS</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_bg">&nbsp;</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cupExt-slider_item" data-view="aside" ng-class="{'current' : bottomNavItem === 'bottomNav_item_2'}">
+                    <div class="cupExt-car_kv">
+                      <div class="cupExt-nav">
+                        <ul class="cupExt-nav_inner" ng-init="points = 'points_11'">
+                          <li class="cupExt-nav_hover">&nbsp;</li>
+                          <li class="cupExt-nav_item" ng-class="{'active' : points === 'points_11'}" ng-click="points = 'points_11'">Внедорожный</li>
+                          <li class="cupExt-nav_item" ng-class="{'active' : points === 'points_12'}" ng-click="points = 'points_12'">Выразительный</li>
+                          <li class="cupExt-nav_item" ng-class="{'active' : points === 'points_13'}" ng-click="points = 'points_13'">Безопасный</li>
+                        </ul>
+                      </div>
+                      <img alt="RAV4" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-aside_tcm-3020-1767646.png" title="" />
+                      <div class="cupExt-points" ng-class="{'active' : points === 'points_11'}">
+                        <div class="cupExt-points_item ext_aside_1_1" data-point-id="ext_aside_1_1">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_aside_1_2" data-point-id="ext_aside_1_2">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_aside_1_3" data-point-id="ext_aside_1_3">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupExt-points" ng-class="{'active' : points === 'points_12'}">
+                        <div class="cupExt-points_item ext_aside_2_1" data-point-id="ext_aside_2_1">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_aside_2_2" data-point-id="ext_aside_2_2">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupExt-points" ng-class="{'active' : points === 'points_13'}">
+                        <div class="cupExt-points_item ext_aside_3_1" data-point-id="ext_aside_3_1">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_aside_3_2" data-point-id="ext_aside_3_2">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_aside_3_3" data-point-id="ext_aside_3_3">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupExt-popups">
+                        <div class="cupExt-popups_item ext_aside_1_1" data-popup-id="ext_aside_1_1">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-body_tcm-3020-1765638.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Уменьшенные свесы кузова</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_aside_1_2" data-popup-id="ext_aside_1_2">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/clirens.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Увеличенный дорожный просвет</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_aside_1_3" data-popup-id="ext_aside_1_3">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-MTS_tcm-3020-1765655.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Система Multi-terrain select<sup class="reg">&reg;</sup> для адаптации к&nbsp;движению по&nbsp;различным покрытиям</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_bg">&nbsp;</div>
+                      </div>
+
+                      <div class="cupExt-popups">
+                        <div class="cupExt-popups_item ext_aside_2_1" data-popup-id="ext_aside_2_1">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-optics_tcm-3020-1765656.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Светодиодная оптика во&nbsp;всех комплектациях</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_aside_2_2" data-popup-id="ext_aside_2_2">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-wheels_tcm-3020-1765662.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Легкосплавные колесные диски&nbsp;19&Prime;</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_bg">&nbsp;</div>
+                      </div>
+
+                      <div class="cupExt-popups">
+                        <div class="cupExt-popups_item ext_aside_3_1" data-popup-id="ext_aside_3_1">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-TNGA_tcm-3020-1765657.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Уникальная модульная архитектура TNGA</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_aside_3_2" data-popup-id="ext_aside_3_2">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/360-camera_tcm-3020-1768648.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Камеры кругового обзора</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_aside_3_3" data-popup-id="ext_aside_3_3">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-TSS_tcm-3020-1765659.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Новое поколение системы активной безопасности TSS</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_bg">&nbsp;</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cupExt-slider_item" data-view="back" ng-class="{'current' : bottomNavItem === 'bottomNav_item_3'}">
+                    <div class="cupExt-car_kv">
+                      <div class="cupExt-nav">
+                        <ul class="cupExt-nav_inner" ng-init="points = 'points_11'">
+                          <li class="cupExt-nav_hover">&nbsp;</li>
+                          <li class="cupExt-nav_item" ng-class="{'active' : points === 'points_11'}" ng-click="points = 'points_11'">Внедорожный</li>
+                          <li class="cupExt-nav_item" ng-class="{'active' : points === 'points_12'}" ng-click="points = 'points_12'">Выразительный</li>
+                          <li class="cupExt-nav_item" ng-class="{'active' : points === 'points_13'}" ng-click="points = 'points_13'">Безопасный</li>
+                        </ul>
+                      </div>
+                      <img alt="RAV4" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-back_tcm-3020-1767647.png" title="" />
+                      <div class="cupExt-points" ng-class="{'active' : points === 'points_11'}">
+                        <div class="cupExt-points_item ext_back_1_1" data-point-id="ext_back_1_1">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_back_1_2" data-point-id="ext_back_1_2">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_back_1_3" data-point-id="ext_back_1_3">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupExt-points" ng-class="{'active' : points === 'points_12'}">
+                        <div class="cupExt-points_item ext_back_2_1" data-point-id="ext_back_2_1">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_back_2_2" data-point-id="ext_back_2_2">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupExt-points" ng-class="{'active' : points === 'points_13'}">
+                        <div class="cupExt-points_item ext_back_3_1" data-point-id="ext_back_3_1">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_back_3_2" data-point-id="ext_back_3_2">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupExt-points_item ext_back_3_3" data-point-id="ext_back_3_3">
+                          <div class="cupExt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupExt-popups">
+                        <div class="cupExt-popups_item ext_back_1_1" data-popup-id="ext_back_1_1">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/sves-back_tcm-3020-1768677.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Уменьшенные свесы кузова</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_back_1_2" data-popup-id="ext_back_1_2">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/clirens.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Увеличенный дорожный просвет</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_back_1_3" data-popup-id="ext_back_1_3">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-MTS_tcm-3020-1765655.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Система Multi-terrain select<sup class="reg">&reg;</sup> для адаптации к&nbsp;движению по&nbsp;различным покрытиям</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_bg">&nbsp;</div>
+                      </div>
+
+                      <div class="cupExt-popups">
+                        <div class="cupExt-popups_item ext_back_2_1" data-popup-id="ext_back_2_1">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/rear-light_tcm-3020-1768684.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Светодиодная оптика во&nbsp;всех комплектациях</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_back_2_2" data-popup-id="ext_back_2_2">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-wheels_tcm-3020-1765662.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Легкосплавные колесные диски&nbsp;19&Prime;</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_bg">&nbsp;</div>
+                      </div>
+
+                      <div class="cupExt-popups">
+                        <div class="cupExt-popups_item ext_back_3_1" data-popup-id="ext_back_3_1">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-TNGA_tcm-3020-1765657.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Уникальная модульная архитектура TNGA</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_back_3_2" data-popup-id="ext_back_3_2">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/360-camera_back3_tcm-3020-1768694.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Камеры кругового обзора</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_item ext_back_3_3" data-popup-id="ext_back_3_3">
+                          <div class="cupExt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupExt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ext-TSS_tcm-3020-1765659.jpg" title="" /></div>
+
+                          <div class="cupExt-popups_text">
+                            <p>Новое поколение системы активной безопасности TSS</p>
+                          </div>
+                        </div>
+
+                        <div class="cupExt-popups_bg">&nbsp;</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cupExt-arrow cupExt-arrow_right" ng-class="{'active' : bottomNavItem === 'bottomNav_item_1'}" ng-click="bottomNavItem = 'bottomNav_item_2'">&nbsp;</div>
+
+                  <div class="cupExt-arrow cupExt-arrow_right" ng-class="{'active' : bottomNavItem === 'bottomNav_item_2'}" ng-click="bottomNavItem = 'bottomNav_item_3'">&nbsp;</div>
+
+                  <div class="cupExt-arrow cupExt-arrow_right" ng-class="{'active' : bottomNavItem === 'bottomNav_item_3'}" ng-click="bottomNavItem = 'bottomNav_item_1'">&nbsp;</div>
+
+                  <div class="cupExt-arrow cupExt-arrow_left" ng-class="{'active' : bottomNavItem === 'bottomNav_item_2'}" ng-click="bottomNavItem = 'bottomNav_item_1'">&nbsp;</div>
+
+                  <div class="cupExt-arrow cupExt-arrow_left" ng-class="{'active' : bottomNavItem === 'bottomNav_item_3'}" ng-click="bottomNavItem = 'bottomNav_item_2'">&nbsp;</div>
+
+                  <div class="cupExt-arrow cupExt-arrow_left" ng-class="{'active' : bottomNavItem === 'bottomNav_item_1'}" ng-click="bottomNavItem = 'bottomNav_item_3'">&nbsp;</div>
+                  <!-- нижняя навигация -->
+
+                  <div class="cupExt-bottomNav">
+                    <ul class="cupExt-bottomNav_inner" ng-init="bottomNavItem = 'bottomNav_item_1'">
+                      <li class="cupExt-bottomNav_item" data-view="front" ng-class="{'active' : bottomNavItem === 'bottomNav_item_1'}" ng-click="bottomNavItem = 'bottomNav_item_1'"><img alt="Вид спереди" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/mini-front2_tcm-3020-1767649.png" title="" /> <span class="cupExt-bottomNav_text">Вид спереди</span></li>
+                      <li class="cupExt-bottomNav_item" data-view="aside" ng-class="{'active' : bottomNavItem === 'bottomNav_item_2'}" ng-click="bottomNavItem = 'bottomNav_item_2'"><img alt="Вид сбоку" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/mini-aside_tcm-3020-1767651.png" title="" /> <span class="cupExt-bottomNav_text">Вид сбоку</span></li>
+                      <li class="cupExt-bottomNav_item" data-view="back" ng-class="{'active' : bottomNavItem === 'bottomNav_item_3'}" ng-click="bottomNavItem = 'bottomNav_item_3'"><img alt="Вид сзади" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/mini-back2_tcm-3020-1767652.png" title="" /> <span class="cupExt-bottomNav_text">Вид сзади</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="html5-inpage html5-inpage__cupInt" data-section-title="" id="html5-inpage3">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 html5">
+          <div class="cupInt">
+            <div class="cupInt-wrapper">
+              <div class="cupInt-title">
+                <div class="h1"><nobr>Новые&nbsp;стандарты</nobr></div>
+              </div>
+
+              <div class="size-limit">
+                <p class="text"><br />
+                Премиальные материалы отделки, вместительный багажник, инновационное техническое оснащение нового Toyota RAV4 расширяют границы ваших возможностей.</p>
+              </div>
+
+              <div class="cupInt-slider">
+                <div class="cupInt-slider_wrapper">&nbsp;</div>
+
+                <div class="cupInt-slider_inner">
+                  <div class="cupInt-slider_item" data-view="front" ng-class="{'current' : bottomNavIntItem === 'bottomNav_item_21'}">
+                    <div class="cupInt-car_kv">
+                      <div class="cupInt-nav">
+                        <ul class="cupInt-nav_inner" ng-init="points2 = 'points_21'">
+                          <li class="cupInt-nav_hover">&nbsp;</li>
+                          <li class="cupInt-nav_item" ng-class="{'active' : points2 === 'points_21'}" ng-click="points2 = 'points_21'">Вместительный</li>
+                          <li class="cupInt-nav_item" ng-class="{'active' : points2 === 'points_22'}" ng-click="points2 = 'points_22'">Комфортный</li>
+                          <li class="cupInt-nav_item" ng-class="{'active' : points2 === 'points_23'}" ng-click="points2 = 'points_23'">Технологичный</li>
+                        </ul>
+                      </div>
+                      <img alt="RAV4" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/interior_front_tcm-3020-1767732.jpg" title="" />
+                      <div class="cupInt-points" ng-class="{'active' : points2 === 'points_21'}">
+                        <div class="cupInt-points_item int_front_1_1" data-point-id="int_front_1_1">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupInt-points_item int_front_1_2" data-point-id="int_front_1_2">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupInt-points" ng-class="{'active' : points2 === 'points_22'}">
+                        <div class="cupInt-points_item int_front_2_1" data-point-id="int_front_2_1">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupInt-points_item int_front_2_2" data-point-id="int_front_2_2">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupInt-points" ng-class="{'active' : points2 === 'points_23'}">
+                        <div class="cupInt-points_item int_front_3_1" data-point-id="int_front_3_1">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupInt-points_item int_front_3_2" data-point-id="int_front_3_2">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupInt-points_item int_front_3_3" data-point-id="int_front_3_3">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupInt-popups">
+                        <div class="cupInt-popups_item int_front_1_1" data-popup-id="int_front_1_1">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-space_tcm-3020-1768683.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Множество отсеков</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_item int_front_1_2" data-popup-id="int_front_1_2">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-space-seat2_tcm-3020-1768686.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Более просторный и&nbsp;вместительный салон</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_bg">&nbsp;</div>
+                      </div>
+
+                      <div class="cupInt-popups">
+                        <div class="cupInt-popups_item int_front_2_1" data-popup-id="int_front_2_1">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-driver-seat_tcm-3020-1765674.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Новая эргономичная форма сидений</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_item int_front_2_2" data-popup-id="int_front_2_2">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-finish_tcm-3020-1765675.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Высокое качество материалов отделки</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_bg">&nbsp;</div>
+                      </div>
+
+                      <div class="cupInt-popups">
+                        <div class="cupInt-popups_item int_front_3_1" data-popup-id="int_front_3_1">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-multimedia_tcm-3020-1765682.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Обновленная мультимедийная система с&nbsp;8&Prime; экраном</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_item int_front_3_2" data-popup-id="int_front_3_2">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-monitor_tcm-3020-1765680.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>7&Prime; TFT дисплей на&nbsp;панели приборов</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_item int_front_3_3" data-popup-id="int_front_3_3">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-wireless-charger_tcm-3020-1765687.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Беспроводное зарядное устройство</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_bg">&nbsp;</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cupInt-slider_item" data-view="back" ng-class="{'current' : bottomNavIntItem === 'bottomNav_item_22'}">
+                    <div class="cupInt-car_kv">
+                      <div class="cupInt-nav">
+                        <ul class="cupInt-nav_inner" ng-init="points2 = 'points_21'">
+                          <li class="cupInt-nav_hover">&nbsp;</li>
+                          <li class="cupInt-nav_item" ng-class="{'active' : points2 === 'points_21'}" ng-click="points2 = 'points_21'">Вместительный</li>
+                          <li class="cupInt-nav_item" ng-class="{'active' : points2 === 'points_22'}" ng-click="points2 = 'points_22'">Комфортный</li>
+                          <li class="cupInt-nav_item" ng-class="{'active' : points2 === 'points_23'}" ng-click="points2 = 'points_23'">Технологичный</li>
+                        </ul>
+                      </div>
+                      <img alt="RAV4" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/interior_back_tcm-3020-1767666.jpg" title="" />
+                      <div class="cupInt-points" ng-class="{'active' : points2 === 'points_21'}">
+                        <div class="cupInt-points_item int_back_1_1" data-point-id="int_back_1_1">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupInt-points_item int_back_1_2" data-point-id="int_back_1_2">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupInt-points_item int_back_1_3" data-point-id="int_back_1_3">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupInt-points" ng-class="{'active' : points2 === 'points_22'}">
+                        <div class="cupInt-points_item int_back_2_1" data-point-id="int_back_2_1">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+
+                        <div class="cupInt-points_item int_back_2_2" data-point-id="int_back_2_2">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupInt-points" ng-class="{'active' : points2 === 'points_23'}">
+                        <div class="cupInt-points_item int_back_3_1" data-point-id="int_back_3_1">
+                          <div class="cupInt-points_icon"><span>+</span></div>
+                        </div>
+                      </div>
+
+                      <div class="cupInt-popups">
+                        <div class="cupInt-popups_item int_back_1_1" data-popup-id="int_back_1_1">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-cabin_tcm-3020-1765665.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Более просторный и&nbsp;вместительный салон</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_item int_back_1_2" data-popup-id="int_back_1_2">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-trunk_tcm-3020-1765686.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Удобный и&nbsp;вместительный багажник</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_item int_back_1_3" data-popup-id="int_back_1_3">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-storage_tcm-3020-1765684.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Множество отсеков</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_bg">&nbsp;</div>
+                      </div>
+
+                      <div class="cupInt-popups">
+                        <div class="cupInt-popups_item int_back_2_1" data-popup-id="int_back_2_1">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-driver-seat_tcm-3020-1765674.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Новая эргономичная форма сидений</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_item int_back_2_2" data-popup-id="int_back_2_2">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-finish_tcm-3020-1765675.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Высокое качество материалов отделки</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_bg">&nbsp;</div>
+                      </div>
+
+                      <div class="cupInt-popups">
+                        <div class="cupInt-popups_item int_back_3_1" data-popup-id="int_back_3_1">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-winter_tcm-3020-1768088.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Зимний пакет</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_item int_front_3_2" data-popup-id="int_front_3_2">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-monitor_tcm-3020-1765680.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>7&Prime; TFT дисплей на&nbsp;панели приборов</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_item int_front_3_3" data-popup-id="int_front_3_3">
+                          <div class="cupInt-popups_close"><a class="btn btn-close"><span class="hidden">Закрыть</span></a></div>
+
+                          <div class="cupInt-popups_img"><img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/int-wireless-charger_tcm-3020-1765687.jpg" title="" /></div>
+
+                          <div class="cupInt-popups_text">
+                            <p>Беспроводное зарядное устройство</p>
+                          </div>
+                        </div>
+
+                        <div class="cupInt-popups_bg">&nbsp;</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cupInt-arrow cupInt-arrow_left" ng-class="{'active' : bottomNavIntItem === 'bottomNav_item_21'}" ng-click="bottomNavIntItem = 'bottomNav_item_22'">&nbsp;</div>
+
+                  <div class="cupInt-arrow cupInt-arrow_left" ng-class="{'active' : bottomNavIntItem === 'bottomNav_item_22'}" ng-click="bottomNavIntItem = 'bottomNav_item_21'">&nbsp;</div>
+
+                  <div class="cupInt-arrow cupInt-arrow_right" ng-class="{'active' : bottomNavIntItem === 'bottomNav_item_21'}" ng-click="bottomNavIntItem = 'bottomNav_item_22'">&nbsp;</div>
+
+                  <div class="cupInt-arrow cupInt-arrow_right" ng-class="{'active' : bottomNavIntItem === 'bottomNav_item_22'}" ng-click="bottomNavIntItem = 'bottomNav_item_21'">&nbsp;</div>
+                  <!-- нижняя навигация -->
+
+                  <div class="cupInt-bottomNav">
+                    <ul class="cupInt-bottomNav_inner" ng-init="bottomNavIntItem = 'bottomNav_item_21'">
+                      <li class="cupInt-bottomNav_item active" data-view="front" ng-class="{'active' : bottomNavIntItem === 'bottomNav_item_21'}" ng-click="bottomNavIntItem = 'bottomNav_item_21'"><img alt="Передний ряд" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/mini-front-row_tcm-3020-1767676.png" title="" /> <span class="cupInt-bottomNav_text">Передний ряд</span></li>
+                      <li class="cupInt-bottomNav_item" data-view="back" ng-class="{'active' : bottomNavIntItem === 'bottomNav_item_22'}" ng-click="bottomNavIntItem = 'bottomNav_item_22'"><img alt="Задний ряд" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/mini-rear-row_tcm-3020-1767677.png" title="" /> <span class="cupInt-bottomNav_text">Задний ряд</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- новые решения, новые возможности -->
+
+  <section class="html5-inpage html5-inpage__newKsp" data-section-title="" id="html5-inpage4">
+    <div class="container">
+      <header class="section-title">
+        <h2>Новые решения</h2>
+      </header>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 html5">
+        <div class="newKsp">
+          <div class="newKsp_inner">
+            <div class="newKsp-items">
+              <div class="newKsp-item">
+                <figure class="newKsp-kv" style="background-image:url(//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ksp-1-1_tcm-3020-1765592.jpg)">&nbsp;</figure>
+
+                <div class="newKsp-button">
+                  <div class="newKsp-button_inner">
+                    <div class="newKsp-button_title"><i class="newKsp-button_arrow"><span class="hidden">Развернуть</span></i>Технологичный</div>
+                  </div>
+                </div>
+
+                <div class="newKsp-info">
+                  <div class="newKsp-info_inner">
+                    <div class="newKsp-info_title">Технологичный</div>
+
+                    <div class="newKsp-info_text">Новому поколению&nbsp;&mdash; новые технологии: Toyota RAV4 построен на&nbsp;глобальной архитектуре TNGA (Toyota New Global Architecture), которая отвечает за&nbsp;комфорт, управляемость и&nbsp;безопасность. Более низкий центр тяжести и&nbsp;увеличенная жесткость кузова обеспечивают абсолютно новому RAV4 улучшенную динамику и&nbsp;превосходную управляемость.</div>
+
+                    <div class="newKsp-info_close">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="newKsp-item">
+                <figure class="newKsp-kv" style="background-image:url(//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ksp-1-2-1_tcm-3020-1765593.jpg)">&nbsp;</figure>
+
+                <div class="newKsp-button">
+                  <div class="newKsp-button_inner">
+                    <div class="newKsp-button_title"><i class="newKsp-button_arrow"><span class="hidden">Развернуть</span></i>Динамичный</div>
+                  </div>
+                </div>
+
+                <div class="newKsp-info">
+                  <div class="newKsp-info_inner">
+                    <div class="newKsp-info_title">Динамичный</div>
+
+                    <div class="newKsp-info_text">С&nbsp;Toyota RAV4&nbsp;вы всегда будете в&nbsp;центре круговорота захватывающих событий. В&nbsp;активе Toyota RAV4&nbsp;на выбор принципиально новые бензиновые двигатели (2.0&nbsp;л и&nbsp;2.5&nbsp;л) и&nbsp;новые трансмиссии&nbsp;&mdash; уникальный вариатор с&nbsp;механической первой и&nbsp;задней передачей, а&nbsp;также 8-ступенчатая АКПП.</div>
+
+                    <div class="newKsp-info_close">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="newKsp-item">
+                <figure class="newKsp-kv" style="background-image:url(//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ksp-1-3_tcm-3020-1768099.jpg)">&nbsp;</figure>
+
+                <div class="newKsp-button">
+                  <div class="newKsp-button_inner">
+                    <div class="newKsp-button_title"><i class="newKsp-button_arrow"><span class="hidden">Развернуть</span></i>Комфортный</div>
+                  </div>
+                </div>
+
+                <div class="newKsp-info">
+                  <div class="newKsp-info_inner">
+                    <div class="newKsp-info_title">Комфортный</div>
+
+                    <div class="newKsp-info_text">Смелый дизайн, высококачественные материалы отделки и&nbsp;современное оснащение&nbsp;&mdash; в&nbsp;салоне Toyota RAV4 нет места компромиссам.</div>
+
+                    <div class="newKsp-info_close">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <header class="section-title">
+            <h2>Новые возможности</h2>
+          </header>
+        </div>
+
+        <div class="newKsp">
+          <div class="newKsp_inner">
+            <div class="newKsp-items">
+              <div class="newKsp-item">
+                <figure class="newKsp-kv" style="background-image:url(//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ksp-2-1_tcm-3020-1768100.jpg)">&nbsp;</figure>
+
+                <div class="newKsp-button">
+                  <div class="newKsp-button_inner">
+                    <div class="newKsp-button_title"><i class="newKsp-button_arrow"><span class="hidden">Развернуть</span></i>Внедорожный</div>
+                  </div>
+                </div>
+
+                <div class="newKsp-info">
+                  <div class="newKsp-info_inner">
+                    <div class="newKsp-info_title">Внедорожный</div>
+
+                    <div class="newKsp-info_text">Внедорожные возможности Toyota RAV4 выходят на&nbsp;новый уровень: теперь он&nbsp;оснащен системой Multi-terrain Select, которая позволяет не&nbsp;зависеть от&nbsp;капризов природы и&nbsp;адаптировать характеристики Toyota RAV4 под разные типы дорожного покрытия.</div>
+
+                    <div class="newKsp-info_close">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="newKsp-item">
+                <figure class="newKsp-kv" style="background-image:url(//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ksp-2-2-1_tcm-3020-1768101.jpg)">&nbsp;</figure>
+
+                <div class="newKsp-button">
+                  <div class="newKsp-button_inner">
+                    <div class="newKsp-button_title"><i class="newKsp-button_arrow"><span class="hidden">Развернуть</span></i>Надежный</div>
+                  </div>
+                </div>
+
+                <div class="newKsp-info">
+                  <div class="newKsp-info_inner">
+                    <div class="newKsp-info_title">Надежный</div>
+
+                    <div class="newKsp-info_text">Впервые на&nbsp;Toyota RAV4 доступен совершенно новый полный привод с&nbsp;адаптивной системой распределения крутящего момента на&nbsp;каждое из&nbsp;задних колес, который позаботится об&nbsp;отличной управляемости на&nbsp;дороге и&nbsp;впечатляющей проходимости за&nbsp;ее&nbsp;пределами.</div>
+
+                    <div class="newKsp-info_close">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="newKsp-item">
+                <figure class="newKsp-kv" style="background-image:url(//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ksp-2-3-1_tcm-3020-1768102.jpg)">&nbsp;</figure>
+
+                <div class="newKsp-button">
+                  <div class="newKsp-button_inner">
+                    <div class="newKsp-button_title"><i class="newKsp-button_arrow"><span class="hidden">Развернуть</span></i>Проходимый</div>
+                  </div>
+                </div>
+
+                <div class="newKsp-info">
+                  <div class="newKsp-info_inner">
+                    <div class="newKsp-info_title">Проходимый</div>
+
+                    <div class="newKsp-info_text">Уменьшенные свесы и&nbsp;улучшенная геометрия кузова позволяют не&nbsp;только с&nbsp;легкостью парковаться, но&nbsp;и&nbsp;без опаски взбираться на&nbsp;крутые подъемы.</div>
+
+                    <div class="newKsp-info_close">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //новые решения, новые возможности --><!-- Технологии безопасности -->
+
+  <section class="html5-inpage html5-inpage__newKsp" data-section-title="" id="html5-inpage4">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 html5">
+          <div class="container-mob">
+            <header class="section-title">
+              <h2>Технологии безопасности</h2>
+            </header>
+
+            <p>Технологии безопасности в Toyota RAV4 уже завоевали высший балл, 5 звезд, в краш-тестах независимой ассоциации Euro NCAP. Этот успех стал возможен, в частности, благодаря интеллектуальным системам активной безопасности* Toyota Safety Sense, которые предупредят водителя, если ситуация будет выходить из-под контроля.</p>
+          </div>
+
+          <div class="mini-carousel">
+            <div class="bstd-slider__wrapper">
+              <div class="bstd-slider__main-image"><img alt="slide0" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/000-tss-2-0_tcm-3020-1324325.png" title="" /></div>
+
+              <div class="bstd-slider">
+                <div class="bstd-slider__item"><img alt="slide1" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/001-tss-2-0_tcm-3020-1324326.png" title="" /><span>Система предупреждения об&nbsp;угрозе фронтального столкновения с&nbsp;функцией автоматического торможения и&nbsp;распознавания пешеходов (PCS)</span></div>
+
+                <div class="bstd-slider__item"><img alt="slide2" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/002-tss-2-0_tcm-3020-1324327.png" title="" /><span>Динамический круиз-контроль c&nbsp;функцией упрощённого переключения лимита скорости в&nbsp;соответствии с&nbsp;ограничениями на&nbsp;дорожных знаках (iDRCC)</span></div>
+
+                <div class="bstd-slider__item"><img alt="slide3" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/003-tss-2-0_tcm-3020-1324328.png" title="" /><span>Система распознавания и&nbsp;информирования водителя о&nbsp;дорожных знаках (RSA)**</span></div>
+
+                <div class="bstd-slider__item"><img alt="slide4" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/004-tss-2-0_tcm-3020-1324329.png" title="" /><span>Система оповещения о&nbsp;непреднамеренном пересечении дорожной разметки с&nbsp;функцией удержания автомобиля по&nbsp;центру полосы (LTA)</span></div>
+
+                <div class="bstd-slider__item"><img alt="slide5" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/005-tss-2-0_tcm-3020-1324330.png" title="" /><span>Система автоматического переключения дальнего света на&nbsp;ближний (AHB)</span></div>
+
+                <div class="bstd-slider__item"><img alt="slide6" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/006-tss-2-0_tcm-3020-1324331.png" title="" /><span>Система контроля и&nbsp;информирования об&nbsp;усталости водителя (SWS)</span></div>
+              </div>
+            </div>
+
+            <div class="button-wrapper"><a class="btn btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о технологиях" href="https://www.toyota.ru/new-cars/technologies/tss" rel="no follow" target="_blank">Подробнее о технологиях</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //Технологии безопасности --><!-- Зимний пакет -->
+
+  <section class="html5-inpage html5-inpage__newKsp" data-section-title="" id="html5-inpage4">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 html5">
+          <div class="container-mob">
+            <header class="section-title">
+              <h2>Зимний пакет</h2>
+            </header>
+
+            <p>Россия славится суровыми зимами. Поэтому мы&nbsp;предусмотрели всё, чтобы комфорт окружал вас, пока за&nbsp;окном бушует снежная буря. Зимний пакет*** не&nbsp;позволит морозам вносить правки в&nbsp;ваши планы на&nbsp;день.</p>
+          </div>
+
+          <div class="mini-carousel">
+            <div class="bstd-slider__wrapper">
+              <div class="bstd-slider__main-image"><img alt="slide0" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/winter_logo_91-1_tcm-3020-1147815.png" title="" /></div>
+
+              <div class="bstd-slider">
+                <div class="bstd-slider__item"><img alt="slide1" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/08_tcm-3020-1147822.png" title="" /><span>Электрообогрев форсунок стеклоомывателя</span></div>
+
+                <div class="bstd-slider__item"><img alt="slide2" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/07_tcm-3020-1147820.png" title="" /><span>Электрообогрев лобового стекла</span></div>
+
+                <div class="bstd-slider__item"><img alt="slide3" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/02_tcm-3020-1147817.png" title="" /><span>Зеркала заднего вида с&nbsp;обогревом</span></div>
+
+                <div class="bstd-slider__item"><img alt="slide4" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/01_tcm-3020-1147816.png" title="" /><span>Электрообогрев рулевого колеса</span></div>
+
+                <div class="bstd-slider__item"><img alt="slide5" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/03_tcm-3020-1147818.png" title="" /><span>Подогрев передних сидений</span></div>
+
+                <div class="bstd-slider__item"><img alt="slide6" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/05_tcm-3020-1147819.png" title="" /><span>Подогрев задних сидений</span></div>
+
+                <div class="bstd-slider__item"><img alt="slide8" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/06_tcm-3020-1147826.png" title="" /><span>Дополнительные воздуховоды для второго ряда сидений</span></div>
+
+                <div class="bstd-slider__item"><img alt="slide10" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/011_tcm-3020-1147824.png" title="" /><span>Индикатор низкого уровня омывающей жидкости</span></div>
+              </div>
+            </div>
+
+            <div class="button-wrapper"><a class="btn btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о пакете" href="https://www.toyota.ru/new-cars/technologies/winter-pack" rel="no follow" target="_blank">Подробнее о&nbsp;пакете</a></div>
+
+            <div><span class="support-text">* Активные системы безопасности такие, как Toyota Safety Sense, предназначены для помощи водителю. Поскольку из-за внешних факторов существует ограничение на точность распознавания и эффективность управления, обеспечиваемые данной системой, не следует слишком полагаться на систему. Водителю всегда необходимо обращать пристальное внимание на окружающую автомобиль обстановку и соблюдать все меры предосторожности при вождении. Эксплуатация Toyota Safety Sense может быть затронута или затруднена из-за внешних факторов, и Toyota не несет ответственности за какие-либо последствия, связанные с использованием системы.<br />
+              ** Система RSA является частью системы iDRCC.<br />
+            *** Набор опций может отличаться в зависимости от комплектации..</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //Зимний пакет --></div>
+  <!-- //#model-descr --><script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', (event) => { 
+
+      let moveNavButton = () => {
+
+        let menuItem = document.querySelector('.cupExt-nav_item.active'),
+        hoverElement = document.querySelectorAll('.cupExt-nav_hover');
+
+        hoverElement.forEach((item,i) => {
+          item.style.left = menuItem.offsetLeft + 'px';
+          item.style.width = menuItem.offsetWidth + 1 + 'px';
+          item.style.height = menuItem.offsetHeight + 1 + 'px';
+        }); 
+
+      };
+
+      setInterval(moveNavButton, 100);
+
+      let moveNavIntButton = () => {
+
+        let menuItem = document.querySelector('.cupInt-nav_item.active'),
+        hoverElement = document.querySelectorAll('.cupInt-nav_hover');
+
+        hoverElement.forEach((item,i) => {
+          item.style.left = menuItem.offsetLeft + 'px';
+          item.style.width = menuItem.offsetWidth + 1 + 'px';
+          item.style.height = menuItem.offsetHeight + 1 + 'px';
+        }); 
+
+      };
+
+      setInterval(moveNavIntButton, 100);
+
+    //popup
+
+    const togglePopup = () => {
+      const pointsItem = document.querySelectorAll('.cupExt-points_item, .cupInt-points_item'),
+      popupsItem = document.querySelectorAll('.cupExt-popups_item, .cupInt-popups_item'),
+      body = document.querySelector('body');
+        //const popupClose = document.querySelectorAll('.popup-close');
+
+        pointsItem.forEach((point) => {
+          point.addEventListener('click', () => {
+            point.classList.add('active');
+            let popupLink = point.dataset.pointId;
+
+            popupsItem.forEach((popup) => {
+              if(popup.dataset.popupId === popupLink) {
+                popup.classList.add('active');
+              }
+            });
+
+
+          });
+        });
+        
+        body.addEventListener('click', (event) => {
+          let target = event.target;
+
+          if(target.classList.contains('btn-close')){
+
+            popupsItem.forEach((popup) => {
+              popup.classList.remove('active');
+            });
+
+          } else if (target.classList.contains('cupExt-popups_bg') || target.classList.contains('cupInt-popups_bg')){
+            popupsItem.forEach((popup) => {
+              popup.classList.remove('active');
+            });
+          }
+
+        });
+      } 
+
+      togglePopup();
+
+
+
+
+      const openKsp = () => {
+        const newKsp = document.querySelectorAll('.newKsp');
+
+        newKsp.forEach((ksp) => {
+
+          ksp.addEventListener('click', (event) => {
+            let target = event.target;          
+
+            if(target.closest('.newKsp-info_text') || target.closest('.newKsp-info_title')) {
+              return;
+            }
+
+            child = target.closest('.newKsp-item');
+            let parent = child.closest('.newKsp-items'),
+            item = document.querySelectorAll('.newKsp-item'),
+            items = document.querySelectorAll('.newKsp-items');
+
+            if(!child.classList.contains('active') && !parent.classList.contains('active')) {
+              child.classList.add('active');
+              parent.classList.add('active');
+              if(document.body.clientWidth < 1024) {
+                document.body.classList.add('modal-open');
+              }
+            } else if(child.classList.contains('active') && parent.classList.contains('active')) {
+              child.classList.remove('active');
+              parent.classList.remove('active');
+              if(document.body.clientWidth < 1024) {
+                document.body.classList.remove('modal-open');
+              }
+            }  else if(!child.classList.contains('active') && parent.classList.contains('active')) {
+              item.forEach((elem)=> {
+                elem.classList.remove('active');
+              });
+              items.forEach((elem)=> {
+                elem.classList.remove('active');
+              });
+              parent.classList.add('active');
+              child.classList.add('active');
+            }
+
+
+          });
+
+        });
+
+      }
+
+      openKsp();
+
+
+
+
+    });
+  </script>
