@@ -1,0 +1,1337 @@
+<style type="text/css">/*стили страницы*/
+
+#blinds {
+  max-width: none !important;
+}
+
+
+@media (min-width: 768px) {
+  #blinds .container {
+    max-width: 750px !important;
+  }
+
+}
+
+@media (min-width: 992px) {
+  #blinds .container {
+    max-width: 992px !important;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  #blinds .container {
+    max-width: 1170px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  #blinds .container {
+    max-width: 1240px !important;
+  }
+}
+
+/*exterior front*/
+.about-article .car-part-1 {
+  left: 52%;
+  bottom: 45%;
+}
+
+.about-article .car-part-2 {
+  left: 68%;
+  bottom: 31%;
+}
+
+/*exterior side*/
+.about-article .car-part-3 {
+  left: 71%;
+  bottom: 27%;
+}
+
+.about-article .car-part-4 {
+  left: 50%;
+  bottom: 49%;
+}
+
+/*exterior back*/
+.about-article .car-part-5 {
+  left: 63%;
+  bottom: 49%;
+}
+
+/*interior 1*/
+.about-article .car-part-6 {
+  left: 48%;
+  bottom: 38%;
+}
+
+.about-article .car-part-7 {
+  left: 75%;
+  bottom: 80%;
+}
+
+.about-article .car-part-8 {
+  left: 34%;
+  bottom: 68%;
+}
+
+.about-article .car-part-9 {
+  left: 27%;
+  bottom: 86%;
+}
+
+.about-article .car-part-10 {
+  left: 62%;
+  bottom: 20%;
+}
+
+/*interior 2*/
+.about-article .car-part-11 {
+  left: 64%;
+  bottom: 36%;
+}
+
+.about-article .car-part-12 {
+  left: 27%;
+  bottom: 30%;
+}
+
+.about-article .car-part-13 {
+  left: 30%;
+  bottom: 39%;
+}
+
+
+.about-article .car-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /*opacity: 0.8;*/
+
+  -ms-touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+.about-article .car-part_left .car-icon {
+  //left: auto;
+  //right: 0;
+}
+
+.about-article .car-part.active .car-icon {
+  transform: scale(1.2) rotate(180deg);
+  /*opacity: 0.8;*/
+}
+
+.about-article .car-icon:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  //background: rgba(229, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: scale(1.5);
+}
+
+.about-article .car-icon span {
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #555;
+  color: transparent;
+  font-size: 30px;
+  font-family: Arial, 'sans-serif';
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.about-article .car-icon span:before,
+.about-article .car-icon span:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.about-article .car-icon span:before {
+  width: 2px;
+  height: 10px;
+}
+
+.about-article .car-icon span:after {
+  height: 2px;
+  width: 10px;
+}
+
+@media(max-width: 767px) {
+  .article .b-car-part,
+  .article .popups {display: block;}
+  /*.article .camry-new .popup {position: relative; height: auto; display: none;}*/
+  .article .camry-new .popup.active {display: block; background-color: #eee; background-size: 190% auto; padding-top: 110%; background-position: 0 0;}
+  .article .camry-new .popup-text {width: 100%; float: none;}
+  .article .camry-new .popup-text h5 {margin-bottom: 0; font-size: 20px;}
+}
+
+
+/* награды */
+#b-awards.new-camry {
+  background: url(https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/1449-camry-awards_tcm-3020-1531680.jpg) center center no-repeat;
+}
+
+.awards-item p {
+  color: #000000;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.awards-button {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.awards-button .btn {
+  margin-right: 0;
+  min-width: 100px;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+.awards-item-wrapper {
+  overflow: hidden;
+}
+
+@media ( max-width: 992px) {
+  .awards-item {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .bstd-slidetab .slides {
+    min-height: 327px;
+  }
+  .awards-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .awards-item  {
+    width: 187px !important;
+  }
+}
+
+@media ( max-width: 992px) {
+  #b-awards.new-camry {
+    background-size: cover !important;
+  }
+}
+
+
+/*большой фон*/
+.model-page-fon {    
+  /*background: url(https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/back.jpg) 50% 100% no-repeat; - к нам заливать - мылит*/
+  background: url(//static.toyota.ru/tridion/toyota/carchapter/blinds/camry-se/back.jpg) 50% 100% no-repeat; 
+  margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+  .model-page-fon {    
+    background: none;
+  }
+}
+
+
+.blind-box_right .blind-box-img {
+  max-width: 100% !important;
+}
+/*изображения в табах для десктопа и моб*/
+.blind-box-img.mob {
+    display: none !important;
+    max-width: 100% !important;
+}
+.blind-box-img.desk {
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+  .blind-box-img.mob {
+      display: block !important;
+  }
+  .blind-box-img.desk {
+    display: none !important;
+  }
+}
+
+
+.slider {
+  margin-bottom: 0 !important;
+}
+
+
+.article .blind-tab-item {
+  color: #000 !important;
+}
+
+.blind-tab-item.active::after {
+  background-color: #000 !important;
+}
+
+
+
+.b-blind-wrap_exterior .car-part-1 {
+  left: 27%;
+    bottom: 67%;
+}
+
+.b-blind-wrap_exterior .car-part-2 {
+  left: 45%;
+    bottom: 46%;
+}
+
+.b-blind-wrap_exterior .car-part-3 {
+  left: 62%;
+    bottom: 33%;
+}
+
+.b-blind-wrap_exterior .car-part-4 {
+  left: 41%;
+    bottom: 59%;
+}
+
+/*exterior side*/
+.b-blind-wrap_exterior .car-part-5 {
+    left: 25%;
+    bottom: 66%;
+}
+
+.b-blind-wrap_exterior .car-part-6 {
+    left: 75%;
+    bottom: 47%;
+}
+
+.b-blind-wrap_exterior .car-part-7 {
+    left: 15%;
+    bottom: 58%;
+}
+
+.b-blind-wrap_exterior .car-part-8 {
+    left: 64%;
+    bottom: 56%;
+}
+
+/*exterior back*/
+.b-blind-wrap_exterior .car-part-9 {
+    left: 52%;
+    bottom: 66%;
+}
+
+.b-blind-wrap_exterior .car-part-10 {
+    left: 77%;
+    bottom: 50%;
+}
+
+.b-blind-wrap_exterior .car-part-11 {
+    left: 30%;
+    bottom: 34%;
+}
+
+.b-blind-wrap_exterior .car-part-12 {
+    left: 50%;
+    bottom: 54%;
+}
+
+.b-blind-wrap_exterior .car-part-13 {
+    left: 35%;
+    bottom: 48%;
+}
+
+.b-blind-wrap_exterior .car-part-14 {
+    left: 71%;
+    bottom: 56%;
+}
+
+.b-blind-wrap_exterior .car-part-15 {
+    top: 35%;
+    left: 8%;
+}
+
+.b-blind-wrap_exterior .car-part-16 {
+    top: 35%;
+    left: 23%;
+}
+
+/*interior-1*/
+.car-part-21 {
+    left: 67%;
+    bottom: 59%;
+}
+
+.car-part-22 {
+    left: 31%;
+    bottom: 7%;
+}
+
+/*interior-2*/
+.car-part-23 {
+    left: 70%;
+    bottom: 66%;
+}
+
+
+/*popup*/
+.popup {
+    transform: scale(0) !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    z-index: 100 !important;
+    top: -100px !important;
+    left: -100px !important;
+    width: 298px !important;
+    max-width: none !important;
+    height: auto !important;
+    padding: 4px !important;
+    border-radius: 3px !important;
+    background-color: #fff !important;
+    transition: opacity 0.3s !important;
+    border-color: #fff !important;
+  }
+
+  .car-part.active .popup {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+    box-shadow: 0 0 0 2500px rgba(0, 0, 0, 0.25) !important;
+  }
+
+  .car-part.active .popup img {
+    max-width: 100%;
+  }
+  
+
+  .popup-close {
+    position: absolute !important;
+    top: -11px !important;
+    right: -11px !important;
+    width: 32px !important;
+    height: 32px !important;
+    z-index: 200 !important;
+  }
+
+  .popup .popup-close .btn-close {  
+    background-image: url(/bundles/brandtoyota2018/images/svg/static/close_white.svg) !important;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 10px 10px !important;
+    background-color: #000 !important;
+    top: 0 !important;
+    right: 0 !important;
+  }
+
+  .popup-close .btn-close:active {
+    background-image: url(/bundles/brandtoyota2018/images/svg/static/close_white.svg) !important;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 10px 10px !important;
+  }
+
+  .popup-close .btn-close:hover {
+    background-color: #333 !important;
+  }
+
+  .popup-img {
+    width: 100% !important;
+  }
+
+  .popup-img img {
+    max-width: 100% !important;
+  }
+
+  .popup-text {
+    padding: 15px 5px !important;
+    text-align: center !important;
+  }
+
+  .popup-text h5 {
+    padding-bottom: 30px !important;
+    margin-bottom: 30px;
+    font-family: "T1 Body Font", "Open Sans",Arial,Helvetica,sans-serif !important;
+    font-weight: normal !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    color: #222 !important;
+    /* border-bottom: 1px solid #1a1a1a; */
+  }
+
+  .popup-text p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    color: #595d60 !important;
+    text-indent: 0 !important;
+  }
+
+  .camry-new .popup-text {
+    width: 100% !important;
+    float: none !important;
+  }
+
+  .car-part-22 .popup {
+    top: -208px !important;
+  }
+
+  .car-part-23 .popup {
+    top: -208px !important;
+  }  
+
+  @media (max-width: 991px) {
+    .car-part.active .popup {
+      transform: scale(1) !important;
+    }
+
+    .car-part-1 .popup {
+      top: -85px !important;
+    }
+
+    .car-part-1 .popup {
+      top: -134px !important;
+      left: -132px !important;
+    }    
+
+    .car-part-4 .popup {
+      top: -85px !important;
+    }
+
+    .car-part-5 .popup {
+      top: -85px !important;
+    }
+
+    .car-part-6 .popup {
+      left: -165px !important;
+    }
+
+    .car-part-8 .popup {
+      left: -150px !important;
+    }
+
+    .car-part-9 .popup {
+      left: -101px !important;
+      top: -85px !important;
+    }
+
+    .car-part-10 .popup {
+      left: -165px !important;
+    }
+
+    .car-part-11 .popup {
+      top: -128px !important;
+    }
+
+    .car-part-14 .popup {
+      left: -150px !important;
+    }
+
+    .car-part-15 .popup {
+      left: -80px !important;
+    }
+
+    .car-part-21 .popup {
+      top: -90px !important;
+      left: -150px !important;
+    }
+
+    .car-part-22 .popup {
+      top: -175px !important;
+    }
+
+    .car-part-23 .popup {
+      top: -90px !important;
+      left: -150px !important;
+    }
+
+    
+  }
+
+  @media (max-width: 479px) {
+    .car-part.active .popup {
+      transform: scale(.5) !important;
+    }
+  }
+
+
+  .awards-button .btn.active.focus, 
+    .awards-button .btn.active:focus, 
+    .awards-button .btn.focus, 
+    .awards-button .btn:active.focus, 
+    .awards-button .btn:active:focus, 
+    .awards-button .btn:focus {
+      background-color: #f0f0f0;
+  }
+
+
+  @media (max-width: 768px) {
+    
+
+    /*exterior front*/
+    .b-blind-wrap_exterior .car-part-1 {
+        left: 28%;
+        bottom: 55%;
+    }
+
+    .b-blind-wrap_exterior .car-part-2 {
+        left: 45%;
+        bottom: 29%;
+    }
+
+    .b-blind-wrap_exterior .car-part-3 {
+        left: 64%;
+        bottom: 20%;
+    }
+
+    .b-blind-wrap_exterior .car-part-4 {
+        left: 41%;
+        bottom: 40%;
+    }
+
+
+    /*exterior side*/
+    .b-blind-wrap_exterior .car-part-5 {
+        left: 24%;
+        bottom: 52%;
+    }
+
+    .b-blind-wrap_exterior .car-part-6 {
+        left: 77%;
+        bottom: 30%;
+    }
+
+    .b-blind-wrap_exterior .car-part-7 {
+        left: 15%;
+        bottom: 41%;
+    }
+
+    .b-blind-wrap_exterior .car-part-8 {
+        left: 64%;
+        bottom: 40%;
+    }
+
+
+    /*exterior back*/
+    .b-blind-wrap_exterior .car-part-9 {
+        left: 52%;
+        bottom: 53%;
+    }
+
+    .b-blind-wrap_exterior .car-part-10 {
+        left: 78%;
+        bottom: 34%;
+    }
+
+    .b-blind-wrap_exterior .car-part-11 {
+        left: 29%;
+        bottom: 22%;
+    }
+
+    .b-blind-wrap_exterior .car-part-12 {
+        left: 50%;
+        bottom: 41%;
+    }
+
+    .b-blind-wrap_exterior .car-part-13 {
+        left: 36%;
+        bottom: 32%;
+    }
+
+    .b-blind-wrap_exterior .car-part-14 {
+        left: 71%;
+        bottom: 41%;
+    }
+
+    .b-blind-wrap_exterior .car-part-15 {
+        left: 11% !important;
+        bottom: 47% !important;
+        top: auto !important;
+    }
+
+    .b-blind-wrap_exterior .car-part-16 {
+        left: 19%;
+        bottom: 47%;
+        top: auto;
+    }
+
+
+    /*interior-1*/
+    .car-part-21 {
+        left: 67%;
+        bottom: 59%;
+    }
+
+    .car-part-22 {
+        left: 31%;
+        bottom: 7%;
+    }
+
+    .car-part-23 {
+        left: 64%;
+        bottom: 53%;
+    }
+
+    .car-part-24 {
+        left: 33%;
+        bottom: 83%;
+    }
+
+
+    /*interior-2*/
+    .car-part-25 {
+        left: 70%;
+        bottom: 66%;
+    }
+
+    .car-part-26 {
+        left: 70%;
+        bottom: 60%;
+    }
+
+    
+}
+
+.nowrap {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+
+
+</style>
+
+
+
+
+<div class="page-content camry-new about-article" id="blinds">
+  
+<div class="model-page-fon">
+
+  <!-- page-header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Toyota Camry</h1>
+
+      <p class="h1_subtitle">&nbsp;</p>
+
+      <p>Toyota Camry&nbsp;— это триумф инженерной мысли и&nbsp;премиальный комфорт, вдохновляющий на&nbsp;новые победы. Уникальная модульная архитектура TNGA*, динамичный дизайн с&nbsp;плавными линиями кузова и&nbsp;передовое техническое оснащение позволяют стать Toyota Camry эталоном бизнес-седана.</p>
+    </div>
+  </section>
+  <!-- //page-header -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <section class="page-content__section2">
+          <header class="section-title">
+            <h3 class="h1">Специальная серия Toyota Camry S-Edition</h3>
+          </header>
+
+          <p>Специальная серия Toyota Camry S-Edition* с&nbsp;первого взгляда заявляет о&nbsp;своем превосходстве уникальным черно-белым исполнением кузова. Двухцветные 18-дюймовые диски, дерзкие накладки на&nbsp;бамперы с&nbsp;красными акцентами и&nbsp;задние фонари с&nbsp;черной окантовкой добавляют экстерьеру еще больше динамики и&nbsp;подчеркивают характер победителя.</p>
+
+          <ul class="blind-tab" ng-init="exteriorActiveTab=&quot;exterior_tab1&quot;">
+            <li class="blind-tab-item active" ng-class="{&quot;active&quot; : exteriorActiveTab === &quot;exterior_tab1&quot;}" ng-click="exteriorActiveTab = &quot;exterior_tab1&quot;">Вид спереди</li>
+            <li class="blind-tab-item" ng-class="{&quot;active&quot; : exteriorActiveTab === &quot;exterior_tab2&quot;}" ng-click="exteriorActiveTab = &quot;exterior_tab2&quot;">Вид сбоку</li>
+            <li class="blind-tab-item" ng-class="{&quot;active&quot; : exteriorActiveTab === &quot;exterior_tab3&quot;}" ng-click="exteriorActiveTab = &quot;exterior_tab3&quot;">Вид сзади</li>
+          </ul>
+
+          <div class="b-blind-wrap b-blind-wrap_exterior">  
+
+
+            <div class="b-blind b-blind__exterior b-blind__exterior-front active" ng-class="{&quot;active&quot; : exteriorActiveTab === &quot;exterior_tab1&quot;}">
+              <div class="slider">
+                
+
+                <div class="blind-box blind-box_right image">
+                  <img alt="" class="blind-box-img desk" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry_front-1_tcm-3020-1864902.png" style="width: 1140px;" title="" />
+                  <img alt="" class="blind-box-img mob" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/Toyota_camry_front_850x450_tcm-3020-1864921.jpg" style="width: 363px;">
+                  <div class="b-car-part">
+                    
+                    <div class="car-part car-part-1" data-popup="1">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-01-2_tcm-3020-1864911.jpg" title="">
+                        <div class="popup-text">
+                          <p>Уникальное черно-белое исполнение кузова</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-2" data-popup="2">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-02-2_tcm-3020-1864912.jpg" title="">
+                        <div class="popup-text">
+                          <p>Двухцветные 18-дюймовые диски</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-3" data-popup="3">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-03-1_tcm-3020-1864913.jpg" title="">
+                        <div class="popup-text">
+                          <p>Дерзкие накладки на передний бампер с красными акцентами</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-4" data-popup="4">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-06-1_tcm-3020-1867753.jpg" title="">
+                        <div class="popup-text">
+                          <p>Черные боковые зеркала</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+
+                
+              </div>
+
+              
+            </div>
+
+
+
+
+            <div class="b-blind b-blind__exterior b-blind__exterior-side" ng-class="{&quot;active&quot; : exteriorActiveTab === &quot;exterior_tab2&quot;}">
+              <div class="slider">
+                
+
+                <div class="blind-box blind-box_right  image">
+                  <img alt="" class="blind-box-img desk" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry_profil-1_tcm-3020-1864896.png" style="width: 1140px;" title="" />
+                  <img alt="" class="blind-box-img mob" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/Toyota_camry_profil_850x450_tcm-3020-1864897.jpg" style="width: 363px;">
+                  <div class="b-car-part">
+                    <div class="car-part car-part-5" data-popup="5">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-01-2_tcm-3020-1864911.jpg" title="">
+                        <div class="popup-text">
+                          <p>Уникальное черно-белое исполнение кузова</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-6" data-popup="6">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-02-2_tcm-3020-1864912.jpg" title="">
+                        <div class="popup-text">
+                          <p>Двухцветные 18-дюймовые диски</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-7" data-popup="7">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-04-2_tcm-3020-1864914.jpg" title="">
+                        <div class="popup-text">
+                          <p>Задние фонари с черной окантовкой</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-8" data-popup="8">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-06-1_tcm-3020-1867753.jpg" title="">
+                        <div class="popup-text">
+                          <p>Черные боковые зеркала</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-15" data-popup="8">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ksp-ext-07_tcm-3020-1864920.jpg" title="">
+                        <div class="popup-text">
+                          <p>Черный аэродинамический спойлер</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                
+              </div>
+
+              
+            </div>
+
+
+
+
+            <div class="b-blind b-blind__exterior b-blind__exterior-back" ng-class="{&quot;active&quot; : exteriorActiveTab === &quot;exterior_tab3&quot;}">
+              <div class="slider">
+                
+
+                <div class="blind-box blind-box_right  image">
+                  <img alt="" class="blind-box-img desk" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry_back-1_tcm-3020-1864890.png" style="width: 1140px;" title="" />
+                  <img alt="corolla" class="blind-box-img mob" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/Toyota_camry_back_850x450_tcm-3020-1864891.jpg" style="width: 363px;">
+                  <div class="b-car-part">
+                    <div class="car-part car-part-9" data-popup="9">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-01-2_tcm-3020-1864911.jpg" title="">
+                        <div class="popup-text">
+                          <p>Уникальное черно-белое исполнение кузова</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-10" data-popup="10">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-02-2_tcm-3020-1864912.jpg" title="">
+                        <div class="popup-text">
+                          <p>Двухцветные 18-дюймовые диски</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-11" data-popup="11">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-03-2_tcm-3020-1867751.jpg" title="">
+                        <div class="popup-text">
+                          <p>Дерзкие накладки на задний бампер с красными акцентами</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-12" data-popup="12">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-04-2_tcm-3020-1864914.jpg" title="">
+                        <div class="popup-text">
+                          <p>Задние фонари с черной окантовкой</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-13" data-popup="13">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-05-1_tcm-3020-1867752.jpg" title="">
+                        <div class="popup-text">
+                          <p>Логотип S-Edition</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-14" data-popup="14">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-ext-06-2_tcm-3020-1867754.jpg" title="">
+                        <div class="popup-text">
+                          <p>Черные боковые зеркала</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="car-part car-part-16" data-popup="16">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                      <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="//s3-eu-west-1.amazonaws.com/tme-toyotaone-prev/toyotaone/ruru/ksp-ext-07_tcm-3020-1864920.jpg" title="">
+                        <div class="popup-text">
+                          <p>Черный аэродинамический спойлер</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                
+              </div>
+
+              
+            </div>
+
+
+
+          </div>
+
+
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <section class="page-content__section">
+          <header class="section-title">
+            <h3>Интерьер Toyota Camry S-Edition</h3>
+          </header>
+
+          <p>Интерьер Toyota Camry S-Edition создан в&nbsp;спортивном стиле, специально для тех, кто не&nbsp;признает ограничений и&nbsp;привык брать от&nbsp;жизни только самое лучшее. Просторный и&nbsp;функциональный салон с&nbsp;красными акцентами, оснащенный самыми передовыми технологиями, и&nbsp;спортивный дизайн сидений с&nbsp;красной прострочкой дополняют уникальный образ автомобиля.</p>
+
+          <ul class="blind-tab" ng-init="comfortActiveTab=&quot;comfort_tab11&quot;">
+            <li class="blind-tab-item active" ng-class="{&quot;active&quot; : comfortActiveTab === &quot;comfort_tab11&quot;}" ng-click="comfortActiveTab = &quot;comfort_tab11&quot;">Первый ряд</li>
+            <li class="blind-tab-item" ng-class="{&quot;active&quot; : comfortActiveTab === &quot;comfort_tab12&quot;}" ng-click="comfortActiveTab = &quot;comfort_tab12&quot;">Второй ряд</li>
+          </ul>
+
+          <div class="b-blind b-blind__comfort b-blind__comfort-front active" ng-class="{&quot;active&quot; : comfortActiveTab === &quot;comfort_tab11&quot;}">
+            <div class="slider">
+              
+
+              <div class="blind-box blind-box_right  image"><img alt="" class="blind-box-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/front_tcm-3020-1867603.jpg" style="width: 1140px;" title="" />
+                <div class="b-car-part">
+                  <div class="car-part car-part-21" data-popup="21">
+                    <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                    <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-int-07-1_tcm-3020-1864915.jpg" title="">
+                        <div class="popup-text">
+                          <p>Красные акценты в интерьере</p>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="car-part car-part-22" data-popup="22">
+                    <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                    <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-int-08-1_tcm-3020-1864916.jpg" title="">
+                        <div class="popup-text">
+                          <p>Спортивный дизайн сидений с красной прострочкой</p>
+                        </div>
+                      </div>
+                  </div>
+
+                </div>
+              </div>
+              
+            </div>
+
+            
+          </div>
+
+          <div class="b-blind b-blind__comfort b-blind__comfort-back" ng-class="{&quot;active&quot; : comfortActiveTab === &quot;comfort_tab12&quot;}">
+            <div class="slider">
+              
+
+              <div class="blind-box blind-box_right  image">
+                <img alt="" class="blind-box-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/back_tcm-3020-1867604.jpg" style="width: 1140px;" title="" />
+                <div class="b-car-part">
+                  <div class="car-part car-part-23" data-popup="23">
+                    <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                    <div class="popup">
+                        <div class="popup-close">
+                          <a class="btn btn-close"><svg class="svg-icon svg-icon_correct svg-icon_inverted modal-close__svg" role="img"><use xlink="http://www.w3.org/1999/xlink" xlink:href="#close" xmlns:="" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></a>
+                        </div>
+                        <img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-int-08-2_tcm-3020-1864917.jpg" title="">
+                        <div class="popup-text">
+                          <p>Спортивный дизайн сидений с красной прострочкой</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+
+            
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <section class="page-content__section">
+          <header class="section-title">
+            <h2>Ключевые преимущества Toyota Camry</h2>
+          </header>
+
+          <div class="props-list" style="max-width: 1440px; margin-left: auto; margin-right: auto;">
+            <div class="col-xs-12 col-sm-6 col-lg-4 props-list__card">
+              <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry-ksp5_tcm-3020-1829083(1).jpg" title="" /></div>
+
+              <div class="props-list__info">
+                <div class="props-list__title">Удовольствие от вождения</div>
+
+                <div class="props-list__text">Глобальная модульная архитектура TNGA позволяет применять передовые инженерные решения в&nbsp;области комфорта, надежности и&nbsp;безопасности. Бизнес-седан Toyota Camry создан для тех, кто не&nbsp;признает ограничений и&nbsp;ценит особое удовольствие от&nbsp;вождения.</div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-lg-4 props-list__card">
+                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry-ksp2_tcm-3020-1829084(1).jpg" title="" /></div>
+
+                <div class="props-list__info">
+                  <div class="props-list__title">Уверенный характер</div>
+
+                  <div class="props-list__text">В&nbsp;основе уверенного характера Toyota Camry&nbsp;— мощный двигатель 3.5&nbsp;л в&nbsp;сочетании с&nbsp;обновленной <span class="nowrap">8-ступенчатой</span> автоматической коробкой передач. Он&nbsp;обеспечит стремительное движение навстречу самым амбициозным целям.</div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-lg-4 props-list__card">
+                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry-ksp1_tcm-3020-1838078(1).jpg" title="" /></div>
+
+                <div class="props-list__info">
+                  <div class="props-list__title">Превосходная безопасность</div>
+
+                  <div class="props-list__text">Инновационные системы контроля кругового обзора 360° и&nbsp;мониторинга слепых зон с&nbsp;функцией визуального оповещения обеспечивают безопасность при движении в любых условиях, теперь ситуация не&nbsp;выйдет из-под вашего контроля.</div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-lg-4 props-list__card">
+                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/Camry-KSP-5-image_tcm-3020-1838077(2).jpg" title="" /></div>
+
+                <div class="props-list__info">
+                  <div class="props-list__title">Передовое оснащение</div>
+
+                  <div class="props-list__text">Мультимедийная система Toyota Touch 2&nbsp;c дисплеем 8&nbsp;дюймов и&nbsp;навигацией в&nbsp;сочетании с&nbsp;аудиосистемой JBL, беспроводным зарядным устройством, а&nbsp;также 10-дюймовым цветным проекционным дисплеем на&nbsp;лобовое стекло делают управление Toyota Camry незабываемым.</div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-lg-4 props-list__card">
+                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry-ksp3_tcm-3020-1829085(1).jpg" title="" /></div>
+
+                <div class="props-list__info">
+                  <div class="props-list__title">Динамичный экстерьер</div>
+
+                  <div class="props-list__text">Экстерьер Toyota Camry выделяют полностью светодидная оптика и&nbsp;массивная центральная решетка, подчеркивающие динамичность этого бизнес-седана.</div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-lg-4 props-list__card">
+                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/Camry-KSP-4-image_tcm-3020-1838076(1).jpg" title="" /></div>
+
+                <div class="props-list__info">
+                  <div class="props-list__title">Премиальный комфорт</div>
+
+                  <div class="props-list__text">Интерьер Toyota Camry впечатлит даже самый взыскательный вкус. Просторный и&nbsp;функциональный салон Toyota Camry дополняют премиальные материалы отделки, а&nbsp;комфортные сиденья с&nbsp;электрорегулировкой позволяют забыть, что поездки на&nbsp;автомобиле бывают утомительными.</div>
+                </div>
+              </div>
+
+              
+
+              
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <section class="page-content__section">
+            <header class="section-title">
+              <h2>Зимний пакет</h2>
+            </header>
+
+            <p>Россия славится суровыми зимами. Поэтому мы&nbsp;предусмотрели всё, чтобы комфорт окружал вас, пока за&nbsp;окном бушует снежная буря. Зимний пакет* не&nbsp;позволит морозам вносить правки в&nbsp;ваши планы на&nbsp;день.</p>
+
+            <div class="mini-carousel">
+              <div class="bstd-slider__wrapper">
+                <div class="bstd-slider__main-image"><img alt="slide0" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/winter_logo_91-1_tcm-3020-1147815.png" title="" /></div>
+
+                <div class="bstd-slider">
+                  <div class="bstd-slider__item"><img alt="slide1" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/08_tcm-3020-1147822.png" title="" /><span>Электрообогрев форсунок стеклоомывателя</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide2" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/07_tcm-3020-1147820.png" title="" /><span>Электрообогрев лобового стекла</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide3" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/02_tcm-3020-1147817.png" title="" /><span>Зеркала заднего вида с&nbsp;обогревом</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide4" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/01_tcm-3020-1147816.png" title="" /><span>Электрообогрев рулевого колеса</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide5" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/03_tcm-3020-1147818.png" title="" /><span>Подогрев передних сидений</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide6" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/05_tcm-3020-1147819.png" title="" /><span>Подогрев задних сидений</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide8" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/06_tcm-3020-1147826.png" title="" /><span>Дополнительные воздуховоды для второго ряда сидений</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide10" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/011_tcm-3020-1147824.png" title="" /><span>Индикатор низкого уровня омывающей жидкости</span></div>
+                </div>
+              </div>
+
+              <div class="button-wrapper"><a class="btn btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о пакете" href="https://www.toyota.ru/new-cars/technologies/winter-pack" rel="no follow" target="_blank">Подробнее о&nbsp;пакете</a></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="container last-model-description-block">
+      <div class="row">
+        <div class="col-xs-12">
+          <section class="page-content__section">
+            <header class="section-title">
+              <h2>Toyota Safety Sense</h2>
+            </header>
+
+            <p>Инновационные технологии Toyota обеспечивают высочайший уровень безопасности вашего движения. Интеллектуальные системы активной и пассивной безопасности* предупредят вас, если ситуация будет выходить из-под вашего контроля.</p>
+
+            <div class="mini-carousel">
+              <div class="bstd-slider__wrapper">
+                <div class="bstd-slider__main-image"><img alt="slide0" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/000-tss-2-0_tcm-3020-1324325.png" title="" /></div>
+
+                <div class="bstd-slider">
+                  <div class="bstd-slider__item"><img alt="slide1" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/001-tss-2-0_tcm-3020-1324326.png" title="" /><span>Система предупреждения об&nbsp;угрозе фронтального столкновения с&nbsp;функцией автоматического торможения и&nbsp;распознавания пешеходов (PCS)</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide2" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/002-tss-2-0_tcm-3020-1324327.png" title="" /><span>Круиз-контроль с&nbsp;функцией поддержания безопасной дистанции до&nbsp;впереди идущего автомобиля во&nbsp;всем диапазоне скоростей (DRCC)</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide3" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/003-tss-2-0_tcm-3020-1324328.png" title="" /><span>Система распознавания и&nbsp;информирования водителя о&nbsp;дорожных знаках (RSA)</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide4" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/004-tss-2-0_tcm-3020-1324329.png" title="" /><span>Система оповещения о&nbsp;непреднамеренном пересечении дорожной разметки с&nbsp;функцией возврата в&nbsp;полосу (LDA)</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide5" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/005-tss-2-0_tcm-3020-1324330.png" title="" /><span>Система автоматического переключения дальнего света на&nbsp;ближний (AHB)</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide6" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/006-tss-2-0_tcm-3020-1324331.png" title="" /><span>Система контроля и&nbsp;информирования об&nbsp;усталости водителя (SWS)</span></div>
+                </div>
+              </div>
+
+              <div class="button-wrapper"><a class="btn btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о технологиях" href="https://www.toyota.ru/new-cars/technologies/tss" rel="no follow" target="_blank">Подробнее о технологиях</a></div>
+
+              <p style="font-size: 13px; line-height: 22px; margin-top: 20px;"><span style="color:#FF0000;">* </span>Набор опций может отличаться в зависимости от комплектации<br />
+              Новые активные системы безопасности такие, как Toyota Safety Sense, предназначены для помощи водителю. Поскольку из-за внешних факторов существует ограничение на точность распознавания и эффективность управления, обеспечиваемые данной системой, не следует слишком полагаться на систему. Водителю всегда необходимо обращать пристальное внимание на окружающую автомобиль обстановку и соблюдать все меры предосторожности при вождении. Эксплуатация Toyota Safety Sense может быть затронута или затруднена из-за внешних факторов, и Toyota не несет ответственности за какие-либо последствия, связанные с использованием системы.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="row last-model-description-block">
+      <div class="col-xs-12"><!-- page-content__section -->
+        <section class="page-content__section page-content__section_width100">
+          <header class="section-title">
+            <h2>Награды</h2>
+          </header>
+
+          <div class="row">
+            <div class="col-xs-12 html5">
+              <div class="new-camry" id="b-awards">
+                <div class="container">
+                  <div class="awards">
+                    <div class="awards-wrapper">
+                      <div class="awards-item-wrapper">
+                        <figure class="awards-item"><img alt="Автостат 2017" class="awards-item-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/4-4_tcm-3020-1660791.png" title="" />
+                          <fieldset>
+                            <p>Автомобиль года<br />
+                              в России<br />
+                            2019</p>
+                          </fieldset>
+                        </figure>
+
+                        <figure class="awards-item"><img alt="Автомобиль года 2016" class="awards-item-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/grand-prix-za-rulem-2019_186x254_tcm-3020-1625188.png" title="" />
+                          <fieldset>
+                            <p>Гран-при журнала<br />
+                              &laquo;За рулем&raquo;<br />
+                            2019</p>
+                          </fieldset>
+                        </figure>
+
+                        <figure class="awards-item"><img alt="Гран-при За рулем 2016" class="awards-item-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/reliable-brand-1-186x254_tcm-3020-1531679.png" title="" />
+                          <fieldset>
+                            <p>Автомобиль года:<br />
+                              &laquo;Самый надежный<br />
+                            автомобиль&raquo;</p>
+                          </fieldset>
+                        </figure>
+                      </div>
+
+                      <div class="awards-button"><a class="btn btn-grey awards-item-link" href="https://www.toyota.ru/world-of-toyota/awards/" rel="no follow" target="_blank"><span>Узнать больше</span> </a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- //page-content__section --></div>
+      </div>
+    </div>

@@ -1,0 +1,945 @@
+<style type="text/css">/*стили страницы*/
+
+#blinds {
+  max-width: none !important;
+}
+
+
+@media (min-width: 768px) {
+  #blinds .container {
+    max-width: 750px !important;
+  }
+
+}
+
+@media (min-width: 992px) {
+  #blinds .container {
+    max-width: 992px !important;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  #blinds .container {
+    max-width: 1170px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  #blinds .container {
+    max-width: 1240px !important;
+  }
+}
+
+/*exterior front*/
+.about-article .car-part-1 {
+  left: 52%;
+  bottom: 45%;
+}
+
+.about-article .car-part-2 {
+  left: 68%;
+  bottom: 31%;
+}
+
+/*exterior side*/
+.about-article .car-part-3 {
+  left: 71%;
+  bottom: 27%;
+}
+
+.about-article .car-part-4 {
+  left: 50%;
+  bottom: 49%;
+}
+
+/*exterior back*/
+.about-article .car-part-5 {
+  left: 63%;
+  bottom: 49%;
+}
+
+/*interior 1*/
+.about-article .car-part-6 {
+  left: 48%;
+  bottom: 38%;
+}
+
+.about-article .car-part-7 {
+  left: 75%;
+  bottom: 80%;
+}
+
+.about-article .car-part-8 {
+  left: 34%;
+  bottom: 68%;
+}
+
+.about-article .car-part-9 {
+  left: 27%;
+  bottom: 86%;
+}
+
+.about-article .car-part-10 {
+  left: 62%;
+  bottom: 20%;
+}
+
+/*interior 2*/
+.about-article .car-part-11 {
+  left: 64%;
+  bottom: 36%;
+}
+
+.about-article .car-part-12 {
+  left: 27%;
+  bottom: 30%;
+}
+
+.about-article .car-part-13 {
+  left: 30%;
+  bottom: 39%;
+}
+
+
+.about-article .car-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /*opacity: 0.8;*/
+
+  -ms-touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+.about-article .car-part_left .car-icon {
+  //left: auto;
+  //right: 0;
+}
+
+.about-article .car-part.active .car-icon {
+  transform: scale(1.2) rotate(180deg);
+  /*opacity: 0.8;*/
+}
+
+.about-article .car-icon:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  //background: rgba(229, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: scale(1.5);
+}
+
+.about-article .car-icon span {
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  height: 100%;
+  //background: #e50000;
+  background: linear-gradient(to right, #929292, #e1e1e1);
+  //color: #e50000;
+  color: transparent;
+  font-size: 30px;
+  font-family: Arial, 'sans-serif';
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(77, 82, 84, 0.5);
+}
+
+.about-article .car-icon span:before,
+.about-article .car-icon span:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  //background: #fff;
+  background: #4d5254;
+  border-radius: 2px;
+}
+
+.about-article .car-icon span:before {
+  width: 2px;
+  height: 10px;
+}
+
+.about-article .car-icon span:after {
+  height: 2px;
+  width: 10px;
+}
+
+@media(max-width: 767px) {
+  .article .b-car-part,
+  .article .popups {display: block;}
+  .article .camry-new .popup {position: relative; height: auto; display: none;}
+  .article .camry-new .popup.active {display: block; background-color: #eee; background-size: 190% auto; padding-top: 110%; background-position: 0 0;}
+  .article .camry-new .popup-text {width: 100%; float: none;}
+  .article .camry-new .popup-text h5 {margin-bottom: 0; font-size: 20px;}
+}
+
+
+.camry-new .popup-1 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-1_tcm-3020-1331471.jpg') !important;
+}
+
+.camry-new .popup-2 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-2-1_tcm-3020-1331473.jpg') !important;
+}
+
+.camry-new .popup-3 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-3_tcm-3020-1331475.jpg') !important;
+}
+
+.camry-new .popup-4 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-4_tcm-3020-1331477.jpg') !important;
+}
+
+.camry-new .popup-5 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-5_tcm-3020-1331479.jpg') !important;
+}
+
+.camry-new .popup-6 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-6_tcm-3020-1331481.jpg') !important;
+}
+
+.camry-new .popup-7 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-7_tcm-3020-1331486.jpg') !important;
+}
+
+.camry-new .popup-8 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-8_tcm-3020-1331488.jpg') !important;
+}
+
+.camry-new .popup-9 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-9_tcm-3020-1331491.jpg') !important;
+}
+
+.camry-new .popup-10 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-10_tcm-3020-1331493.jpg') !important;
+}
+
+.camry-new .popup-11 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-11_tcm-3020-1331495.jpg') !important;
+}
+
+.camry-new .popup-12 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-12_tcm-3020-1331497.jpg') !important;
+}
+
+.camry-new .popup-13 {
+  background-image: url('https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/ksp-13_tcm-3020-1331499.jpg') !important;
+}
+
+/* награды */
+#b-awards.new-camry {
+  background: url(https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/1449-camry-awards_tcm-3020-1531680.jpg) center center no-repeat;
+}
+
+.awards-item p {
+  color: #000000;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.awards-button {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.awards-button .btn {
+  margin-right: 0;
+  min-width: 100px;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+.awards-item-wrapper {
+  overflow: hidden;
+}
+
+@media ( max-width: 992px) {
+  .awards-item {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .bstd-slidetab .slides {
+    min-height: 327px;
+  }
+  .awards-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .awards-item  {
+    width: 187px !important;
+  }
+}
+
+@media ( max-width: 992px) {
+  #b-awards.new-camry {
+    background-size: cover !important;
+  }
+}
+</style>
+<!-- page-header -->
+<section class="page-header">
+  <div class="container">
+    <h1>Toyota Camry</h1>
+
+    <p class="h1_subtitle">&nbsp;</p>
+
+    <p>Toyota Camry&nbsp;&mdash; это триумф инженерной мысли и&nbsp;премиальный комфорт, вдохновляющий на&nbsp;новые победы. Уникальная модульная архитектура TNGA*, динамичный дизайн с&nbsp;плавными линиями кузова и&nbsp;передовое техническое оснащение позволяют стать Toyota Camry эталоном бизнес-седана.</p>
+  </div>
+</section>
+<!-- //page-header -->
+<style type="text/css">/* VIDEO */
+
+.inset-video_title
+{
+  padding-bottom: 16px;
+}
+
+.blind-text.inset-video
+{
+  margin-bottom: 0;
+}
+
+.inset-video_block
+{
+  margin-bottom: 30px !important;
+}
+
+
+.inset-video_block .content_wrapper
+{
+  position:relative;
+  display: block;
+}
+
+.inset-video_block .content_wrapper .desktop 
+{
+  display: block;
+}
+
+.inset-video_block .content_wrapper .mob
+{
+  display: none;
+}
+
+.inset-video_block .content_wrapper .content
+{
+  position: absolute;
+  top: 0;
+  left: 15px !important;
+  padding: 20px 30px;
+}
+
+.inset-video_block .content_wrapper .content h2
+{
+  text-align: left;
+  color: #fff;
+  padding-bottom: 16px;
+}
+
+
+
+@media only screen and (max-width:768px) {
+
+  .inset-video_block
+  {
+    margin-bottom: 20px;
+  }
+
+  .inset-video_block .content_wrapper .content
+  {
+    position:relative;
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
+
+  .inset-video_block .content h2
+  {
+    display:none;
+  }
+
+  .inset-video_block .btn-desktop
+  {
+    display:inline-block;
+  }
+
+  .inset-video_block .button_wrapper
+  {
+    text-align: center;
+  }
+
+  .inset-video_block .content_wrapper .desktop 
+  {
+    display: none;
+  }
+
+  .inset-video_block .content_wrapper .mob
+  {
+    display: block;
+    max-width: 100%;
+  } 
+
+}
+
+.play-ico {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  margin-right: 1px;
+}
+</style>
+<div class="page-content camry-new about-article" id="blinds">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="inset-video_block">
+          <div class="content_wrapper"><img alt="Camry" class="desktop" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/banner-camry-6_tcm-3020-1324210.jpg" title="" /> <img alt="Camry" class="mob" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/banner-mob-camry-6_tcm-3020-1324211.jpg" title="" />
+            <div class="content">
+              <h2>Toyota Camry<br />
+              Управляй мечтой</h2>
+
+              <div><a class="btn btn-sm btn-success" href="https://www.youtube.com/embed/bSsu7V3HIB4?autoplay=1&amp;color=white&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.toyota.ru&amp;widgetid=1" target="_blank"><span class="play-ico"><svg id="blue_copy" style="fill: #fff;" version="1.1" viewbox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Layer_4_copy"> <path d="M31.356,25.677l38.625,22.3c1.557,0.899,1.557,3.147,0,4.046l-38.625,22.3c-1.557,0.899-3.504-0.225-3.504-2.023V27.7   C27.852,25.902,29.798,24.778,31.356,25.677z"></path> <path d="M69.981,47.977l-38.625-22.3c-0.233-0.134-0.474-0.21-0.716-0.259l37.341,21.559c1.557,0.899,1.557,3.147,0,4.046   l-38.625,22.3c-0.349,0.201-0.716,0.288-1.078,0.301c0.656,0.938,1.961,1.343,3.078,0.699l38.625-22.3   C71.538,51.124,71.538,48.876,69.981,47.977z"></path> <path d="M31.356,25.677l38.625,22.3c1.557,0.899,1.557,3.147,0,4.046   l-38.625,22.3c-1.557,0.899-3.504-0.225-3.504-2.023V27.7C27.852,25.902,29.798,24.778,31.356,25.677z" style="fill:#fff;stroke:#fff;stroke-miterlimit:10;"></path> </g> </svg> </span> Посмотреть видео</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <section class="page-content__section">
+          <header class="section-title">
+            <h2>Отражение статуса</h2>
+          </header>
+
+          <p>Экстерьер Toyota&nbsp;Camry выделяют низкий аэродинамичный силуэт и&nbsp;расширенные колёсные арки, подчёркивающие динамичность этого бизнес-седана.</p>
+
+          <ul class="blind-tab" ng-init="exteriorActiveTab=&quot;exterior_tab1&quot;">
+            <li class="blind-tab-item active" ng-class="{&quot;active&quot; : exteriorActiveTab === &quot;exterior_tab1&quot;}" ng-click="exteriorActiveTab = &quot;exterior_tab1&quot;">Вид спереди</li>
+            <li class="blind-tab-item" ng-class="{&quot;active&quot; : exteriorActiveTab === &quot;exterior_tab2&quot;}" ng-click="exteriorActiveTab = &quot;exterior_tab2&quot;">Вид сбоку</li>
+            <li class="blind-tab-item" ng-class="{&quot;active&quot; : exteriorActiveTab === &quot;exterior_tab3&quot;}" ng-click="exteriorActiveTab = &quot;exterior_tab3&quot;">Вид сзади</li>
+          </ul>
+
+          <div class="b-blind-wrap">
+            <div class="b-blind b-blind__exterior b-blind__exterior-front active" ng-class="{&quot;active&quot; : exteriorActiveTab === &quot;exterior_tab1&quot;}">
+              <div class="slider">
+                <div class="blind-box blind-box_left left image"><img alt="" class="blind-box-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry_before_after-1_tcm-3020-1331465.jpg" style="width: 1140px;" title="" /></div>
+
+                <div class="blind-box blind-box_right right image"><img alt="" class="blind-box-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry_before_after-2_tcm-3020-1331464.jpg" style="width: 1140px;" title="" />
+                  <div class="b-car-part">
+                    <div class="car-part car-part-1" data-popup="1">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                    </div>
+
+                    <div class="car-part car-part-2" data-popup="2">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-dragline js-ga-event ui-draggable ui-draggable-handle" data-ga-name="exterior-move">
+                  <div class="slider-dragline__inner">&nbsp;</div>
+                </div>
+              </div>
+
+              <div class="popups">
+                <div class="popup popup-1">
+                  <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                  <div class="popup-text">
+                    <h5>Полностью светодиодная оптика</h5>
+
+                    <p>Яркие светодиодные фары Toyota&nbsp;Camry, рассеют все сомнения и&nbsp;сделают путь к&nbsp;любым вашим целям предельно ясным.</p>
+                  </div>
+                </div>
+
+                <div class="popup popup-2">
+                  <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                  <div class="popup-text">
+                    <h5>Массивная центральная решётка</h5>
+
+                    <p>Массивная центральная решётка создает уникальность всего образа и&nbsp;делает Toyota&nbsp;Camry заметным издалека.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="b-blind b-blind__exterior b-blind__exterior-side" ng-class="{&quot;active&quot; : exteriorActiveTab === &quot;exterior_tab2&quot;}">
+              <div class="slider">
+                <div class="blind-box blind-box_left left image"><img alt="" class="blind-box-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry_before_after-6_tcm-3020-1331467.jpg" style="width: 1140px;" title="" /></div>
+
+                <div class="blind-box blind-box_right right image"><img alt="" class="blind-box-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry_before_after-4_tcm-3020-1331466.jpg" style="width: 1140px;" title="" />
+                  <div class="b-car-part">
+                    <div class="car-part car-part-3" data-popup="3">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                    </div>
+
+                    <div class="car-part car-part-4" data-popup="4">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-dragline js-ga-event ui-draggable ui-draggable-handle" data-ga-name="">
+                  <div class="slider-dragline__inner">&nbsp;</div>
+                </div>
+              </div>
+
+              <div class="popups">
+                <div class="popup popup-3">
+                  <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                  <div class="popup-text">
+                    <h5>18&quot; легкосплавные диски</h5>
+
+                    <p>Стильные 18&quot; легкосплавные диски подчеркнут динамичный облик Toyota&nbsp;Camry.</p>
+                  </div>
+                </div>
+
+                <div class="popup popup-4">
+                  <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                  <div class="popup-text">
+                    <h5>Интеллектуальная система доступа в&nbsp;автомобиль и&nbsp;запуск двигателя нажатием кнопки Smart Entry &amp; Push Start</h5>
+
+                    <p>В отличие от&nbsp;традиционного ключа система Smart Entry &amp; Push Start представляет собой передатчик, позволяющий отпереть двери, потянув за&nbsp;ручку, а&nbsp;также запереть их&nbsp;нажатием на&nbsp;кнопку. Для запуска или выключения двигателя просто нажмите кнопку Start/Stop. Единственное, что требуется,&nbsp;&mdash; это &laquo;умный ключ&raquo; в&nbsp;кармане или сумочке.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="b-blind b-blind__exterior b-blind__exterior-back" ng-class="{&quot;active&quot; : exteriorActiveTab === &quot;exterior_tab3&quot;}">
+              <div class="slider">
+                <div class="blind-box blind-box_left left image"><img alt="" class="blind-box-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry_before_after-5_tcm-3020-1331463.jpg" style="width: 1140px;" title="" /></div>
+
+                <div class="blind-box blind-box_right right image"><img alt="" class="blind-box-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry_before_after-3_tcm-3020-1331462.jpg" style="width: 1140px;" title="" />
+                  <div class="b-car-part">
+                    <div class="car-part car-part-5" data-popup="5">
+                      <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-dragline js-ga-event ui-draggable ui-draggable-handle" data-ga-name="">
+                  <div class="slider-dragline__inner">&nbsp;</div>
+                </div>
+              </div>
+
+              <div class="popups">
+                <div class="popup popup-5">
+                  <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                  <div class="popup-text">
+                    <h5>Полностью светодиодная оптика</h5>
+
+                    <p>Яркие светодиодные задние фонари Toyota&nbsp;Camry обеспечат отличную видимость автомобиля вне зависимости от&nbsp;погодных условий, а&nbsp;также позволят бизнес-седану эффектно выделиться в&nbsp;потоке.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <section class="page-content__section">
+          <header class="section-title">
+            <h2>Комфорт для максималиста</h2>
+          </header>
+
+          <p>Интерьер Toyota Camry впечатлит даже самый взыскательный вкус. Просторный и&nbsp;функциональный салон Toyota Camry создан для тех, кто не&nbsp;признает ограничений и&nbsp;берёт от&nbsp;жизни только самое лучшее. Комфортные сиденья с&nbsp;электрорегулировкой поясничного подпора и&nbsp;системой вентиляции позволяют забыть, что поездки на&nbsp;автомобиле бывают утомительными, а&nbsp;продуманная до мелочей эргономика и&nbsp;уникальный дизайн центральной консоли позволяют интуитивно управлять всеми технологическими возможностями.</p>
+
+          <ul class="blind-tab" ng-init="comfortActiveTab=&quot;comfort_tab11&quot;">
+            <li class="blind-tab-item active" ng-class="{&quot;active&quot; : comfortActiveTab === &quot;comfort_tab11&quot;}" ng-click="comfortActiveTab = &quot;comfort_tab11&quot;">Первый ряд</li>
+            <li class="blind-tab-item" ng-class="{&quot;active&quot; : comfortActiveTab === &quot;comfort_tab12&quot;}" ng-click="comfortActiveTab = &quot;comfort_tab12&quot;">Второй ряд</li>
+          </ul>
+
+          <div class="b-blind b-blind__comfort b-blind__comfort-front active" ng-class="{&quot;active&quot; : comfortActiveTab === &quot;comfort_tab11&quot;}">
+            <div class="slider">
+              <div class="blind-box blind-box_left left image"><img alt="" class="blind-box-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/camry_before_after-7_tcm-3020-1331469.jpg" style="width: 1140px;" title="" /></div>
+
+              <div class="blind-box blind-box_right right image"><img alt="" class="blind-box-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/interior_1_new_tcm-3020-1331468.jpg" style="width: 1140px;" title="" />
+                <div class="b-car-part">
+                  <div class="car-part car-part-6" data-popup="6">
+                    <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                  </div>
+
+                  <div class="car-part car-part-7" data-popup="7">
+                    <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                  </div>
+
+                  <div class="car-part car-part-8" data-popup="8">
+                    <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                  </div>
+
+                  <div class="car-part car-part-9" data-popup="9">
+                    <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                  </div>
+
+                  <div class="car-part car-part-10" data-popup="10">
+                    <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider-dragline ui-draggable ui-draggable-handle">
+                <div class="slider-dragline__inner">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="popups">
+              <div class="popup popup-6">
+                <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                <div class="popup-text">
+                  <h5>Беспроводное зарядное устройство</h5>
+
+                  <p>Всегда оставаться на&nbsp;связи поможет беспроводное зарядное устройство, благодаря которой можно заряжать смартфон, просто положив его на&nbsp;специальную площадку во&nbsp;время движения автомобиля.</p>
+                </div>
+              </div>
+
+              <div class="popup popup-7">
+                <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                <div class="popup-text">
+                  <h5>Аудиосистема JBL премиум класса</h5>
+
+                  <p>Аудиосистема JBL премиум класса c&nbsp;9&nbsp;высококачественными динамиками, усилителями мощности и&nbsp;уникальной технологией анализа и&nbsp;восстановления качества звука Clari-Fi превращает салон Toyota&nbsp;Camry в&nbsp;концертный зал. Акустические компоненты, разработанные специально Toyota&nbsp;Camry, великолепно воспроизводят музыку любых жанров.</p>
+                </div>
+              </div>
+
+              <div class="popup popup-8">
+                <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                <div class="popup-text">
+                  <h5>7-дюймовый цветной дисплей на&nbsp;приборной панели</h5>
+
+                  <p>Чтобы все самое необходимое всегда было перед глазами водителя, Toyota&nbsp;Camry оснащается 7-дюймовым цветным дисплеем на&nbsp;приборной панели. Теперь вся важная информация отображается на&nbsp;лобовом стекле, непосредственно в&nbsp;поле зрения водителя, позволяя ему не&nbsp;отвлекаться от&nbsp;дороги.</p>
+                </div>
+              </div>
+
+              <div class="popup popup-9">
+                <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                <div class="popup-text">
+                  <h5>10-дюймовый цветной проекционный дисплей на&nbsp;лобовое стекло</h5>
+
+                  <p>На проекционном дисплее отображаются данные спидометра/одометра, информация по&nbsp;работе мультимедиа, систем активной безопасности Toyota&nbsp;Safety&nbsp;Sense и&nbsp;другие параметры, которые водитель может выбрать в&nbsp;зависимости от&nbsp;своих предпочтений. Цветное изображение и&nbsp;обширный перечень возможной информации делают дисплей удобным помощником водителя.<br />
+                  &nbsp;</p>
+                </div>
+              </div>
+
+              <div class="popup popup-10">
+                <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                <div class="popup-text">
+                  <h5>Премиальные материалы отделки</h5>
+
+                  <p>Многослойная архитектура передней панели, высококачественные материалы отделки, акценты декоративных вставок создают гармоничный премиальный стиль.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="b-blind b-blind__comfort b-blind__comfort-back" ng-class="{&quot;active&quot; : comfortActiveTab === &quot;comfort_tab12&quot;}">
+            <div class="slider">
+              <div class="blind-box blind-box_left left image"><img alt="" class="blind-box-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/interior_2_tcm-3020-1331470.jpg" style="width: 1140px;" title="" /></div>
+
+              <div class="blind-box blind-box_right right image"><img alt="" class="blind-box-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/interior_2_tcm-3020-1331470.jpg" style="width: 1140px;" title="" />
+                <div class="b-car-part">
+                  <div class="car-part car-part-11" data-popup="11">
+                    <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                  </div>
+
+                  <div class="car-part car-part-12" data-popup="12">
+                    <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                  </div>
+
+                  <div class="car-part car-part-13" data-popup="13">
+                    <div class="car-icon js-ga-event" data-ga-name="ksp-open"><span>+</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider-dragline ui-draggable ui-draggable-handle">
+                <div class="slider-dragline__inner">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="popups">
+              <div class="popup popup-11">
+                <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                <div class="popup-text">
+                  <h5>Пакет опций для дополнительного комфорта задних пассажиров</h5>
+
+                  <p>Просторный задний ряд сидений с&nbsp;сенсорным пультом управления электрорегулировкой угла наклона спинки, солнечнозащитными шторками, аудиосистемой, климат-контролем обеспечивают истинный комфорт для пассажиров Toyota‬ &lrm;Camry‬.‬‬</p>
+                </div>
+              </div>
+
+              <div class="popup popup-12">
+                <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                <div class="popup-text">
+                  <h5>3-зонный климат-контроль</h5>
+
+                  <p>Благодаря 3-зонному климат-контролю пассажиры сможет настроить комфортную для себя температуру.</p>
+                </div>
+              </div>
+
+              <div class="popup popup-13">
+                <div class="popup-close"><a class="btn btn-close"><span class="icon icon-remove">&nbsp;</span></a></div>
+
+                <div class="popup-text">
+                  <h5>Ионизатор воздуха Nanoe</h5>
+
+                  <p>Ионизатор Nanoe&trade; генерирует отрицательно заряженные ионы, окруженные молекулами воды, которые обладают длительным циклом жизни и&nbsp;способностью глубоко проникать в&nbsp;любые ткани, эффективно блокируя вирусы, бактерии, аллергены и&nbsp;устраняя запахи. Мельчайшие частицы Nanoe размером до&nbsp;20&nbsp;нанометров, что в&nbsp;1&nbsp;млрд раз меньше частиц пара, прекрасно увлажняют кожу и&nbsp;волосы и&nbsp;предотвращают дальнейшую потерю влаги.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <section class="page-content__section">
+          <header class="section-title">
+            <h2>Технологии Toyota Camry</h2>
+          </header>
+
+          <div class="props-list" style="max-width: 1440px; margin-left: auto; margin-right: auto;">
+            <div class="col-xs-12 col-sm-6 col-lg-4 props-list__card">
+              <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/3138-9-3_tcm-3020-1327048.jpg" title="" /></div>
+
+              <div class="props-list__info">
+                <div class="props-list__title">Глобальная модульная архитектура TNGA<br />
+                (Toyota New Global Architecture)</div>
+
+                <div class="props-list__text">В&nbsp;стремлении создавать лучшие во&nbsp;всем автомобили инженеры Toyota разработали новый подход к&nbsp;проектированию&nbsp;&mdash; глобальную модульную архитектуру TNGA (Toyota New Global Architecture). Переход к&nbsp;TNGA позволяет применять передовые инженерные решения и&nbsp;создавать более комфортные, надёжные и&nbsp;безопасные автомобили с&nbsp;новым ярким дизайном, которые дарят особое удовольствие от&nbsp;вождения.<br />
+                  <br />
+                  <a class="btn btn-success tfv2" href="https://www.toyota.ru/new-cars/technologies/tss" rel="no follow" target="_blank">Подробнее</a></div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-lg-4 props-list__card">
+                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/3138-5-ksp-2-small_tcm-3020-1327055.jpg" style="max-width: 300%; height: 100%;" title="" /></div>
+
+                <div class="props-list__info">
+                  <div class="props-list__title">Двигатель 3,5 литра с новой 8-ступенчатой автоматической коробкой передач</div>
+
+                  <div class="props-list__text">В&nbsp;основе уверенного характера Toyota Camry лежит мощный двигатель 3,5&nbsp;л в&nbsp;сочетании с&nbsp;новой 8-ступенчатой автоматической коробкой передач. Он&nbsp;обеспечит стремительное движение навстречу самым амбициозным целям.</div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-lg-4 props-list__card">
+                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/003-camty-top-feature-panoramic-view-500x430_tcm-3020-1327058.jpg" title="" /></div>
+
+                <div class="props-list__info">
+                  <div class="props-list__title">Система кругового обзора 360&deg;</div>
+
+                  <div class="props-list__text">Когда одни становятся узниками обстоятельств, владелец Toyota Camry остаётесь хозяином положения. Контролируйте ситуацию вокруг с&nbsp;помощью 4&nbsp;камер панорамного обзора, образующих объёмную картинку в&nbsp;360&nbsp;градусов, функции &laquo;Вид сквозь капот&raquo; и&nbsp;визуальных подсказок траекторий движения.</div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-lg-4 props-list__card">
+                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/004-camty-top-feature-touch-2-500x430_tcm-3020-1327060.jpg" title="" /></div>
+
+                <div class="props-list__info">
+                  <div class="props-list__title">Мультимедийная система Toyota Touch 2 c дисплеем 8 дюймов и навигацией</div>
+
+                  <div class="props-list__text">Стильный интерфейс с&nbsp;изменяемыми цветовой гаммой и&nbsp;дизайном существенно упрощает использование мультимедийной системы Toyota Touch&nbsp;2. Благодаря высокочувствительному дисплею управлять мультимедиа и&nbsp;переключать любимые мелодии и&nbsp;радиостранции стало просто, как никогда раньше. Интуитивно понятный интерфейс, выполненный аналогично современному смартфону, крупные удобные кнопки меню позволят максимально легко решать ежедневные задачи в&nbsp;дороге.</div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-lg-4 props-list__card">
+                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/3138-5-ksp-3_tcm-3020-1327065.jpg" title="" /></div>
+
+                <div class="props-list__info">
+                  <div class="props-list__title">Система мониторинга слепых зон с функцией визуального оповещения (BSM)</div>
+
+                  <div class="props-list__text">Система повышает уровень безопасности при смене полосы движения. Когда установленные сзади радарные датчики обнаруживают невидимый для водителя другой автомобиль, находящийся в&nbsp;&laquo;мертвой&raquo; зоне, на&nbsp;зеркале заднего вида с&nbsp;соответствующей стороны загорается сигнальная лампа. Если при этом водитель включит поворотник, сигнальная лампа начнет мигать, предупреждая, что перестроение в&nbsp;данный момент небезопасно.</div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-lg-4 props-list__card">
+                <div class="props-list__image"><img alt="" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/006-camty-top-feature-rcta-500x430_tcm-3020-1327071.jpg" title="" /></div>
+
+                <div class="props-list__info">
+                  <div class="props-list__title">Система слежения за слепыми зонами при выезде с парковки задним ходом (RCTA)</div>
+
+                  <div class="props-list__text">Система RCTA работает при движении задним ходом. Датчики-радары &laquo;сканируют&raquo; слепые зоны и&nbsp;распознают транспортные средства, приближающиеся к&nbsp;автомобилю сбоку. При обнаружении таких препятствий система вовремя предупредит вас с&nbsp;помощью мигающего индикатора на&nbsp;боковых зеркалах заднего вида и&nbsp;звукового сигнала.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <section class="page-content__section">
+            <header class="section-title">
+              <h2>Зимний пакет</h2>
+            </header>
+
+            <p>Россия славится суровыми зимами. Поэтому мы&nbsp;предусмотрели всё, чтобы комфорт окружал вас, пока за&nbsp;окном бушует снежная буря. Зимний пакет* не&nbsp;позволит морозам вносить правки в&nbsp;ваши планы на&nbsp;день.</p>
+
+            <div class="mini-carousel">
+              <div class="bstd-slider__wrapper">
+                <div class="bstd-slider__main-image"><img alt="slide0" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/winter_logo_91-1_tcm-3020-1147815.png" title="" /></div>
+
+                <div class="bstd-slider">
+                  <div class="bstd-slider__item"><img alt="slide1" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/08_tcm-3020-1147822.png" title="" /><span>Электрообогрев форсунок стеклоомывателя</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide2" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/07_tcm-3020-1147820.png" title="" /><span>Электрообогрев лобового стекла</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide3" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/02_tcm-3020-1147817.png" title="" /><span>Зеркала заднего вида с&nbsp;обогревом</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide4" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/01_tcm-3020-1147816.png" title="" /><span>Электрообогрев рулевого колеса</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide5" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/03_tcm-3020-1147818.png" title="" /><span>Подогрев передних сидений</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide6" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/05_tcm-3020-1147819.png" title="" /><span>Подогрев задних сидений</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide8" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/06_tcm-3020-1147826.png" title="" /><span>Дополнительные воздуховоды для второго ряда сидений</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide10" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/011_tcm-3020-1147824.png" title="" /><span>Индикатор низкого уровня омывающей жидкости</span></div>
+                </div>
+              </div>
+
+              <div class="button-wrapper"><a class="btn btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о пакете" href="https://www.toyota.ru/new-cars/technologies/winter-pack" rel="no follow" target="_blank">Подробнее о&nbsp;пакете</a></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="container last-model-description-block">
+      <div class="row">
+        <div class="col-xs-12">
+          <section class="page-content__section">
+            <header class="section-title">
+              <h2>Toyota Safety Sense</h2>
+            </header>
+
+            <p>Инновационные технологии Toyota обеспечивают высочайший уровень безопасности вашего движения. Интеллектуальные системы активной и пассивной безопасности* предупредят вас, если ситуация будет выходить из-под вашего контроля.</p>
+
+            <div class="mini-carousel">
+              <div class="bstd-slider__wrapper">
+                <div class="bstd-slider__main-image"><img alt="slide0" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/000-tss-2-0_tcm-3020-1324325.png" title="" /></div>
+
+                <div class="bstd-slider">
+                  <div class="bstd-slider__item"><img alt="slide1" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/001-tss-2-0_tcm-3020-1324326.png" title="" /><span>Система предупреждения об&nbsp;угрозе фронтального столкновения с&nbsp;функцией автоматического торможения и&nbsp;распознавания пешеходов (PCS)</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide2" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/002-tss-2-0_tcm-3020-1324327.png" title="" /><span>Круиз-контроль с&nbsp;функцией поддержания безопасной дистанции до&nbsp;впереди идущего автомобиля во&nbsp;всем диапазоне скоростей (DRCC)</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide3" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/003-tss-2-0_tcm-3020-1324328.png" title="" /><span>Система распознавания и&nbsp;информирования водителя о&nbsp;дорожных знаках (RSA)</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide4" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/004-tss-2-0_tcm-3020-1324329.png" title="" /><span>Система оповещения о&nbsp;непреднамеренном пересечении дорожной разметки с&nbsp;функцией возврата в&nbsp;полосу (LDA)</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide5" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/005-tss-2-0_tcm-3020-1324330.png" title="" /><span>Система автоматического переключения дальнего света на&nbsp;ближний (AHB)</span></div>
+
+                  <div class="bstd-slider__item"><img alt="slide6" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/006-tss-2-0_tcm-3020-1324331.png" title="" /><span>Система контроля и&nbsp;информирования об&nbsp;усталости водителя (LDA)</span></div>
+                </div>
+              </div>
+
+              <div class="button-wrapper"><a class="btn btn-primary" data-bt-category="component" data-bt-componentname="winter_pack_more" data-bt-eventclass="componentevent" data-bt-track="" data-bt-value="Подробнее о технологиях" href="https://www.toyota.ru/new-cars/technologies/tss" rel="no follow" target="_blank">Подробнее о технологиях</a></div>
+
+              <p style="font-size: 13px; line-height: 22px; margin-top: 20px;"><span style="color:#FF0000;">* </span>Набор опций может отличаться в зависимости от комплектации<br />
+              Новые активные системы безопасности такие, как Toyota Safety Sense, предназначены для помощи водителю. Поскольку из-за внешних факторов существует ограничение на точность распознавания и эффективность управления, обеспечиваемые данной системой, не следует слишком полагаться на систему. Водителю всегда необходимо обращать пристальное внимание на окружающую автомобиль обстановку и соблюдать все меры предосторожности при вождении. Эксплуатация Toyota Safety Sense может быть затронута или затруднена из-за внешних факторов, и Toyota не несет ответственности за какие-либо последствия, связанные с использованием системы.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="row last-model-description-block">
+      <div class="col-xs-12"><!-- page-content__section -->
+        <section class="page-content__section page-content__section_width100">
+          <header class="section-title">
+            <h2>Награды</h2>
+          </header>
+
+          <div class="row">
+            <div class="col-xs-12 html5">
+              <div class="new-camry" id="b-awards">
+                <div class="container">
+                  <div class="awards">
+                    <div class="awards-wrapper">
+                      <div class="awards-item-wrapper">
+                        <figure class="awards-item"><img alt="Автостат 2017" class="awards-item-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/4-4_tcm-3020-1660791.png" title="" />
+                          <fieldset>
+                            <p>Автомобиль года<br />
+                              в России<br />
+                            2019</p>
+                          </fieldset>
+                        </figure>
+
+                        <figure class="awards-item"><img alt="Автомобиль года 2016" class="awards-item-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/grand-prix-za-rulem-2019_186x254_tcm-3020-1625188.png" title="" />
+                          <fieldset>
+                            <p>Гран-при журнала<br />
+                              &laquo;За рулем&raquo;<br />
+                            2019</p>
+                          </fieldset>
+                        </figure>
+
+                        <figure class="awards-item"><img alt="Гран-при За рулем 2016" class="awards-item-img" src="https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/reliable-brand-1-186x254_tcm-3020-1531679.png" title="" />
+                          <fieldset>
+                            <p>Автомобиль года:<br />
+                              &laquo;Самый надежный<br />
+                            автомобиль&raquo;</p>
+                          </fieldset>
+                        </figure>
+                      </div>
+
+                      <div class="awards-button"><a class="btn btn-grey awards-item-link" href="https://www.toyota.ru/world-of-toyota/awards/" rel="no follow" target="_blank"><span>Узнать больше</span> </a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- //page-content__section --></div>
+      </div>
+    </div>
