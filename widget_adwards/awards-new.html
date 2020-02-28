@@ -1,0 +1,394 @@
+<div class="slice__content container">
+  <style type="text/css">.at-otd-barriers-trigers, .at-otd-awards-trigers {text-align: center; margin-bottom: 48px;}
+  .at-otd-awards-trigers-item {display: inline-block; cursor: pointer; border-bottom: 2px solid #ffffff; margin: 0 30px; padding: 15px 0;}
+  .at-otd-br-m {display: none;}
+  .at-otd-awards-trigers-item.at-otd-current {pointer-event: none; cursor: default; font-weight: bold; border-bottom-color: #e3010e;}
+  .awards-layout {display: -ms-flexbox; display: -webkit-box; display: -webkit-flex; display: -moz-box; display: flex; -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -15px;}
+  .awards-item {position: relative; width: -webkit-calc(33.33333% - 30px); width: calc(33.33333% - 30px); padding: 30px; border: 1px solid #e1e1e1; margin: 15px; float: left; -moz-box-sizing: border-box; box-sizing: border-box;}
+  .awards-item__img {padding-bottom: 19px; border-bottom: inherit;}
+  .awards-item__img__preview {position: relative; overflow: hidden; width: 100%; height: 100%;}
+  .awards-item__img__preview:before {width: 100%; padding-top: 50%; float: left; content: "";}
+  .awards-item__img__preview img {display: block; position: absolute; max-width: 100%; max-height: 100%; top: 0; left: 0; bottom: 0; right: 0; margin: auto;}
+  .awards-item__img__full {display: none;}
+  .awards-item .figcaption {padding-top: 21px;}
+  .awards-item__head:after, .awards-item__head:before {display: table; content: " ";}
+  .awards-item__head:after {clear: both;}
+  .awards-item__country {display: inline-block; width: auto; padding: 3px 6px 4px; color: #fff; font-size: 13px; line-height: 1.2; font-family: toyota-display,Verdana,Geneva,Arial,Helvetica,serif; background: #d52b1e; margin-right: 6px; font-size: 12px; border-radius: 2px; float: right;}
+  .awards-item__title {display: inline-block; color: #202020; font-size: 16px; margin: 0; font-family: toyota-display,Verdana,Geneva,Arial,Helvetica,serif; margin: 4px 0 0; font-weight: 700;}
+  .awards-item__content {padding: 9px 0 14px;}
+  .awards-item__text {color: #202020; text-indent: 0; letter-spacing: -.005em;}
+  .awards-item__content--full {display: none; border-top: 1px solid #e1e1e1; padding-top: 12px;}
+  .awards-item__title-mini {font-size: 17px; margin-bottom: 8px;}
+  .awards-item__btn--article {margin-top: 20px;}
+  .awards-item__btn--close {display: none; position: absolute; top: -20px; right: -20px; width: 40px; height: 40px; border-radius: 50%; background: #d4d4d4; cursor: pointer; -webkit-transition: all .5s ease; transition: all .5s ease;}
+  .awards-item__btn--close:before {
+    display: inline-block;
+    content: '';
+    background: #202020;
+    font-size: 24px;
+    font-weight: 600;
+    width: 2px;
+    height: 17px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border-radius: 1px;
+  }
+  .awards-item__btn--close:after {
+    display: inline-block;
+    content: '';
+    background: #202020;
+    font-size: 24px;
+    font-weight: 600;
+    width: 2px;
+    height: 17px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border-radius: 1px;
+  }
+  .awards-item__btn--close__line {position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 40%; height: 2px; background: #343434;}
+  .awards-item__btn--close__line--top {-webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
+  .awards-item__btn--close__line--bottom {-webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);}
+  a.awards-item__btn--open {font: 14px/47px toyota-display,Verdana,Geneva,Arial,Helvetica,serif; color: #000; background: #f0f0f0; height: auto; min-width: 147px; padding: 0;}
+  .awards-item.active {width: -webkit-calc(100% - 30px); width: calc(100% - 30px); padding: 50px;}
+  .awards-item.active .awards-item__img {position: absolute; top: 30px; right: 30px; bottom: 30px; width: 30%; padding-bottom: 0; border: none;}
+  .awards-item.active .awards-item__img__preview:before {padding-top: 100%;}
+  .awards-item.active .figcaption {padding: 0 -webkit-calc(30% + 30px) 0 0; padding: 0 calc(30% + 30px) 0 0;}
+  .awards-item.active .awards-item__head {display: block;}
+  .awards-item.active .awards-item__country {font-size: 20px; padding: 0 10px; height: 34px; line-height: 34px; border-radius: 4px; float: none; font-family: toyota-display,Verdana,Geneva,Arial,Helvetica,serif;}
+  .awards-item.active .awards-item__title {display: block; font-size: 20px; margin: 14px 0 0; font-family: toyota-display,Verdana,Geneva,Arial,Helvetica,serif;}
+  .awards-item.active .awards-item__title-mini {font-size: 16px; margin-bottom: 9px;font-weight: 700;
+    color: #202020;}
+    .awards-item.active .awards-item__text {letter-spacing: 0;}
+    .awards-item.active .awards-item__content {padding: 8px 0 24px;}
+    .awards-item.active .awards-item__content--full {display: block; padding: 25px 0 0;}
+    .awards-item.active .awards-item__btn--open {display: none;}
+    .awards-item.active .awards-item__btn--close {display: block; right: 5px; top: 5px; background: transparent;}
+    .awards-item.active .awards-item__btn--article {box-shadow: none; outline: none; border: none; color: #fff; height: auto; border-radius: 24px; margin-top: 14px; padding: 0 36px; background: #e50000; font: 14px/47px toyota-display,Verdana,Geneva,Arial,Helvetica,serif;}
+    .awards-item.active .awards-item__btn--article:hover {background: #ce0000;}
+    
+    @media (max-width:991px) {
+      .awards-item {width: -webkit-calc(50% - 30px); width: calc(50% - 30px);}
+      .awards-item.active .awards-item__img {width: 40%;}
+      .awards-item.active .figcaption {padding: 0 -webkit-calc(40% + 30px) 0 0; padding: 0 calc(40% + 30px) 0 0;}
+    }
+    
+    @media (max-width:767px) {
+      .awards-item__btn--close {top: 15px; right: 15px;}
+      .awards-item.active {padding: 15px;}
+      .awards-item.active .awards-item__img {position: relative; top: 0; right: 0; bottom: 0; width: 100%; padding-bottom: 15px;}
+      .awards-item.active .awards-item__img__preview:before {padding-top: 40%;}
+      .awards-item.active .figcaption {width: 100%; padding: 0;}
+    }
+    
+    @media (max-width:568px) {
+      .awards-item {width: -webkit-calc(100% - 30px); width: calc(100% - 30px); padding: 15px; margin: 7.5px 15px;}
+      .awards-item__img {padding-bottom: 15px;}
+      .awards-item .figcaption {padding-top: 15px;}
+      .at-otd-awards-trigers {margin: -15px auto 15px; width: 214px;}
+      
+      .awards-item.active-tab {display: block !important;}
+    }
+  </style>
+  <div id="awards">
+    <div class="h2 at-otd-title">Награды</div>
+
+    <div class="at-otd-awards-trigers" ng-init="awardsModel='LandCruiser200'">
+      <div class="at-otd-awards-trigers-item at-1 at-otd-current" ng-class="{'at-otd-current': awardsModel === 'LandCruiser200'}" ng-click="awardsModel = 'LandCruiser200'">Land Cruiser 200</div>
+
+      <div class="at-otd-br-m">&nbsp;</div>
+
+      <div class="at-otd-awards-trigers-item at-2" ng-class="{'at-otd-current': awardsModel == 'LandCruiserPrado'}" ng-click="awardsModel = 'LandCruiserPrado'">Land Cruiser Prado</div>
+
+      <div class="at-otd-br-m">&nbsp;</div>
+
+      <div class="at-otd-awards-trigers-item at-3" ng-class="{'at-otd-current': awardsModel == 'Fortuner'}" ng-click="awardsModel = 'Fortuner'">Fortuner</div>
+
+      <div class="at-otd-br-m">&nbsp;</div>
+
+      <div class="at-otd-awards-trigers-item at-4" ng-class="{'at-otd-current': awardsModel == 'Hilux'}" ng-click="awardsModel = 'Hilux'">Hilux</div>
+    </div>
+
+    
+    <section class="b-awards">
+      <div class="bstd-layout">
+        <div class="awards">
+          <div class="awards__year">
+            <div class="awards-layout">              
+              
+
+              <!-- Toyota Land Cruiser 200 == awardsItem21Open-->
+              <div class="figure awards-item" ng-class="{'active': awardsItem21Open === true, 'active-tab': awardsModel === 'LandCruiser200'}" ng-show="awardsModel === 'LandCruiser200' && (!awardsItem22Open && !awardsItem23Open)">
+                <div class="awards-item__img">
+                  <div class="awards-item__img__preview"><img alt="Toyota Land Cruiser 200" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/autostat_2020_tcm-3020-1865719.jpg" alt="Toyota Land Cruiser 200" title="" /></div>
+
+                  <div class="awards-item__img__full"><img alt="Toyota Land Cruiser 200" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/awards-item__img--4x4-2019_tcm-3020-1636671.jpg" title="" /></div>
+                </div>
+
+                <div class="figcaption">
+                  <div class="awards-item__head">
+                    <div class="awards-item__country" data-country="В России">В России</div>
+
+                    <div class="awards-item__title">Toyota Land Cruiser 200</div>
+                  </div>
+
+                  <div class="awards-item__content">
+                    <p class="awards-item__text">Согласно исследованию аналитического агентства «Автостат» Toyota Land Cruiser 200 признан лидером в сегменте SUV (E) по сохранению остаточной стоимости в 2020 году.</p>
+                  </div>
+
+                  <div class="awards-item__content--full">
+                    <div class="awards-item__title-mini">О премии</div>
+
+                    <p class="awards-item__text">Аналитическое агентство «Автостат» изучает остаточную стоимость автомобилей с пробегом не старше трех лет, реализованных официальными дилерами в России и проданных на вторичном рынке, затем рассчитывают индексы остаточной стоимости и формируют рейтинг моделей по сегментам. При этом учитываются объемы продаж в целом по России и исключаются модели, имевшие объемы ниже определенных минимальных значений для каждого из сегментов.</p>
+                  </div>
+                  <a class="btn awards-item__btn--open js-awards-item__btn--open" ng-click="awardsItem21Open = awardsItem21Open == true ? false : true"><span>Подробнее</span></a>
+
+                  <div class="awards-item__btn--close js-awards-item__btn--close" ng-click="awardsItem21Open = awardsItem21Open == true ? false : true">&nbsp;</div>
+                </div>
+              </div>
+
+              
+              <!-- Toyota Land Cruiser 200 == awardsItem22Open -->
+              <div class="figure awards-item" ng-class="{'active': awardsItem22Open === true, 'active-tab': awardsModel === 'LandCruiser200'}" ng-show="awardsModel === 'LandCruiser200' &&  (!awardsItem21Open && !awardsItem23Open)">
+                <div class="awards-item__img">
+                  <div class="awards-item__img__preview"><img alt="Toyota Land Cruiser 200" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/awards-item__img--4x4-2019_tcm-3020-1636671.jpg" title="" /></div>
+
+                  <div class="awards-item__img__full"><img alt="Toyota Land Cruiser 200" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/awards-item__img--4x4-2019_tcm-3020-1636671.jpg" title="" /></div>
+                </div>
+
+                <div class="figcaption">
+                  <div class="awards-item__head">
+                    <div class="awards-item__country" data-country="В России">В России</div>
+
+                    <div class="awards-item__title">Toyota Land Cruiser 200</div>
+                  </div>
+
+                  <div class="awards-item__content">
+                    <p class="awards-item__text">Toyota Land Cruiser 200 стал обладателем престижной российской автомобильной премии «Внедорожник года – 2019» в номинации «Полноразмерный внедорожник».</p>
+                  </div>
+
+                  <div class="awards-item__content--full">
+                    <div class="awards-item__title-mini">О премии</div>
+
+                    <p class="awards-item__text">Ежегодная профессиональная премия «Внедорожник года» проводится журналом «Клуб 4х4». Компетентное жюри и просто все интересующиеся внедорожной темой оценивают проходимость и надежность представленных на рынке моделей и выбирают лучший внедорожник в своем классе.</p>
+                  </div>
+                  <a class="btn awards-item__btn--open js-awards-item__btn--open" ng-click="awardsItem22Open = awardsItem22Open == true ? false : true"><span>Подробнее</span></a>
+
+                  <div class="awards-item__btn--close js-awards-item__btn--close" ng-click="awardsItem22Open = awardsItem22Open == true ? false : true">&nbsp;</div>
+                </div>
+              </div>
+
+              <!-- LandCruiser200 == awardsItem23Open -->
+              <div class="figure awards-item" ng-class="{'active': awardsItem23Open === true, 'active-tab': awardsModel === 'LandCruiser200'}" ng-show="awardsModel === 'LandCruiser200' &&  (!awardsItem21Open && !awardsItem22Open)">
+                <div class="awards-item__img">
+                  <div class="awards-item__img__preview"><img alt="Toyota Land Cruiser 200" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/logo-autostat-2019_tcm-3020-1584891.png" title="" /></div>
+
+                  <div class="awards-item__img__full"><img alt="Toyota Land Cruiser 200" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/logo-autostat-2019_tcm-3020-1584891.png" title="" /></div>
+                </div>
+
+                <div class="figcaption">
+                  <div class="awards-item__head">
+                    <div class="awards-item__country" data-country="В России">В России</div>
+
+                    <div class="awards-item__title">Toyota Land Cruiser 200</div>
+                  </div>
+
+                  <div class="awards-item__content">
+                    <p class="awards-item__text">Согласно исследованию аналитического агентства «Автостат» Toyota Land Cruiser 200 признан лидером в сегменте SUV (E) по сохранению остаточной стоимости в 2019 году.</p>
+                  </div>
+
+                  <div class="awards-item__content--full">
+                    <div class="awards-item__title-mini">О премии</div>
+
+                    <p class="awards-item__text">Аналитическое агентство &laquo;Автостат&raquo; изучает остаточную стоимость автомобилей с пробегом не старше трех лет, реализованных официальными дилерами в России и проданных на вторичном рынке, затем рассчитывают индексы остаточной стоимости и формируют рейтинг моделей по сегментам. При этом учитываются объемы продаж в целом по России и исключаются модели, имевшие объемы ниже определенных минимальных значений для каждого из сегментов.</p>
+                  </div>
+                  <a class="btn awards-item__btn--open js-awards-item__btn--open" ng-click="awardsItem23Open = awardsItem23Open == true ? false : true"><span>Подробнее</span></a>
+
+                  <div class="awards-item__btn--close js-awards-item__btn--close" ng-click="awardsItem23Open = awardsItem23Open == true ? false : true">&nbsp;</div>
+                </div>
+              </div>
+
+
+
+
+
+
+              
+
+              <!-- LandCruiserPrado == awardsItem31Open-->
+              <div class="figure awards-item" ng-class="{'active': awardsItem31Open === true, 'active-tab': awardsModel === 'LandCruiserPrado'}" ng-show="awardsModel === 'LandCruiserPrado' && !awardsItem32Open">
+                <div class="awards-item__img">
+                  <div class="awards-item__img__preview"><img alt="Toyota Land Cruiser Prado" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/autostat_2020_tcm-3020-1865719.jpg" alt="Toyota Land Cruiser 200" title="" /></div>
+
+                  <div class="awards-item__img__full"><img alt="Toyota Land Cruiser Prado" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/autostat_2020_tcm-3020-1865719.jpg" alt="Toyota Land Cruiser 200" title="" /></div>
+                </div>
+
+                <div class="figcaption">
+                  <div class="awards-item__head">
+                    <div class="awards-item__country" data-country="В России">В России</div>
+
+                    <div class="awards-item__title">Toyota Land Cruiser Prado</div>
+                  </div>
+
+                  <div class="awards-item__content">
+                    <p class="awards-item__text">Согласно исследованию аналитического агентства «Автостат» Toyota Land Cruiser Prado признан лидером в сегменте SUV (D) по сохранению остаточной стоимости в 2020 году.</p>
+                  </div>
+
+                  <div class="awards-item__content--full">
+                    <div class="awards-item__title-mini">О премии</div>
+
+                    <p class="awards-item__text">Аналитическое агентство «Автостат» изучает остаточную стоимость автомобилей с пробегом не старше трех лет, реализованных официальными дилерами в России и проданных на вторичном рынке, затем рассчитывают индексы остаточной стоимости и формируют рейтинг моделей по сегментам. При этом учитываются объемы продаж в целом по России и исключаются модели, имевшие объемы ниже определенных минимальных значений для каждого из сегментов.</p>
+                  </div>
+                  <a class="btn awards-item__btn--open js-awards-item__btn--open" ng-click="awardsItem31Open = awardsItem31Open == true ? false : true"> <span>Подробнее</span> </a>
+
+                  <div class="awards-item__btn--close js-awards-item__btn--close" ng-click="awardsItem31Open = awardsItem31Open == true ? false : true">&nbsp;</div>
+                </div>
+              </div>
+
+
+              <!-- LandCruiserPrado == awardsItem32Open-->
+              <div class="figure awards-item" ng-class="{'active': awardsItem32Open === true, 'active-tab': awardsModel === 'LandCruiserPrado'}" ng-show="awardsModel === 'LandCruiserPrado' && !awardsItem31Open">
+                <div class="awards-item__img">
+                  <div class="awards-item__img__preview"><img alt="Toyota Land Cruiser Prado" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/awards-item__img--4x4-2019_tcm-3020-1636671.jpg" title="" /></div>
+
+                  <div class="awards-item__img__full"><img alt="Toyota Land Cruiser Prado" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/awards-item__img--4x4-2019_tcm-3020-1636671.jpg" title="" /></div>
+                </div>
+
+                <div class="figcaption">
+                  <div class="awards-item__head">
+                    <div class="awards-item__country" data-country="В России">В России</div>
+
+                    <div class="awards-item__title">Toyota Land Cruiser Prado</div>
+                  </div>
+
+                  <div class="awards-item__content">
+                    <p class="awards-item__text">Toyota Land Cruiser Prado стал обладателем престижной российской автомобильной премии &laquo;Внедорожник года &ndash; 2019&raquo; в номинации &laquo;Среднеразмерный внедорожник&raquo; по версии Большого жюри (народного голосования читателей).</p>
+                  </div>
+
+                  <div class="awards-item__content--full">
+                    <div class="awards-item__title-mini">О премии</div>
+
+                    <p class="awards-item__text">Ежегодная профессиональная премия &laquo;Внедорожник года&raquo; проводится журналом &laquo;Клуб 4х4&raquo;. Компетентное жюри и просто все интересующиеся внедорожной темой оценивают проходимость и надежность представленных на рынке моделей и выбирают лучший внедорожник в своем классе.</p>
+                  </div>
+                  <a class="btn awards-item__btn--open js-awards-item__btn--open" ng-click="awardsItem32Open = awardsItem32Open == true ? false : true"> <span>Подробнее</span> </a>
+
+                  <div class="awards-item__btn--close js-awards-item__btn--close" ng-click="awardsItem32Open = awardsItem32Open == true ? false : true">&nbsp;</div>
+                </div>
+              </div>
+
+
+
+
+              
+
+
+              
+
+
+              <!-- Fortuner == awardsItem41Open -->
+              <div class="figure awards-item" ng-class="{'active': awardsItem41Open === true, 'active-tab': awardsModel === 'Fortuner'}" ng-show="awardsModel === 'Fortuner'">
+                <div class="awards-item__img">
+                  <div class="awards-item__img__preview"><img alt="Toyota Fortuner" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/awards-item__img--4x4-2019_tcm-3020-1636671.jpg" title="" /></div>
+
+                  <div class="awards-item__img__full"><img alt="Toyota Fortuner" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/awards-item__img--4x4-2019_tcm-3020-1636671.jpg" title="" /></div>
+                </div>
+
+                <div class="figcaption">
+                  <div class="awards-item__head">
+                    <div class="awards-item__country" data-country="В России">В России</div>
+
+                    <div class="awards-item__title">Toyota Fortuner</div>
+                  </div>
+
+                  <div class="awards-item__content">
+                    <p class="awards-item__text">Toyota Fortuner стал обладателем престижной российской автомобильной премии &laquo;Внедорожник года &ndash; 2019&raquo; в номинации &laquo;Среднеразмерный внедорожник&raquo; по версии Экспертного жюри (редакторов и экспертов журнала).</p>
+                  </div>
+
+                  <div class="awards-item__content--full">
+                    <div class="awards-item__title-mini">О премии</div>
+
+                    <p class="awards-item__text">Ежегодная профессиональная премия &laquo;Внедорожник года&raquo; проводится журналом &laquo;Клуб 4х4&raquo;. Компетентное жюри и просто все интересующиеся внедорожной темой оценивают проходимость и надежность представленных на рынке моделей и выбирают лучший внедорожник в своем классе.</p>
+                  </div>
+                  <a class="btn awards-item__btn--open js-awards-item__btn--open" ng-click="awardsItem41Open = awardsItem41Open == true ? false : true"><span>Подробнее</span></a>
+
+                  <div class="awards-item__btn--close js-awards-item__btn--close" ng-click="awardsItem41Open = awardsItem41Open == true ? false : true">&nbsp;</div>
+                </div>
+              </div>
+
+
+              
+
+
+              <!-- Hilux == awardsItem51Open -->
+              <div class="figure awards-item" ng-class="{'active': awardsItem51Open === true, 'active-tab': awardsModel === 'Hilux'}" ng-show="awardsModel === 'Hilux' && !awardsItem52Open">
+                <div class="awards-item__img">
+                  <div class="awards-item__img__preview"><img alt="Toyota Hilux" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/autostat_2020_tcm-3020-1865719.jpg" title="" /></div>
+
+                  <div class="awards-item__img__full"><img alt="Toyota Hilux" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/autostat_2020_tcm-3020-1865719.jpg" title="" /></div>
+                </div>
+
+                <div class="figcaption">
+                  <div class="awards-item__head">
+                    <div class="awards-item__country" data-country="В России">В России</div>
+
+                    <div class="awards-item__title">Toyota Hilux</div>
+                  </div>
+
+                  <div class="awards-item__content">
+                    <p class="awards-item__text">Согласно исследованию аналитического агентства «Автостат» Toyota Hilux признан лидером в сегменте пикапов по сохранению остаточной стоимости в 2020 году.</p>
+                  </div>
+
+                  <div class="awards-item__content--full">
+                    <div class="awards-item__title-mini">О премии</div>
+
+                    <p class="awards-item__text">Аналитическое агентство «Автостат» изучает остаточную стоимость автомобилей с пробегом не старше трех лет, реализованных официальными дилерами в России и проданных на вторичном рынке, затем рассчитывают индексы остаточной стоимости и формируют рейтинг моделей по сегментам. При этом учитываются объемы продаж в целом по России и исключаются модели, имевшие объемы ниже определенных минимальных значений для каждого из сегментов.</p>
+                  </div>
+                  <a class="btn awards-item__btn--open js-awards-item__btn--open" ng-click="awardsItem51Open = awardsItem51Open == true ? false : true"><span>Подробнее</span></a>
+
+                  <div class="awards-item__btn--close js-awards-item__btn--close" ng-click="awardsItem51Open = awardsItem51Open == true ? false : true">&nbsp;</div>
+                </div>
+              </div>
+
+
+              
+              <!-- Hilux == awardsItem052pen-->
+              <div class="figure awards-item" ng-class="{'active': awardsItem52Open === true, 'active-tab': awardsModel === 'Hilux'}" ng-show="awardsModel === 'Hilux' && !awardsItem51Open">
+                <div class="awards-item__img">
+                  <div class="awards-item__img__preview"><img alt="Toyota Hilux" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/logo-autostat-2019_tcm-3020-1584891.png" title="" /></div>
+
+                  <div class="awards-item__img__full"><img alt="Toyota Hilux" src="//t1-cms-ru.images.toyota-europe.com/toyotaone/ruru/logo-autostat-2019_tcm-3020-1584891.png" title="" /></div>
+                </div>
+
+                <div class="figcaption">
+                  <div class="awards-item__head">
+                    <div class="awards-item__country" data-country="В России">В России</div>
+
+                    <div class="awards-item__title">Toyota Hilux</div>
+                  </div>
+
+                  <div class="awards-item__content">
+                    <p class="awards-item__text">Согласно исследованию аналитического агентства «Автостат» Toyota Hilux признан лидером в сегменте пикапов по сохранению остаточной стоимости в 2019 году.</p>
+                  </div>
+
+                  <div class="awards-item__content--full">
+                    <div class="awards-item__title-mini">О премии</div>
+
+                    <p class="awards-item__text">Аналитическое агентство «Автостат» изучает остаточную стоимость автомобилей с пробегом не старше трех лет, реализованных официальными дилерами в России и проданных на вторичном рынке, затем рассчитывают индексы остаточной стоимости и формируют рейтинг моделей по сегментам. При этом учитываются объемы продаж в целом по России и исключаются модели, имевшие объемы ниже определенных минимальных значений для каждого из сегментов.</p>
+                  </div>
+                  <a class="btn awards-item__btn--open js-awards-item__btn--open" ng-click="awardsItem52Open = awardsItem52Open == true ? false : true"><span>Подробнее</span></a>
+
+                  <div class="awards-item__btn--close js-awards-item__btn--close" ng-click="awardsItem52Open = awardsItem52Open == true ? false : true">&nbsp;</div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

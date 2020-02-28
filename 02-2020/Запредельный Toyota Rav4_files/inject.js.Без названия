@@ -1,0 +1,63 @@
+window.inject = (function () {
+
+  return function(params) {
+    window.injectParams  =  window.injectParams || [];
+    window.injectParams.push(params);
+
+    var src = params.src;
+
+    if(
+      params.devSrc &&
+      (
+        window.location.hostname.match('.dev.') ||
+        window.location.hostname.match('.herokuapp.') ||
+        window.location.hostname.match('.bstd.') ||
+        window.location.hostname.match('fiddle.')
+      )
+    ) {
+      src = params.devSrc;
+    }
+    src = src.replace('\/$', '') + '/';
+
+    if(params.scripts instanceof Array) {
+      loadScripts(params.scripts);
+    }
+    else {
+      var scripts = src + (params.scripts || 'inject.json');
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', scripts + '?' + Math.random(), false);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState != 4) return;
+        if (xhr.status === 200) {
+          scripts = JSON.parse(xhr.responseText).map(function(script) {
+            return src + script;
+          });
+          if(params.preScripts) {
+            scripts = params.preScripts.concat(scripts);
+          }
+          loadScripts(scripts);
+        }
+      };
+      xhr.send();
+    }
+
+    function loadScripts(srcList) {
+      f(0);
+      function f(i) {
+        if(i >= srcList.length) return;
+        loadScript(srcList[i], function() {
+          f(++i);
+        });
+      }
+    }
+
+    function loadScript(src, onLoad) {
+      var $script = document.createElement('script');
+      $script.type = "text/javascript";
+      $script.src = src;
+      $script.onload = onLoad;
+      document.body.appendChild($script);
+    }
+  };
+
+})();

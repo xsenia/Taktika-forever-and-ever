@@ -1,0 +1,82 @@
+<style type="text/css">
+.l-banner-title {text-align: 100%; padding-top: 30px; padding-bottom: 16px;}
+#l-banner {position: relative; padding: 47px 0; background: none;}
+#l-banner .container {position: relative;}
+.l-banner {overflow: hidden;}
+.l-banner::after {content: ''; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+
+.rav4 .l-banner:after {
+    background: url(https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/L-banner-RAV4-desktop.jpg) center center no-repeat;
+}
+.l-banner-wrapper {display: inline-flex; flex-direction: column;}
+#l-banner .l-banner-button {text-align: right; padding-top: 30px;}
+.l-banner-button a {margin-right: 5px;}
+.l-banner-item {position: relative; width: 186px; float: left; margin: 5px 0 5px 10px; padding: 20px; background: rgba(255, 255, 255, 0.6); -webkit-border-radius: 3px; border-radius: 3px;}
+.l-banner-item:before {float: left; padding-top: 130%; content: '';}
+.l-banner-item p {color: #000000; font-size: 14px; line-height: 16px; padding: 0 10px; font-weight: 600; }
+.l-banner-item:nth-child(4n - 3) {margin-left: 0; }
+.l-banner-item-img {position: absolute; top: 0px; bottom: 86px; margin: auto; max-width: calc(100% - 40px); max-height: calc(100% - 20px); left: 15px; right: 20px;}
+.l-banner-item fieldset {position: absolute; left: 0; right: 0; bottom: 20px; text-align: center;}
+.l-banner-item fieldset .btn {margin-right: 0; min-width: 100px;}
+.l-banner-mobile {display: none;}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .l-banner-item {width: 126px;}
+  .l-banner-item p {color: #000000; font-size: 11px; line-height: 14px; padding: 0 8px; font-weight: 500;}
+}
+
+@media (max-width: 1200px) {
+ #l-banner {padding: 60px 0 35px;}
+}
+
+@media (max-width: 991px) {
+ .l-banner-title {padding-top: 30px;}
+}
+
+@media (max-width: 767px) {
+    #l-banner {padding: 0!important; background: none !important;}
+    #l-banner .l-banner:after {position: relative; height: auto; background-size: cover; right: 0; bottom: 0; width: 100%; padding-bottom: 56%;}
+    #l-banner .container {position: unset;}
+    #l-banner .l-banner {position: relative;}
+    #l-banner .l-banner-wrapper {display: none;}
+
+    .rav4 .l-banner::after {
+      background: url(https://toyota.space/uploads/projects/toyota_tradedealer/uploads/images/L-banner-RAV4-mobile.jpg) center center no-repeat;
+  }
+  .l-banner-title {padding-top: 0px;}
+  .l-banner-wrapper {width: 100%;}
+  .l-banner-button {display: none;}
+  .l-banner-button.l-banner-mobile {display: block;}
+  .l-banner-mobile > a {margin-bottom: 10px}
+  .l-banner-item {display: none;}
+  .l-banner-item p {color: #000000; font-size: 14px; line-height: 16px; padding: 0 8px; font-weight: 500;}
+  .l-banner-item:nth-child(2n - 1) {margin-left: 0; }
+  #l-banner .l-banner-button {display: block !important; position: relative; left: 0; text-align: left; top: auto; bottom: 0; margin-bottom: 30px;}
+  #l-banner .l-banner-button a {padding: 10px 15px 10px; display: block;}
+}
+
+@media (max-width: 480px) {
+    .l-banner-item {width: 80%; margin: 10px auto; float: none; overflow: hidden;}
+    .l-banner-item:nth-child(2n - 1) {margin-left: auto;}
+}
+.support-text {font-size: 12px !important;}
+</style>
+<!-- <header class="section-title">
+    <h2 class="l-banner-title" style="text-align: center;">Специальная серия внедорожников Toyota TRD<small><sup>1</sup></small></h2>
+</header> -->
+
+<div class="rav4" id="l-banner">
+    <div class="l-banner">
+        <div class="l-banner-wrapper">
+            <div class="l-banner-item-wrapper">
+                <figure class="l-banner-item" style="opacity: 0;visibility: hidden;">&nbsp;</figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="l-banner-button">
+            <a class="btn btn-success" href="/toyota/new-rav4/about" target="_blank">Узнать больше </a>
+        </div>
+    </div>
+</div>
